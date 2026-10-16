@@ -1,24 +1,36 @@
 ---
-name: "Bruna Soares — Advocacia e Consultoria Jurídica"
-description: "Rosé, cobre e marfim do monograma BS; serifas elegantes e leitura clara."
+name: "Luana Oliveira — Advocacia"
+description: "Dourado do logo LO, vinho e bege das referências; serifas elegantes e leitura clara."
 colors:
-  ink: "#301e17"
-  ink-soft: "#70594d"
+  ink: "#321b23"
+  ink-soft: "#6c555b"
+  gold-divider: "rgb(224 192 144 / 25%)"
+  gold-frame: "rgb(224 192 144 / 40%)"
   paper: "#ffffff"
-  ivory: "#fff7f1"
-  linen: "#f1e0d4"
-  brand-50: "#fcf0e8"
-  brand-100: "#ffe0d0"
-  brand-200: "#ffd0b0"
-  brand-300: "#f0b090"
-  brand-400: "#d99878"
-  brand-500: "#bc7b5a"
-  brand-600: "#a06040"
-  brand-700: "#87523b"
-  brand-800: "#653d2d"
-  brand-900: "#301000"
-  brand-950: "#241611"
+  ivory: "#faf7f0"
+  linen: "#e5d9c9"
+  brand-50: "#f3ede3"
+  brand-100: "#eee0cf"
+  brand-200: "#fff0d0"
+  brand-300: "#e0c090"
+  brand-400: "#d0b080"
+  brand-500: "#b09060"
+  brand-600: "#836337"
+  brand-700: "#731d35"
+  brand-800: "#64162c"
+  brand-900: "#420d1b"
+  brand-950: "#501020"
 typography:
+  feature:
+    fontFamily: "Cormorant Garamond, Georgia, serif"
+    fontSize: "1.7rem"
+    fontWeight: 400
+    lineHeight: 1.25
+  feature-caption:
+    fontFamily: "Lato, system-ui, sans-serif"
+    fontSize: "11px"
+    fontWeight: 400
+    lineHeight: "1.25rem"
   display:
     fontFamily: "Cormorant Garamond, Georgia, serif"
     fontSize: "3.25rem"
@@ -80,37 +92,37 @@ typography:
     lineHeight: "2.25rem"
     letterSpacing: "-0.025em"
   body:
-    fontFamily: "Montserrat, system-ui, sans-serif"
+    fontFamily: "Lato, system-ui, sans-serif"
     fontSize: "15px"
     fontWeight: 400
     lineHeight: "1.75rem"
     letterSpacing: "normal"
   body-small:
-    fontFamily: "Montserrat, system-ui, sans-serif"
+    fontFamily: "Lato, system-ui, sans-serif"
     fontSize: "14px"
     fontWeight: 400
     lineHeight: "1.75rem"
     letterSpacing: "normal"
   compact-body:
-    fontFamily: "Montserrat, system-ui, sans-serif"
+    fontFamily: "Lato, system-ui, sans-serif"
     fontSize: "13px"
     fontWeight: 400
     lineHeight: "1.5rem"
     letterSpacing: "normal"
   navigation:
-    fontFamily: "Montserrat, system-ui, sans-serif"
-    fontSize: "0.8rem"
+    fontFamily: "Lato, system-ui, sans-serif"
+    fontSize: "0.875rem"
     fontWeight: 600
     lineHeight: "1.5"
     letterSpacing: "normal"
   label:
-    fontFamily: "Montserrat, system-ui, sans-serif"
+    fontFamily: "Lato, system-ui, sans-serif"
     fontSize: "12px"
     fontWeight: 600
     lineHeight: "1rem"
     letterSpacing: "0.14em"
   label-small:
-    fontFamily: "Montserrat, system-ui, sans-serif"
+    fontFamily: "Lato, system-ui, sans-serif"
     fontSize: "10px"
     fontWeight: 600
     lineHeight: "1.5"
@@ -152,81 +164,48 @@ components:
     textColor: "{colors.brand-950}"
 ---
 
-# Design System: Bruna Soares
+# Design System: Luana Oliveira
 
 ## Overview
 
-**Creative North Star: "Cuidado com sua história"**
-
-A identidade parte do logo original BS: rosé, cobre, marfim e marrom profundo. O cabeçalho claro preserva a assinatura escura da marca; campos escuros sustentam o rosé e alternam com superfícies claras de leitura. Cormorant Garamond acompanha o contraste das serifas do logo, enquanto Montserrat oferece leitura e controles claros.
-
-**Key Characteristics:**
-- Logo e dois retratos originais preservados integralmente.
-- Contraste entre marrom profundo, rosé e superfícies quentes claras.
-- Tipografia em duas famílias, divisórias finas e CTAs planos.
+A identidade vem dos anexos originais: dourado do monograma LO e vinho e bege da apresentação profissional. Títulos serifados, fotografias reais e superfícies claras trazem elegância e proximidade. Cabeçalho, hero e rodapé escuros sustentam a assinatura dourada.
 
 ## Colors
 
-### Primary
-Rosé brand-300 nos CTAs e detalhes em fundo escuro; brand-200 no hover. As amostras opacas do logo foram quantizadas em passos de 16; os demais tons foram derivados para legibilidade.
+O logo forneceu amostras opacas quantizadas em passos de 16: #e0c090, #f0d0a0, #d0b080, #fff0d0 e #b09060. A apresentação forneceu #501020 e #d0c0b0. Os tons derivados normativos estão no frontmatter e em app/globals.css, onde o Tailwind 4 configura o tema com @theme inline.
 
-### Secondary
-Cobre brand-600 e seus tons escuros brand-700/800 em links, ícones e títulos sobre claro. O marrom brand-900 também é uma amostra do logo; brand-950 é a superfície profunda derivada.
-
-### Neutral
-Ivory e paper sustentam leitura e a assinatura original do logo. Ink é o texto principal e ink-soft o apoio. Brand-100 atende textos de apoio sobre escuro. Divisórias e moldura rosé usam 22% e 35% de opacidade.
-
-Contrastes calculados: ink-soft/ivory 6,15:1; brand-700/ivory 6,01:1; brand-950/brand-300 9,45:1; brand-100/brand-950 14,05:1; foco brand-600/ivory 4,67:1.
+Dourado brand-300 nos CTAs sobre vinho; brand-200 no hover. Vinho brand-700 em links sobre claro. Ivory e paper alternam leitura; ink-soft mantém 6,36:1 sobre ivory. Ink/ivory 14,91:1; brand-700/ivory 10,03:1; brand-950/brand-300 8,43:1; brand-100/brand-950 11,28:1. Divisórias douradas usam 25%, e a moldura do retrato usa 40%.
 
 ## Typography
 
-Cormorant Garamond para títulos e Montserrat para leitura, ambas servidas localmente por next/font/google, display swap. Os papéis e valores normativos estão no frontmatter. O estilo font-display usa peso 400 e tracking -0,025em.
-
-H1 cresce em base/sm/lg; títulos compartilhados seguem a mesma progressão. Resumos dos serviços usam compact-body; biografia e detalhes usam body/body-small. Controles usam peso 600. Rating e nomes de avaliações mantêm a família serifada.
+Cormorant Garamond nos títulos, peso 400, tracking -0,025em. Lato na leitura; arquivos locais otimizados por next/font/google com display swap. Display carrega 400/500/600; Lato carrega 400/700, com pesos intermediários solicitados pelos controles resolvidos pelo navegador. H1 3,25/4,4/4,8rem; títulos 2,25/3/3,55rem. Texto 15px/28px; detalhes 13px/24px. Navegação desktop 14px. Rótulos de apoio 11px; destaque de atendimento e diálogo 1,7rem.
 
 ## Layout
 
-Contêiner máximo 80rem e gutters de 20/32/48px. Breakpoints sm 640px, md 768px e lg 1024px; ajuste do logo em 360px. Seções usam 80/112/128px de espaço vertical; hero 56/80px.
-
-Cabeçalho sticky com altura interna 96/112px e borda de 1px. Logo proporcional de 195px abaixo de 360, 215px até sm e 260px a partir de sm. Controle móvel não encolhe e mantém 44px. Menu absoluto sob o cabeçalho, com rolagem interna limitada pela altura da janela.
-
-Hero em colunas 1,05fr/0,95fr em lg; retrato integral com largura máxima 360/400px. No celular, retrato abaixo do texto. Sobre usa colunas 0,85fr/1,15fr em lg, foto integral com máximo de 390px. Serviços em linhas separadas por divisórias; avaliações em três colunas em md. Contato em duas colunas em lg. Rodapé com logo de 250px sobre placa marfim.
+Contêiner máximo 80rem; gutters 20/32/48px; breakpoints sm 640, md 768 e lg 1024px. Cabeçalho sticky 96/112px. Hero em duas colunas no desktop, texto seguido de retrato no celular. Foto integral até 400px; arte Sobre quadrada até 460px, limitada pela coluna disponível. Serviços em linhas separadas por divisórias; avaliações em três colunas no desktop. Contato em duas colunas a partir de lg. Sem rolagem horizontal nas larguras 320, 390, 768, 1024 e 1440px verificadas.
 
 ## Elevation & Depth
 
-Superfícies planas, contraste tonal e linhas finas. A sombra do diálogo é 0 18px 48px rgb(48 30 23 / 18%). Backdrop usa ink/55 e desfoque leve para distinguir o diálogo. Menu 220ms, diálogo 240ms, CTA 200ms e navegação 180ms.
-
-A moldura do retrato tem revelação por clip-path em 1200ms, cubic-bezier(0.16, 1, 0.3, 1). Conteúdo visível por padrão, MotionConfig reducedMotion=user e CSS para prefers-reduced-motion.
+Superfícies planas com separação tonal. Sombra do diálogo: 0 18px 48px rgb(50 27 35 / 18%). Backdrop ink/55 com desfoque. Menu 220ms, diálogo 240ms, CTA 200ms, navegação 180ms. Revelação da moldura por clip-path em 1200ms. Movimento reduzido respeitado; conteúdo visível por padrão.
 
 ## Shapes
 
-Painéis retangulares; CTAs com raio de 4px. Controles compactos circulares. Modal com cantos superiores de 16px no celular e raio de 4px em sm; largura máxima 36rem e altura máxima 90dvh com rolagem interna. Fotografias completas, sem máscaras ou recortes.
+Painéis retangulares, botões com raio de 4px, controles compactos circulares. Modal com cantos superiores de 16px no celular e 4px no desktop, altura máxima 90dvh e rolagem interna. Imagens originais preservadas integralmente.
 
 ## Components
 
-### Buttons
-CTAs planos com texto escuro sobre rosé, borda de 1px e altura mínima 44px. Variantes e padding no frontmatter. Hover brand-200. Foco com contorno de 2px, offset de 3px no CTA e 4px nos demais controles. Sobre escuro, contorno brand-200; no menu móvel, brand-800.
+CTAs dourados com texto vinho, altura mínima 44px e foco visível. Links do cabeçalho claros sobre vinho escuro, dourados no hover. Menu móvel marfim, com aria-expanded e fechamento por seleção ou Escape. Logo original diretamente sobre vinho no cabeçalho e rodapé.
 
-### Navigation
-Links brand-800 no cabeçalho marfim, hover brand-700 e sublinhado fino. Menu com aria-expanded/aria-controls; fecha por seleção e Escape. Link de salto visível ao foco.
+Quatro serviços: inventário, usucapião, regularização de imóveis e consultoria imobiliária e registral. Diálogos nomeados com foco inicial, ciclo Tab/Shift+Tab, Escape, retorno de foco, fundo inert e bloqueio de rolagem. WhatsApp contextual inclui o assunto selecionado.
 
-### Service details
-Seis temas familiares. Diálogos nomeados com role=dialog e aria-modal. Foco no fechamento ao abrir, ciclo Tab/Shift+Tab, Escape, retorno ao controle de origem, fundo inert e bloqueio/restauração da rolagem. CTA inclui a área na mensagem WhatsApp.
+FAQ em details/summary. Endereço em Caratinga, telefone, Instagram e atendimento on-line nacional; destinos centralizados em app/lib/brand.ts. Nota 5,0 e 43 avaliações correspondem ao material fornecido, sem integração ao vivo. Não há e-mail ou inscrição OAB informados.
 
-### FAQ and contact
-FAQ em details/summary nativos. Contato apresenta WhatsApp, telefone, Instagram e um endereço em Piumhi. Não há formulário. Destinos vêm de app/lib/brand.ts.
-
-### Original materials
-Logo 1998 × 787, retrato principal 730 × 837 e foto Sobre 651 × 844 em public/bruna-soares-*.png. Cópias binárias dos anexos; origem e SHA-256 em .impeccable/asset-origins.json. Next/image otimiza a exibição sem modificar os arquivos originais.
+Logo 2172 × 724, retrato 340 × 510 e arte Sobre 510 × 510 em public/luana-oliveira-*.png. Proveniência e hashes em .impeccable/asset-origins.json. A baixa resolução do retrato é a do arquivo original.
 
 ## Do's and Don'ts
 
-### Do:
-- Do preservar proporções e cores dos anexos originais.
-- Do usar Cormorant Garamond nos títulos e Montserrat na leitura.
-- Do manter foco visível, controles móveis de 44px e movimento reduzido.
-
-### Don't:
-- Don’t alterar o logo para torná-lo claro; aplicar sobre a superfície marfim.
-- Don’t inventar credenciais, experiência, e-mail, horários ou avaliações.
-- Don’t omitir o comportamento de teclado dos diálogos.
+- Do preservar cores, proporções e integridade dos anexos.
+- Do manter dourado sobre vinho e texto escuro sobre fundos claros.
+- Do preservar foco visível e acessibilidade dos diálogos.
+- Don't inventar e-mail, OAB, domínio, horários ou resultados.
+- Don't apresentar os oito anos em cartório como oito anos de advocacia.

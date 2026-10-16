@@ -16,8 +16,8 @@ import {
   MapPin,
   Menu,
   Scale,
-  Users,
-  HeartHandshake,
+  House,
+  FileCheck2,
   ScrollText,
   Camera,
   Star,
@@ -44,40 +44,28 @@ const stagger: Variants = {
 
 const areas = [
   {
-    title: "Divórcio e separação", icon: Scale,
-    summary: "Orientação para encerrar um ciclo com clareza sobre suas escolhas e os próximos passos.",
-    details: "Cada separação tem uma história. O atendimento considera suas dúvidas, os vínculos familiares e os documentos para explicar as alternativas e organizar o encaminhamento da situação, de forma individual e sigilosa.",
-    topics: ["Análise da situação do casal","Organização dos documentos","Orientação sobre acordos","Acompanhamento dos encaminhamentos"],
+    title: "Inventário", icon: ScrollText,
+    summary: "Cuidado com a história da sua família e orientação para organizar a transmissão do patrimônio.",
+    details: "Após a perda de alguém, lidar com documentos e bens pode trazer muitas dúvidas. O atendimento acolhe a família, analisa o patrimônio e a documentação disponível e orienta sobre os caminhos para conduzir o inventário, conforme as particularidades do caso.",
+    topics: ["Análise da documentação da família e dos bens", "Orientação sobre inventário judicial ou extrajudicial", "Organização das etapas da partilha", "Acompanhamento do procedimento"],
   },
   {
-    title: "Guarda e convivência", icon: Users,
-    summary: "Cuidado com as relações familiares e atenção às necessidades de crianças e adolescentes.",
-    details: "Decisões que envolvem filhos pedem escuta e responsabilidade. A consulta permite compreender a rotina da família, as necessidades envolvidas e os pontos que precisam de orientação para organizar a guarda e a convivência.",
-    topics: ["Orientação sobre guarda","Organização da convivência familiar","Análise de acordos existentes","Acompanhamento de questões familiares"],
+    title: "Usucapião", icon: House,
+    summary: "Análise da história do seu imóvel para compreender as possibilidades de reconhecimento da propriedade.",
+    details: "Você ocupa um imóvel, mas ainda não tem o registro em seu nome? A consulta permite conhecer a origem e as condições da posse, analisar os documentos existentes e avaliar se a usucapião é um caminho adequado para a sua situação.",
+    topics: ["Análise da posse e do histórico do imóvel", "Levantamento de documentos e comprovantes", "Avaliação da via adequada ao caso", "Orientação e acompanhamento da demanda"],
   },
   {
-    title: "Pensão alimentícia", icon: HeartHandshake,
-    summary: "Clareza para tratar das necessidades de quem recebe e das responsabilidades de quem contribui.",
-    details: "O atendimento analisa o contexto familiar e os documentos para esclarecer dúvidas sobre alimentos. Cada demanda recebe atenção às necessidades das pessoas envolvidas e às particularidades da situação apresentada.",
-    topics: ["Orientação para fixação de alimentos","Análise de pedidos de revisão","Dúvidas sobre pagamentos","Organização de comprovantes e documentos"],
+    title: "Regularização de imóveis", icon: FileCheck2,
+    summary: "Atenção à documentação, à escritura e ao registro para cuidar do que é seu.",
+    details: "Pendências na documentação podem dificultar decisões sobre um imóvel. A análise individual identifica a situação registral, os documentos disponíveis e as providências que precisam ser avaliadas para a regularização.",
+    topics: ["Análise de matrícula e documentos do imóvel", "Orientação sobre escritura e registro", "Identificação de pendências documentais", "Acompanhamento dos encaminhamentos em cartório"],
   },
   {
-    title: "União estável", icon: HeartHandshake,
-    summary: "Orientação sobre a vida em comum, a formalização da relação e as decisões de cada casal.",
-    details: "Compreender os aspectos jurídicos da relação ajuda o casal a tomar decisões informadas. A consulta considera a história, os documentos e os objetivos apresentados para orientar sobre formalização, reconhecimento ou dissolução da união.",
-    topics: ["Formalização da união estável","Orientação sobre reconhecimento","Dissolução da união","Análise de documentos e acordos"],
-  },
-  {
-    title: "Partilha de bens", icon: ScrollText,
-    summary: "Atenção ao patrimônio construído e às particularidades de cada relação familiar.",
-    details: "A organização do patrimônio exige uma análise cuidadosa da relação e dos documentos. O atendimento esclarece dúvidas sobre a partilha no contexto da separação e orienta sobre os caminhos adequados ao caso.",
-    topics: ["Levantamento de bens e documentos","Análise do contexto patrimonial","Orientação sobre acordos de partilha","Acompanhamento da demanda"],
-  },
-  {
-    title: "Consultoria em Direito de Família", icon: MessageCircle,
-    summary: "Uma conversa para compreender sua situação antes de tomar uma decisão importante.",
-    details: "A consultoria é um espaço para apresentar sua história, esclarecer dúvidas e compreender os aspectos jurídicos de uma questão familiar. A partir da análise individual, são explicadas as possibilidades e os documentos necessários para os próximos passos.",
-    topics: ["Esclarecimento de dúvidas familiares","Análise individual da situação","Orientação preventiva","Planejamento dos próximos passos"],
+    title: "Consultoria imobiliária e registral", icon: Scale,
+    summary: "Informação clara para tomar decisões sobre imóveis, documentos e patrimônio.",
+    details: "Uma conversa para compreender sua dúvida antes de dar o próximo passo. A consultoria reúne a análise dos documentos apresentados e a orientação individual sobre questões imobiliárias, notariais e registrais, com linguagem acessível.",
+    topics: ["Esclarecimento de dúvidas sobre imóveis", "Análise da documentação apresentada", "Orientação sobre procedimentos em cartório", "Planejamento dos próximos passos"],
   },
 ];
 
@@ -169,18 +157,18 @@ export default function Home() {
       <main className="bg-ivory text-ink">
         <div ref={contentRef}>
         <a href="#inicio" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-sm focus:bg-white focus:p-4 focus:text-ink">Ir para o conteúdo</a>
-        <header className="brand-header sticky top-0 z-40 border-b border-brand-800/10 bg-ivory text-ink">
+        <header className="brand-header sticky top-0 z-40 border-b border-brand-300/20 bg-brand-900 text-ivory">
           <div className="mx-auto flex h-[96px] max-w-7xl items-center justify-between gap-5 px-5 sm:h-[112px] sm:px-8 lg:px-12">
             <a
               href="#inicio"
-              aria-label="Bruna Soares Advocacia — início"
+              aria-label="Luana Oliveira Advocacia — início"
               onClick={closeMenu}
               className="shrink-0"
             >
               <Image
                 src={brand.logo}
-                width={1998}
-                height={787}
+                width={2172}
+                height={724}
                 alt={brand.businessName}
                 preload
                 className="h-auto w-[195px] min-[360px]:w-[215px] sm:w-[260px]"
@@ -212,8 +200,8 @@ export default function Home() {
                 href={contact}
                 target="_blank"
                 rel="noreferrer"
-                aria-label="WhatsApp da Dra. Bruna Soares"
-                className="grid size-11 place-items-center rounded-full border border-brand-800/20 text-brand-800 transition-colors hover:border-brand-700 hover:text-brand-700"
+                aria-label="WhatsApp da Dra. Luana Oliveira"
+                className="grid size-11 place-items-center rounded-full border border-brand-300/40 text-brand-200 transition-colors hover:border-brand-300 hover:text-brand-300"
               >
                 <WhatsAppMark size={17} strokeWidth={1.7} />
               </a>
@@ -295,14 +283,14 @@ export default function Home() {
                 variants={reveal}
                 className="max-w-[720px] font-display text-[3.25rem] leading-[1.04] tracking-[-0.025em] text-ivory sm:text-[4.4rem] lg:text-[4.8rem]"
               >
-                Sua família merece{" "}
-                <span className="text-brand-300">cuidado. Você, clareza.</span>
+                Seu patrimônio tem história.{" "}
+                <span className="text-brand-300">Cuide do próximo capítulo.</span>
               </motion.h1>
               <motion.p
                 variants={reveal}
                 className="mt-7 max-w-xl text-[15px] leading-7 text-ink-soft sm:text-base sm:leading-8"
               >
-                Nos momentos que transformam sua família, ter orientação faz diferença. Com a Dra. Bruna Soares, você encontra escuta e cuidado para compreender seus direitos e decidir os próximos passos. Advocacia familiarista em Piumhi, Minas Gerais.
+                Inventário, usucapião e regularização de imóveis com a Dra. Luana Oliveira. Orientação clara e um olhar atento para proteger seu patrimônio e sua família, em Caratinga e on-line em todo o Brasil.
               </motion.p>
               <motion.div
                 variants={reveal}
@@ -314,7 +302,7 @@ export default function Home() {
                   size="lg"
                   className="rounded-sm"
                 >
-                  <WhatsAppMark size={17} /> Converse com a Dra. Bruna
+                  <WhatsAppMark size={17} /> Converse com a Dra. Luana
                 </GlowingButton>
                 <a
                   href="#atuacao"
@@ -336,8 +324,8 @@ export default function Home() {
                   {brand.location}
                 </span>
                 <span className="inline-flex items-center gap-2">
-                  <HeartHandshake size={15} className="text-brand-700" />
-                  Atendimento com atenção e sigilo
+                  <MessageCircle size={15} className="text-brand-700" />
+                  On-line em todo o Brasil
                 </span>
                 <a href="#avaliacoes" className="inline-flex items-center gap-2 py-2 text-sm text-brand-200 underline underline-offset-4">
                   <Star size={15} aria-hidden="true" /> Avaliações no Google
@@ -357,16 +345,16 @@ export default function Home() {
               <figure className="hero-signature">
                 <Image
                   src={brand.portrait}
-                  alt="Dra. Bruna Soares sentada em seu escritório"
-                  width={730}
-                  height={837}
+                  alt="Dra. Luana Oliveira, de blusa vinho e colete preto"
+                  width={340}
+                  height={510}
                   preload
                   sizes="(max-width: 640px) 90vw, 400px"
                   className="h-auto w-full"
                 />
                 <figcaption className="flex flex-col gap-2 border-t border-brand-300/25 px-5 pb-7 pt-6 text-center leading-6 text-brand-100">
-                  <span className="font-display text-3xl text-brand-300">Dra. Bruna Soares</span>
-                  <span className="text-xs tracking-[0.1em]">Advogada familiarista</span>
+                  <span className="font-display text-3xl text-brand-300">Dra. Luana Oliveira</span>
+                  <span className="text-xs tracking-[0.06em]">Inventário & regularização de imóveis</span>
                 </figcaption>
               </figure>
             </motion.div>
@@ -379,9 +367,9 @@ export default function Home() {
         >
           <div className="mx-auto grid max-w-7xl gap-6 px-5 py-7 sm:grid-cols-3 sm:gap-4 sm:px-8 lg:px-12">
             {[
-              ["Escuta", "Atenção à sua história"],
-              ["Sigilo", "Respeito à sua história"],
-              ["Presença", "Orientação em cada etapa"],
+              ["Experiência", "8 anos no Registro de Imóveis"],
+              ["Proximidade", "Em Caratinga e on-line"],
+              ["Clareza", "Orientação em cada etapa"],
             ].map(([value, label], index) => (
               <div
                 key={value}
@@ -416,10 +404,10 @@ export default function Home() {
             >
               <Heading
 
-                description="Relações, recomeços e decisões importantes. Orientação em Direito de Família para cuidar do que faz parte da sua história."
+                description="Do inventário à documentação do seu imóvel, cada situação recebe uma análise cuidadosa e orientação sobre os caminhos possíveis."
               >
-                Cuidado com os vínculos.{" "}
-                <span className="text-brand-700">Atenção aos seus direitos.</span>
+                Seu patrimônio em ordem.{" "}
+                <span className="text-brand-700">Sua família amparada.</span>
               </Heading>
               <p className="max-w-[250px] pb-1 text-xs leading-6 text-ink-soft">
                 Encontre o assunto sobre o qual deseja conversar. Cada história recebe uma análise individual.
@@ -475,16 +463,16 @@ export default function Home() {
 
         <section id="sobre" className="scroll-mt-28 bg-white py-20 sm:py-28 lg:py-32">
           <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-24 lg:px-12">
-            <figure className="mx-auto w-full max-w-[390px] lg:mx-0">
-              <Image src={brand.aboutImage} alt="Bruna Soares em seu escritório, junto à biblioteca jurídica" width={651} height={844} sizes="(max-width: 640px) 90vw, 390px" className="h-auto w-full" />
-              <figcaption className="border-b border-brand-800/20 py-5 text-sm text-ink-soft">Um atendimento próximo, com respeito à sua história.</figcaption>
+            <figure className="mx-auto w-full max-w-[460px] lg:mx-0">
+              <Image src={brand.aboutImage} alt="Apresentação de Luana Oliveira: advogada, pós-graduada em Direito Imobiliário pela PUC Minas e em Direito Notarial e Registral pela Doctum, com oito anos de experiência em Cartório de Registro de Imóveis" width={510} height={510} sizes="(max-width: 640px) 90vw, 460px" className="h-auto w-full" />
+              <figcaption className="border-b border-brand-800/20 py-5 text-sm text-ink-soft">Conhecimento técnico, cuidado com cada história.</figcaption>
             </figure>
             <div>
-              <Heading>Direito de Família com <span className="text-brand-700">um olhar humano.</span></Heading>
-              <h3 className="mt-7 font-display text-3xl text-brand-800">Dra. Bruna Soares</h3>
-              <p className="mt-2 text-xs font-medium tracking-[0.08em] text-ink-soft">Advogada familiarista · Piumhi, MG</p>
-              <p className="mt-6 max-w-xl text-[15px] leading-7 text-ink-soft">Por trás de uma questão familiar, existe uma história que merece ser ouvida. À frente da Bruna Soares — Advocacia e Consultoria Jurídica, a Dra. Bruna acolhe suas dúvidas e orienta cada passo com atenção às pessoas envolvidas.</p>
-              <p className="mt-4 max-w-xl text-[15px] leading-7 text-ink-soft">Em Piumhi, Minas Gerais, o atendimento une escuta, sigilo e explicações acessíveis. Um espaço para entender sua situação, conhecer os caminhos possíveis e tomar decisões com mais clareza.</p>
+              <Heading>Experiência para orientar.{" "}<span className="text-brand-700">Sensibilidade para acolher.</span></Heading>
+              <h3 className="mt-7 font-display text-3xl text-brand-800">Dra. Luana Oliveira</h3>
+              <p className="mt-2 text-xs font-medium tracking-[0.04em] text-ink-soft">Advogada · Caratinga, MG · Atendimento on-line no Brasil</p>
+              <p className="mt-6 max-w-xl text-[15px] leading-7 text-ink-soft">Ao longo de oito anos de trabalho em Cartório de Registro de Imóveis, Luana conheceu de perto os detalhes que fazem parte da história de cada propriedade. Hoje, traz essa experiência para a advocacia, com atuação em inventário, usucapião e regularização de imóveis.</p>
+              <p className="mt-4 max-w-xl text-[15px] leading-7 text-ink-soft">Pós-graduada em Direito Imobiliário pela PUC Minas e em Direito Notarial e Registral pela Doctum, une conhecimento técnico e explicações acessíveis para que você compreenda cada etapa. Sua vida e sua profissão são guiadas por princípios cristãos, respeito e atenção às pessoas.</p>
               <a href={contact} target="_blank" rel="noopener noreferrer" className="group mt-8 inline-flex min-h-11 items-center gap-2 border-b border-brand-700/40 py-2 text-sm font-semibold text-brand-800 transition-colors hover:text-brand-700">Conheça o atendimento <ArrowUpRight size={16} /></a>
             </div>
           </div>
@@ -495,7 +483,7 @@ export default function Home() {
             <Heading
 
               light
-              description="Decisões sobre sua família merecem tempo, informação e cuidado. Conheça os próximos passos com uma orientação que considera a sua realidade."
+              description="Decisões sobre seu patrimônio merecem informação e cuidado. Do primeiro contato ao acompanhamento, entenda como funciona o atendimento."
             >
               Clareza para compreender cada{" "}
               <span className="text-brand-200">etapa.</span>
@@ -509,16 +497,16 @@ export default function Home() {
             >
               {[
                 [
-                  "Escuta e compreensão",
-                  "Um atendimento que começa ouvindo sua história, suas dúvidas e as circunstâncias do caso.",
+                  "Primeiro, a sua história",
+                  "Conte sua situação pelo WhatsApp e combine o atendimento, presencial em Caratinga ou on-line em todo o Brasil.",
                 ],
                 [
-                  "Comunicação clara",
-                  "Explicações acessíveis sobre a situação, os caminhos possíveis e o andamento da demanda.",
+                  "Depois, os documentos",
+                  "A documentação é analisada com atenção ao imóvel, ao patrimônio e às particularidades da sua família.",
                 ],
                 [
-                  "Análise cuidadosa",
-                  "Atenção aos fatos e aos documentos, com respeito ao sigilo e às particularidades de cada caso.",
+                  "Um caminho compreensível",
+                  "Você recebe explicações sobre as alternativas, os próximos passos e o acompanhamento da sua demanda, com atenção e sigilo.",
                 ],
               ].map(([title, description]) => (
                 <motion.div
@@ -545,8 +533,8 @@ export default function Home() {
               {[
                 ["Como funciona o primeiro contato?", `Envie uma mensagem pelo WhatsApp ou ligue para ${brand.phone}. Conte brevemente sua situação para receber informações sobre o atendimento e os documentos iniciais necessários.`],
                 ["Onde fica o escritório?", `O escritório fica na ${brand.address}. Entre em contato para combinar sua visita.`],
-                ["Posso tirar dúvidas sobre uma questão familiar?", "Sim. Conte brevemente o que está acontecendo e quais são suas dúvidas. A Dra. Bruna explicará como funciona a consulta e a análise individual da sua situação."],
-                ["Quais documentos devo separar?", "Envie um resumo da situação pelo WhatsApp. Conforme a situação, podem ser necessários documentos pessoais, certidões, comprovantes ou acordos anteriores. A Dra. Bruna orientará quais documentos são pertinentes ao seu caso."],
+                ["O atendimento pode ser on-line?", "Sim. Além do atendimento presencial em Caratinga, Minas Gerais, a Dra. Luana atende on-line em todo o Brasil. Entre em contato para combinar sua consulta."],
+                ["Quais documentos devo separar?", "Os documentos variam conforme a situação. Documentos pessoais, certidões e documentos do imóvel podem ser úteis à análise. A Dra. Luana orientará quais são pertinentes ao seu caso durante o agendamento."],
               ].map(([question, answer]) => (
                 <details key={question} className="group py-6">
                   <summary className="cursor-pointer text-base font-semibold text-ink marker:text-brand-700">{question}</summary>
@@ -563,7 +551,7 @@ export default function Home() {
         >
           <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
             <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
-              <Heading description="Relatos de clientes sobre o atendimento da Dra. Bruna Soares, publicados no Google.">
+              <Heading description="Relatos de quem já contou com a atenção e a orientação da Dra. Luana Oliveira, publicados no Google.">
                 Confiança que se{" "}
                 <span className="text-brand-700">compartilha.</span>
               </Heading>
@@ -617,7 +605,7 @@ export default function Home() {
             <div>
               <Heading
 
-                description="Converse com a Dra. Bruna sobre sua situação e receba informações para iniciar o atendimento em Piumhi."
+                description="Converse com a Dra. Luana sobre seu imóvel ou inventário. Atendimento presencial em Caratinga e on-line em todo o Brasil."
               >
                 Um primeiro contato com{" "}
                 <span className="text-brand-700">tranquilidade.</span>
@@ -629,7 +617,7 @@ export default function Home() {
                   size="lg"
                   className="rounded-sm"
                 >
-                  <WhatsAppMark size={17} /> Converse com a Dra. Bruna
+                  <WhatsAppMark size={17} /> Converse com a Dra. Luana
                 </GlowingButton>
                 <a href={telephone} className="inline-flex min-h-11 items-center gap-2 text-sm text-brand-700 hover:text-brand-800"><Phone size={16} /> Ligue: {brand.phone}</a>
                 <a href={brand.instagram} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-2 py-2 text-sm text-brand-700 hover:text-brand-800"><Camera size={16} /> {brand.instagramHandle}</a>
@@ -642,17 +630,17 @@ export default function Home() {
                   <MapPin size={21} strokeWidth={1.6} />
                 </span>
                 <div>
-                  <h3 className="font-display text-2xl text-ink">Nosso escritório em Piumhi</h3>
+                  <h3 className="font-display text-2xl text-ink">Nosso escritório em Caratinga</h3>
                 </div>
               </div>
-              <p className="mt-6 text-sm font-semibold text-brand-700">Bruna Soares · Advocacia e Consultoria Jurídica</p>
+              <p className="mt-6 text-sm font-semibold text-brand-700">Luana Oliveira · Advocacia</p>
               <address className="mt-2 max-w-md not-italic text-[14px] leading-7 text-ink-soft">
                 {brand.address}
               </address>
               <div className="my-7 h-px bg-ink/10" />
               <div className="flex flex-wrap items-center justify-between gap-4">
                 <p className="text-xs text-ink-soft">
-                  Consulte a localização antes de sua visita.
+                  Entre em contato para agendar sua visita.
                 </p>
                 <a
                   href={maps}
@@ -688,18 +676,18 @@ export default function Home() {
         <footer className="brand-footer bg-brand-950 px-5 py-12 text-brand-100 sm:px-8 lg:px-12">
           <div className="mx-auto grid max-w-7xl gap-10 sm:grid-cols-2 lg:grid-cols-[1.1fr_0.9fr_1fr]">
             <div>
-              <div className="inline-flex bg-ivory px-4 py-3">
+              <div className="inline-flex py-3">
                 <Image
                   src={brand.logo}
-                  width={1998}
-                  height={787}
+                  width={2172}
+                  height={724}
                   alt={brand.businessName}
                   className="h-auto w-[250px]"
                   sizes="250px"
                 />
               </div>
               <p className="mt-4 max-w-xs text-xs leading-6 text-ink-soft">
-                Advocacia e consultoria jurídica em Piumhi, Minas Gerais. Cuidado com sua família e clareza sobre seus direitos.
+                Inventário, usucapião e regularização de imóveis. Em Caratinga, Minas Gerais, e on-line em todo o Brasil.
               </p>
             </div>
             <div>

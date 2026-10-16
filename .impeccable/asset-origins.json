@@ -1,29 +1,32 @@
 [
   {
-    "path": "public/bruna-soares-logo.png",
-    "origin": "C:/Users/matheus/Downloads/Logotipo Luxuoso Bruna Soares Advocacia.png",
-    "width": 1998,
-    "height": 787,
+    "path": "public/luana-oliveira-logo.png",
+    "origin": "C:/Users/matheus/Downloads/Logo Dourado Luana Oliveira Advocacia.png",
+    "width": 2172,
+    "height": 724,
     "transformation": "Cópia binária integral do anexo, sem edição.",
-    "sha256": "0dc67226ab747a4c15638cae701433b7160f3196a4a2a9628ab441b9fab24849",
+    "sha256": "25d9ecbaf21a1689ee512722817c43fef8eeb1f8682f2063af93deed03289408",
+    "sourceSha256": "25d9ecbaf21a1689ee512722817c43fef8eeb1f8682f2063af93deed03289408",
     "identicalToSource": true
   },
   {
-    "path": "public/bruna-soares-retrato.png",
-    "origin": "C:/Users/matheus/AppData/Local/Temp/codex-clipboard-73694038-3ff5-4f20-a0e4-b8f861b30dab.png",
-    "width": 730,
-    "height": 837,
+    "path": "public/luana-oliveira-retrato.png",
+    "origin": "C:/Users/matheus/AppData/Local/Temp/codex-clipboard-d693f149-2be4-43d3-a92b-b5d5104d353e.png",
+    "width": 340,
+    "height": 510,
     "transformation": "Cópia binária integral do anexo, sem edição.",
-    "sha256": "219b98b471106e56c2e7aae69e653c10e7325cf0a2f3266f1c994b75c09cc3b1",
+    "sha256": "be5a10398afbf535c3dadbece8f9c61293038fe97b9363c9442d1bf5180be4e2",
+    "sourceSha256": "be5a10398afbf535c3dadbece8f9c61293038fe97b9363c9442d1bf5180be4e2",
     "identicalToSource": true
   },
   {
-    "path": "public/bruna-soares-sobre.png",
-    "origin": "C:/Users/matheus/AppData/Local/Temp/codex-clipboard-2bd8107a-2778-4838-b251-9f2384a44990.png",
-    "width": 651,
-    "height": 844,
+    "path": "public/luana-oliveira-sobre.png",
+    "origin": "C:/Users/matheus/AppData/Local/Temp/codex-clipboard-cd6f3ccd-5342-4689-b628-637d745a7a22.png",
+    "width": 510,
+    "height": 510,
     "transformation": "Cópia binária integral do anexo, sem edição.",
-    "sha256": "7d54b94568dcd5c843ecdec5b04ae2a957b9805ee0b80c9666f7ca0085d2f4c3",
+    "sha256": "7cbaee5ce0111ac209fd79c0406f8e4267a0969ded5c3082587b570fd30bbfe6",
+    "sourceSha256": "7cbaee5ce0111ac209fd79c0406f8e4267a0969ded5c3082587b570fd30bbfe6",
     "identicalToSource": true
   }
 ]

@@ -1,43 +1,43 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-15T22:49:28.392Z",
-  "title": "Design System: Bruna Soares",
+  "generatedAt": "2026-10-16T00:24:35.016Z",
+  "title": "Design System: Luana Oliveira",
   "extensions": {
     "colorMeta": {
       "ink": {
         "role": "neutral",
         "displayName": "ink",
-        "canonical": "#301e17",
+        "canonical": "#321b23",
         "tonalRamp": [
-          "#241611",
-          "#301000",
-          "#653d2d",
-          "#87523b",
-          "#a06040",
-          "#bc7b5a",
-          "#d99878",
-          "#f0b090",
-          "#ffd0b0",
-          "#ffe0d0",
-          "#fcf0e8"
+          "#501020",
+          "#420d1b",
+          "#64162c",
+          "#731d35",
+          "#836337",
+          "#b09060",
+          "#d0b080",
+          "#e0c090",
+          "#fff0d0",
+          "#eee0cf",
+          "#f3ede3"
         ]
       },
       "ink-soft": {
         "role": "neutral",
         "displayName": "ink-soft",
-        "canonical": "#70594d",
+        "canonical": "#6c555b",
         "tonalRamp": [
-          "#241611",
-          "#301000",
-          "#653d2d",
-          "#87523b",
-          "#a06040",
-          "#bc7b5a",
-          "#d99878",
-          "#f0b090",
-          "#ffd0b0",
-          "#ffe0d0",
-          "#fcf0e8"
+          "#501020",
+          "#420d1b",
+          "#64162c",
+          "#731d35",
+          "#836337",
+          "#b09060",
+          "#d0b080",
+          "#e0c090",
+          "#fff0d0",
+          "#eee0cf",
+          "#f3ede3"
         ]
       },
       "paper": {
@@ -45,252 +45,262 @@
         "displayName": "paper",
         "canonical": "#ffffff",
         "tonalRamp": [
-          "#241611",
-          "#301000",
-          "#653d2d",
-          "#87523b",
-          "#a06040",
-          "#bc7b5a",
-          "#d99878",
-          "#f0b090",
-          "#ffd0b0",
-          "#ffe0d0",
-          "#fcf0e8"
+          "#501020",
+          "#420d1b",
+          "#64162c",
+          "#731d35",
+          "#836337",
+          "#b09060",
+          "#d0b080",
+          "#e0c090",
+          "#fff0d0",
+          "#eee0cf",
+          "#f3ede3"
         ]
       },
       "ivory": {
         "role": "neutral",
         "displayName": "ivory",
-        "canonical": "#fff7f1",
+        "canonical": "#faf7f0",
         "tonalRamp": [
-          "#241611",
-          "#301000",
-          "#653d2d",
-          "#87523b",
-          "#a06040",
-          "#bc7b5a",
-          "#d99878",
-          "#f0b090",
-          "#ffd0b0",
-          "#ffe0d0",
-          "#fcf0e8"
+          "#501020",
+          "#420d1b",
+          "#64162c",
+          "#731d35",
+          "#836337",
+          "#b09060",
+          "#d0b080",
+          "#e0c090",
+          "#fff0d0",
+          "#eee0cf",
+          "#f3ede3"
         ]
       },
       "linen": {
         "role": "neutral",
         "displayName": "linen",
-        "canonical": "#f1e0d4",
+        "canonical": "#e5d9c9",
         "tonalRamp": [
-          "#241611",
-          "#301000",
-          "#653d2d",
-          "#87523b",
-          "#a06040",
-          "#bc7b5a",
-          "#d99878",
-          "#f0b090",
-          "#ffd0b0",
-          "#ffe0d0",
-          "#fcf0e8"
+          "#501020",
+          "#420d1b",
+          "#64162c",
+          "#731d35",
+          "#836337",
+          "#b09060",
+          "#d0b080",
+          "#e0c090",
+          "#fff0d0",
+          "#eee0cf",
+          "#f3ede3"
         ]
       },
       "brand-50": {
         "role": "neutral",
         "displayName": "brand-50",
-        "canonical": "#fcf0e8",
+        "canonical": "#f3ede3",
         "tonalRamp": [
-          "#241611",
-          "#301000",
-          "#653d2d",
-          "#87523b",
-          "#a06040",
-          "#bc7b5a",
-          "#d99878",
-          "#f0b090",
-          "#ffd0b0",
-          "#ffe0d0",
-          "#fcf0e8"
+          "#501020",
+          "#420d1b",
+          "#64162c",
+          "#731d35",
+          "#836337",
+          "#b09060",
+          "#d0b080",
+          "#e0c090",
+          "#fff0d0",
+          "#eee0cf",
+          "#f3ede3"
         ]
       },
       "brand-100": {
         "role": "neutral",
         "displayName": "brand-100",
-        "canonical": "#ffe0d0",
+        "canonical": "#eee0cf",
         "tonalRamp": [
-          "#241611",
-          "#301000",
-          "#653d2d",
-          "#87523b",
-          "#a06040",
-          "#bc7b5a",
-          "#d99878",
-          "#f0b090",
-          "#ffd0b0",
-          "#ffe0d0",
-          "#fcf0e8"
+          "#501020",
+          "#420d1b",
+          "#64162c",
+          "#731d35",
+          "#836337",
+          "#b09060",
+          "#d0b080",
+          "#e0c090",
+          "#fff0d0",
+          "#eee0cf",
+          "#f3ede3"
         ]
       },
       "brand-200": {
         "role": "primary",
         "displayName": "brand-200",
-        "canonical": "#ffd0b0",
+        "canonical": "#fff0d0",
         "tonalRamp": [
-          "#241611",
-          "#301000",
-          "#653d2d",
-          "#87523b",
-          "#a06040",
-          "#bc7b5a",
-          "#d99878",
-          "#f0b090",
-          "#ffd0b0",
-          "#ffe0d0",
-          "#fcf0e8"
+          "#501020",
+          "#420d1b",
+          "#64162c",
+          "#731d35",
+          "#836337",
+          "#b09060",
+          "#d0b080",
+          "#e0c090",
+          "#fff0d0",
+          "#eee0cf",
+          "#f3ede3"
         ]
       },
       "brand-300": {
         "role": "primary",
         "displayName": "brand-300",
-        "canonical": "#f0b090",
+        "canonical": "#e0c090",
         "tonalRamp": [
-          "#241611",
-          "#301000",
-          "#653d2d",
-          "#87523b",
-          "#a06040",
-          "#bc7b5a",
-          "#d99878",
-          "#f0b090",
-          "#ffd0b0",
-          "#ffe0d0",
-          "#fcf0e8"
+          "#501020",
+          "#420d1b",
+          "#64162c",
+          "#731d35",
+          "#836337",
+          "#b09060",
+          "#d0b080",
+          "#e0c090",
+          "#fff0d0",
+          "#eee0cf",
+          "#f3ede3"
         ]
       },
       "brand-400": {
         "role": "neutral",
         "displayName": "brand-400",
-        "canonical": "#d99878",
+        "canonical": "#d0b080",
         "tonalRamp": [
-          "#241611",
-          "#301000",
-          "#653d2d",
-          "#87523b",
-          "#a06040",
-          "#bc7b5a",
-          "#d99878",
-          "#f0b090",
-          "#ffd0b0",
-          "#ffe0d0",
-          "#fcf0e8"
+          "#501020",
+          "#420d1b",
+          "#64162c",
+          "#731d35",
+          "#836337",
+          "#b09060",
+          "#d0b080",
+          "#e0c090",
+          "#fff0d0",
+          "#eee0cf",
+          "#f3ede3"
         ]
       },
       "brand-500": {
         "role": "neutral",
         "displayName": "brand-500",
-        "canonical": "#bc7b5a",
+        "canonical": "#b09060",
         "tonalRamp": [
-          "#241611",
-          "#301000",
-          "#653d2d",
-          "#87523b",
-          "#a06040",
-          "#bc7b5a",
-          "#d99878",
-          "#f0b090",
-          "#ffd0b0",
-          "#ffe0d0",
-          "#fcf0e8"
+          "#501020",
+          "#420d1b",
+          "#64162c",
+          "#731d35",
+          "#836337",
+          "#b09060",
+          "#d0b080",
+          "#e0c090",
+          "#fff0d0",
+          "#eee0cf",
+          "#f3ede3"
         ]
       },
       "brand-600": {
         "role": "secondary",
         "displayName": "brand-600",
-        "canonical": "#a06040",
+        "canonical": "#836337",
         "tonalRamp": [
-          "#241611",
-          "#301000",
-          "#653d2d",
-          "#87523b",
-          "#a06040",
-          "#bc7b5a",
-          "#d99878",
-          "#f0b090",
-          "#ffd0b0",
-          "#ffe0d0",
-          "#fcf0e8"
+          "#501020",
+          "#420d1b",
+          "#64162c",
+          "#731d35",
+          "#836337",
+          "#b09060",
+          "#d0b080",
+          "#e0c090",
+          "#fff0d0",
+          "#eee0cf",
+          "#f3ede3"
         ]
       },
       "brand-700": {
         "role": "secondary",
         "displayName": "brand-700",
-        "canonical": "#87523b",
+        "canonical": "#731d35",
         "tonalRamp": [
-          "#241611",
-          "#301000",
-          "#653d2d",
-          "#87523b",
-          "#a06040",
-          "#bc7b5a",
-          "#d99878",
-          "#f0b090",
-          "#ffd0b0",
-          "#ffe0d0",
-          "#fcf0e8"
+          "#501020",
+          "#420d1b",
+          "#64162c",
+          "#731d35",
+          "#836337",
+          "#b09060",
+          "#d0b080",
+          "#e0c090",
+          "#fff0d0",
+          "#eee0cf",
+          "#f3ede3"
         ]
       },
       "brand-800": {
         "role": "secondary",
         "displayName": "brand-800",
-        "canonical": "#653d2d",
+        "canonical": "#64162c",
         "tonalRamp": [
-          "#241611",
-          "#301000",
-          "#653d2d",
-          "#87523b",
-          "#a06040",
-          "#bc7b5a",
-          "#d99878",
-          "#f0b090",
-          "#ffd0b0",
-          "#ffe0d0",
-          "#fcf0e8"
+          "#501020",
+          "#420d1b",
+          "#64162c",
+          "#731d35",
+          "#836337",
+          "#b09060",
+          "#d0b080",
+          "#e0c090",
+          "#fff0d0",
+          "#eee0cf",
+          "#f3ede3"
         ]
       },
       "brand-900": {
         "role": "neutral",
         "displayName": "brand-900",
-        "canonical": "#301000",
+        "canonical": "#420d1b",
         "tonalRamp": [
-          "#241611",
-          "#301000",
-          "#653d2d",
-          "#87523b",
-          "#a06040",
-          "#bc7b5a",
-          "#d99878",
-          "#f0b090",
-          "#ffd0b0",
-          "#ffe0d0",
-          "#fcf0e8"
+          "#501020",
+          "#420d1b",
+          "#64162c",
+          "#731d35",
+          "#836337",
+          "#b09060",
+          "#d0b080",
+          "#e0c090",
+          "#fff0d0",
+          "#eee0cf",
+          "#f3ede3"
         ]
       },
       "brand-950": {
         "role": "neutral",
         "displayName": "brand-950",
-        "canonical": "#241611",
+        "canonical": "#501020",
         "tonalRamp": [
-          "#241611",
-          "#301000",
-          "#653d2d",
-          "#87523b",
-          "#a06040",
-          "#bc7b5a",
-          "#d99878",
-          "#f0b090",
-          "#ffd0b0",
-          "#ffe0d0",
-          "#fcf0e8"
+          "#501020",
+          "#420d1b",
+          "#64162c",
+          "#731d35",
+          "#836337",
+          "#b09060",
+          "#d0b080",
+          "#e0c090",
+          "#fff0d0",
+          "#eee0cf",
+          "#f3ede3"
         ]
+      },
+      "gold-divider": {
+        "role": "neutral",
+        "displayName": "Divisória dourada",
+        "canonical": "rgb(224 192 144 / 25%)"
+      },
+      "gold-frame": {
+        "role": "neutral",
+        "displayName": "Moldura dourada",
+        "canonical": "rgb(224 192 144 / 40%)"
       }
     },
     "typographyMeta": {
@@ -357,12 +367,20 @@
       "label-small": {
         "displayName": "label-small",
         "purpose": "Papel tipográfico implementado"
+      },
+      "feature": {
+        "displayName": "Destaque de atendimento",
+        "purpose": "Serifa de 1,7rem nos destaques e no título de diálogo"
+      },
+      "feature-caption": {
+        "displayName": "Legenda de atendimento",
+        "purpose": "Legenda de 11px"
       }
     },
     "shadows": [
       {
         "name": "dialog",
-        "value": "0 18px 48px rgb(48 30 23 / 18%)",
+        "value": "0 18px 48px rgb(50 27 35 / 18%)",
         "purpose": "Diálogo de serviço"
       }
     ],
@@ -417,66 +435,64 @@
       "name": "CTA principal",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Contato direto pelo WhatsApp da Dra. Bruna.",
-      "html": "<a class=\"ds-primary\" href=\"https://wa.me/5537998635592\">Converse com a Dra. Bruna</a>",
-      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:14px 24px;border:1px solid var(--color-brand-300,#f0b090);border-radius:4px;background:var(--color-brand-300,#f0b090);color:var(--color-brand-950,#241611);font:600 12px/16px var(--font-body,Montserrat),sans-serif;letter-spacing:.14em;text-decoration:none;transition:background 200ms,border-color 200ms}.ds-primary:hover{background:var(--color-brand-200,#ffd0b0);border-color:var(--color-brand-200,#ffd0b0)}.ds-primary:focus-visible{outline:2px solid var(--color-brand-700,#87523b);outline-offset:3px}.ds-small{padding:12px 20px;font-size:10px;letter-spacing:.13em}.ds-large{padding:16px 28px}"
+      "description": "Contato direto pelo WhatsApp da Dra. Luana.",
+      "html": "<a class=\"ds-primary\" href=\"https://wa.me/5533987394137\">Converse com a Dra. Luana</a>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:14px 24px;border:1px solid var(--color-brand-300,#e0c090);border-radius:4px;background:var(--color-brand-300,#e0c090);color:var(--color-brand-950,#501020);font:600 12px/16px var(--font-body,Lato),sans-serif;letter-spacing:.14em;text-decoration:none;transition:background 200ms,border-color 200ms}.ds-primary:hover{background:var(--color-brand-200,#fff0d0);border-color:var(--color-brand-200,#fff0d0)}.ds-primary:focus-visible{outline:2px solid var(--color-brand-700,#731d35);outline-offset:3px}.ds-small{padding:12px 20px;font-size:10px;letter-spacing:.13em}.ds-large{padding:16px 28px}"
     },
     {
       "name": "CTA compacto",
       "kind": "button",
       "refersTo": "button-primary-small",
-      "description": "Contato direto pelo WhatsApp da Dra. Bruna.",
-      "html": "<a class=\"ds-primary ds-small\" href=\"https://wa.me/5537998635592\">WhatsApp</a>",
-      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:14px 24px;border:1px solid var(--color-brand-300,#f0b090);border-radius:4px;background:var(--color-brand-300,#f0b090);color:var(--color-brand-950,#241611);font:600 12px/16px var(--font-body,Montserrat),sans-serif;letter-spacing:.14em;text-decoration:none;transition:background 200ms,border-color 200ms}.ds-primary:hover{background:var(--color-brand-200,#ffd0b0);border-color:var(--color-brand-200,#ffd0b0)}.ds-primary:focus-visible{outline:2px solid var(--color-brand-700,#87523b);outline-offset:3px}.ds-small{padding:12px 20px;font-size:10px;line-height:1.5;letter-spacing:.13em}.ds-large{padding:16px 28px}"
+      "description": "Contato direto pelo WhatsApp da Dra. Luana.",
+      "html": "<a class=\"ds-primary ds-small\" href=\"https://wa.me/5533987394137\">WhatsApp</a>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:14px 24px;border:1px solid var(--color-brand-300,#e0c090);border-radius:4px;background:var(--color-brand-300,#e0c090);color:var(--color-brand-950,#501020);font:600 12px/16px var(--font-body,Lato),sans-serif;letter-spacing:.14em;text-decoration:none;transition:background 200ms,border-color 200ms}.ds-primary:hover{background:var(--color-brand-200,#fff0d0);border-color:var(--color-brand-200,#fff0d0)}.ds-primary:focus-visible{outline:2px solid var(--color-brand-700,#731d35);outline-offset:3px}.ds-small{padding:12px 20px;font-size:10px;line-height:1.5;letter-spacing:.13em}.ds-large{padding:16px 28px}"
     },
     {
       "name": "CTA amplo",
       "kind": "button",
       "refersTo": "button-primary-large",
-      "description": "Contato direto pelo WhatsApp da Dra. Bruna.",
-      "html": "<a class=\"ds-primary ds-large\" href=\"https://wa.me/5537998635592\">Converse com a Dra. Bruna</a>",
-      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:14px 24px;border:1px solid var(--color-brand-300,#f0b090);border-radius:4px;background:var(--color-brand-300,#f0b090);color:var(--color-brand-950,#241611);font:600 12px/16px var(--font-body,Montserrat),sans-serif;letter-spacing:.14em;text-decoration:none;transition:background 200ms,border-color 200ms}.ds-primary:hover{background:var(--color-brand-200,#ffd0b0);border-color:var(--color-brand-200,#ffd0b0)}.ds-primary:focus-visible{outline:2px solid var(--color-brand-700,#87523b);outline-offset:3px}.ds-small{padding:12px 20px;font-size:10px;letter-spacing:.13em}.ds-large{padding:16px 28px}"
+      "description": "Contato direto pelo WhatsApp da Dra. Luana.",
+      "html": "<a class=\"ds-primary ds-large\" href=\"https://wa.me/5533987394137\">Converse com a Dra. Luana</a>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:14px 24px;border:1px solid var(--color-brand-300,#e0c090);border-radius:4px;background:var(--color-brand-300,#e0c090);color:var(--color-brand-950,#501020);font:600 12px/16px var(--font-body,Lato),sans-serif;letter-spacing:.14em;text-decoration:none;transition:background 200ms,border-color 200ms}.ds-primary:hover{background:var(--color-brand-200,#fff0d0);border-color:var(--color-brand-200,#fff0d0)}.ds-primary:focus-visible{outline:2px solid var(--color-brand-700,#731d35);outline-offset:3px}.ds-small{padding:12px 20px;font-size:10px;letter-spacing:.13em}.ds-large{padding:16px 28px}"
     },
     {
       "name": "Navegação",
       "kind": "nav",
-      "description": "Links sobre cabeçalho marfim.",
+      "description": "Links claros no cabeçalho vinho escuro.",
       "html": "<nav class=\"ds-nav\"><a href=\"#inicio\">Início</a><a href=\"#atuacao\">Atuação</a><a href=\"#contato\">Contato</a></nav>",
-      "css": ".ds-nav{display:flex;gap:28px;padding:16px;background:var(--color-ivory,#fff7f1)}.ds-nav a{padding:12px 0;color:var(--color-brand-800,#653d2d);font:600 12.8px/1.5 var(--font-body,Montserrat),sans-serif;text-decoration:none;border-bottom:1px solid transparent;transition:color 180ms,border-color 180ms}.ds-nav a:hover{color:var(--color-brand-700,#87523b);border-color:currentColor}.ds-nav a:focus-visible{outline:2px solid var(--color-brand-600,#a06040);outline-offset:4px}"
+      "css": ".ds-nav{display:flex;gap:28px;padding:16px;background:var(--color-brand-900,#420d1b)}.ds-nav a{padding:12px 0;color:var(--color-brand-100,#eee0cf);font:600 14px/1.5 var(--font-body,Lato),sans-serif;text-decoration:none}.ds-nav a:hover{color:var(--color-brand-300,#e0c090)}.ds-nav a:focus-visible{outline:2px solid #fff0d0;outline-offset:4px}"
     },
     {
       "name": "Pergunta frequente",
       "kind": "custom",
       "description": "Disclosure nativo com resposta sobre a localização.",
-      "html": "<details class=\"ds-faq\"><summary>Onde fica o escritório?</summary><p>Rua Rafael Gonçalves Tomé, 118 — Centro, Piumhi — MG, 37925-000.</p></details>",
-      "css": ".ds-faq{padding:24px 0;border-block:1px solid rgb(48 30 23 / 15%);background:var(--color-brand-50,#fcf0e8);color:var(--color-ink,#301e17);font:400 14px/28px var(--font-body,Montserrat),sans-serif}.ds-faq summary{cursor:pointer;font-size:16px;font-weight:600}.ds-faq summary::marker{color:var(--color-brand-700,#87523b)}.ds-faq summary:hover{color:var(--color-brand-700,#87523b)}.ds-faq summary:focus-visible{outline:2px solid var(--color-brand-600,#a06040);outline-offset:4px}.ds-faq p{margin-top:16px;color:var(--color-ink-soft,#70594d)}"
+      "html": "<details class=\"ds-faq\"><summary>Onde fica o escritório?</summary><p>Rua Raul Soares, 134 — Centro, Caratinga — MG, 35300-020.</p></details>",
+      "css": ".ds-faq{padding:24px 0;border-block:1px solid rgb(50 27 35 / 15%);background:var(--color-brand-50,#f3ede3);color:var(--color-ink,#321b23);font:400 14px/28px var(--font-body,Lato),sans-serif}.ds-faq summary{cursor:pointer;font-size:16px;font-weight:600}.ds-faq summary::marker{color:var(--color-brand-700,#731d35)}.ds-faq summary:hover{color:var(--color-brand-700,#731d35)}.ds-faq summary:focus-visible{outline:2px solid var(--color-brand-600,#836337);outline-offset:4px}.ds-faq p{margin-top:16px;color:var(--color-ink-soft,#6c555b)}"
     },
     {
       "name": "Endereço",
       "kind": "card",
       "description": "Painel de contato do escritório.",
-      "html": "<section class=\"ds-address\"><h3>Nosso escritório em Piumhi</h3><p>Bruna Soares · Advocacia e Consultoria Jurídica</p><address>Rua Rafael Gonçalves Tomé, 118 — Centro, Piumhi — MG, 37925-000</address></section>",
-      "css": ".ds-address{padding:28px;border:1px solid rgb(48 30 23 / 10%);background:var(--color-paper,#fff);color:var(--color-ink,#301e17)}.ds-address h3{margin:0;font:400 24px/32px var(--font-display-face,\"Cormorant Garamond\"),Georgia,serif;letter-spacing:-.025em}.ds-address p{margin-top:24px;font:600 14px/24px var(--font-body,Montserrat),sans-serif;color:var(--color-brand-700,#87523b)}.ds-address address{font:400 14px/28px var(--font-body,Montserrat),sans-serif;font-style:normal;color:var(--color-ink-soft,#70594d)}"
+      "html": "<section class=\"ds-address\"><h3>Nosso escritório em Caratinga</h3><p>Luana Oliveira · Advocacia</p><address>Rua Raul Soares, 134 — Centro, Caratinga — MG, 35300-020</address></section>",
+      "css": ".ds-address{padding:28px;border:1px solid rgb(50 27 35 / 10%);background:var(--color-paper,#fff);color:var(--color-ink,#321b23)}.ds-address h3{margin:0;font:400 24px/32px var(--font-display-face,\"Cormorant Garamond\"),Georgia,serif;letter-spacing:-.025em}.ds-address p{margin-top:24px;font:600 14px/24px var(--font-body,Lato),sans-serif;color:var(--color-brand-700,#731d35)}.ds-address address{font:400 14px/28px var(--font-body,Lato),sans-serif;font-style:normal;color:var(--color-ink-soft,#6c555b)}"
     }
   ],
   "narrative": {
-    "northStar": "Cuidado com sua história",
-    "overview": "A identidade parte do logo original BS: rosé, cobre, marfim e marrom profundo. O cabeçalho claro preserva a assinatura escura da marca; campos escuros sustentam o rosé e alternam com superfícies claras de leitura. Cormorant Garamond acompanha o contraste das serifas do logo, enquanto Montserrat oferece leitura e controles claros.",
+    "northStar": "Cuidado com o próximo capítulo",
+    "overview": "Dourado do monograma LO, vinho e bege dos anexos, Cormorant Garamond e Lato. Cabeçalho e rodapé escuros preservam a assinatura dourada original.",
     "keyCharacteristics": [
-      "Logo e dois retratos originais preservados integralmente.",
-      "Contraste entre marrom profundo, rosé e superfícies quentes claras.",
-      "Tipografia em duas famílias, divisórias finas e CTAs planos."
+      "Logo, retrato e arte Sobre originais preservados integralmente.",
+      "Vinho profundo, dourado e superfícies claras.",
+      "Serviços em linhas, divisórias finas e CTAs planos."
     ],
     "rules": [],
     "dos": [
-      "Do preservar proporções e cores dos anexos originais.",
-      "Do usar Cormorant Garamond nos títulos e Montserrat na leitura.",
-      "Do manter foco visível, controles móveis de 44px e movimento reduzido."
+      "Preservar as proporções dos anexos.",
+      "Manter foco visível e movimento reduzido."
     ],
     "donts": [
-      "Don’t alterar o logo para torná-lo claro; aplicar sobre a superfície marfim.",
-      "Don’t inventar credenciais, experiência, e-mail, horários ou avaliações.",
-      "Don’t omitir o comportamento de teclado dos diálogos."
+      "Não inventar credenciais, contatos, horários ou avaliações.",
+      "Não confundir tempo de cartório com tempo de advocacia."
     ]
   }
 }
