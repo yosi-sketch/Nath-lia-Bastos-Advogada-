@@ -1,16 +1,17 @@
 import type { Metadata, Viewport } from "next";
-import { Marcellus, Source_Sans_3 } from "next/font/google";
+import { Cinzel, Lato } from "next/font/google";
 import { brand } from "./lib/brand";
 import "./globals.css";
 
-const displayFont = Marcellus({
+const displayFont = Cinzel({
   variable: "--font-display-face",
   subsets: ["latin"],
   weight: "400",
   display: "swap",
 });
 
-const bodyFont = Source_Sans_3({
+const bodyFont = Lato({
+  weight: ["400", "700"],
   variable: "--font-body",
   subsets: ["latin"],
   display: "swap",
@@ -19,15 +20,15 @@ const bodyFont = Source_Sans_3({
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 const metadataBase = siteUrl ? new URL(siteUrl) : undefined;
 const shareImage = brand.logo;
-const title = "Rocha Advocacia | Shirley Rocha · Previdenciário e Trabalhista em Sete Lagoas";
-const description = "Orientação previdenciária e trabalhista com a Dra. Shirley Rocha, em Sete Lagoas, MG. Aposentadorias, benefícios do INSS e direitos do trabalho. WhatsApp: (31) 97173-1592.";
+const title = "Santos Advocacia | Dra. Marcela Santos · Advogada em Formiga, MG";
+const description = "Dra. Marcela Santos: Direito Previdenciário, Trabalhista, Civil e do Consumidor. Sede em Formiga, MG, e atendimento em todo o Brasil. (37) 99929-3550.";
 
 export const metadata: Metadata = {
   ...(metadataBase ? { metadataBase } : {}),
   title,
   description,
-  keywords: ["Rocha Advocacia", "Shirley Rocha", "advogada em Sete Lagoas", "direito previdenciário", "direito trabalhista", "planejamento previdenciário", "aposentadoria", "INSS"],
-  icons: { icon: [{ url: "/icon.svg", type: "image/svg+xml" }] },
+  keywords: ["Santos Advocacia", "Marcela Santos", "advogada em Formiga", "advocacia em Formiga MG", "orientação jurídica"],
+  icons: { icon: [{ url: brand.logo, type: "image/png" }] },
   openGraph: {
     title,
     description,
@@ -38,8 +39,8 @@ export const metadata: Metadata = {
       ? [
           {
             url: shareImage,
-            width: 1983,
-            height: 793,
+            width: 2172,
+            height: 724,
             alt: brand.businessName,
           },
         ]
@@ -54,7 +55,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#800010",
+  themeColor: "#171715",
 };
 
 export default function RootLayout({

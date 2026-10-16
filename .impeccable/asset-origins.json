@@ -1,22 +1,23 @@
-[
-  {
-    "path": "public/rocha-advocacia-logo.png",
-    "origin": "C:/Users/matheus/Downloads/Logo Rocha Advocacia e Imobiliária.png",
-    "width": 1983,
-    "height": 793,
-    "transformation": "Cópia binária integral do anexo, sem edição.",
-    "sha256": "1481b8663a46399ddbaa545b8caecb8ec59b4582465342d8958cdc829252a110",
-    "sourceSha256": "1481b8663a46399ddbaa545b8caecb8ec59b4582465342d8958cdc829252a110",
-    "identicalToSource": true
-  },
-  {
-    "path": "public/shirley-rocha-retrato.png",
-    "origin": "C:/Users/matheus/Downloads/Retrato Corporativo Profissional com Logo Rocha.png",
-    "width": 1230,
-    "height": 1278,
-    "transformation": "Cópia binária integral do anexo, sem edição.",
-    "sha256": "11531e278d4af06c77dfbcf47e64dc99c3e600fdcc3f7ee1733ccc8d91c7192b",
-    "sourceSha256": "11531e278d4af06c77dfbcf47e64dc99c3e600fdcc3f7ee1733ccc8d91c7192b",
-    "identicalToSource": true
-  }
-]
+{
+  "client": "Santos Advocacia — Marcela Santos",
+  "assets": [
+    {
+      "source": "C:/Users/matheus/Downloads/Logotipo Jurídico Marcela Santos.png",
+      "destination": "public/marcela-santos-logo.png",
+      "width": 2172,
+      "height": 724,
+      "sha256": "bf216ddac25d6e0324101c8e01e5446d13f8f800fbaae288a96b79bc3bd0028e",
+      "sourceSha256": "bf216ddac25d6e0324101c8e01e5446d13f8f800fbaae288a96b79bc3bd0028e",
+      "identicalToSource": true
+    },
+    {
+      "source": "C:/Users/matheus/AppData/Local/Temp/codex-clipboard-98ad3770-d601-4b42-a03f-9f2b8d9d90eb.png",
+      "destination": "public/marcela-santos-retrato.png",
+      "width": 666,
+      "height": 842,
+      "sha256": "bfd00001bda5636f29b2df170c06bcaa3775ef312c71c14f12f803a8aac67a5d",
+      "sourceSha256": "bfd00001bda5636f29b2df170c06bcaa3775ef312c71c14f12f803a8aac67a5d",
+      "identicalToSource": true
+    }
+  ]
+}

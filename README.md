@@ -1,60 +1,32 @@
-# Rocha Advocacia — Dra. Shirley Rocha
+# Santos Advocacia — Dra. Marcela Santos
 
-Site institucional em português da Rocha Advocacia, em Sete Lagoas, MG, com foco em Direito Previdenciário e Trabalhista. Inclui apresentação profissional, serviços em linhas com detalhes em diálogos, processo de atendimento, FAQ, avaliações e contato.
+Site institucional com identidade dourada extraída do logo original. Cinzel nos títulos e Lato nos textos. Áreas confirmadas: Direito Previdenciário, Trabalhista, Civil e do Consumidor. Sede em Formiga, MG, e atendimento em todo o Brasil.
 
 ## Desenvolvimento
 
-Instalar dependências com `npm install` e iniciar com `npm run dev -- --port 3005`. A prévia fica em [localhost:3005](http://localhost:3005) quando o servidor estiver ativo.
+Next.js 16.3.5, React 19.2.8 e Tailwind CSS 4. Instale com npm install e inicie com npm run dev -- --port 3006. Prévia: http://localhost:3006. Leia AGENTS.md e os guias locais do Next.js antes de alterar APIs.
 
-Pacote `rocha-advocacia`: Next.js 16.3.5, React 19.2.8, Tailwind CSS 4, Framer Motion e Lucide. Ler AGENTS.md e os guias em node_modules/next/dist/docs antes de alterar código Next.js.
+## Organização
 
-Validação fornecida pelo principal: npm run build, npm run lint -- app e tsc --noEmit concluídos com exit 0; navegador de produção sem errors/warnings; larguras 320, 390, 527, 768, 1024 e 1440px sem overflow horizontal; imagens carregadas; menu móvel fecha por seleção; FAQ abre/fecha; quatro modais com WhatsApp contextual, Escape, foco inicial, ciclo Tab/Shift+Tab, retorno de foco e remoção de inert/scroll lock. Revisão independente: ship. Evidências em .impeccable/review/qa-results.json e, na mesma pasta, desktop.png, mobile.png, user-527.png, desktop-hero.png e mobile-hero.png. Esta passagem documentou esses resultados; não os executou.
+- app/lib/brand.ts: dados, mensagens e depoimentos.
+- app/page.tsx: seções, quatro diálogos, menu e FAQ.
+- app/globals.css: tema Tailwind 4, foco e movimento.
+- app/layout.tsx: Cinzel/Lato, metadados e favicon do logo.
+- app/components/GlowingButton.tsx: CTA dourado compartilhado.
+- PRODUCT.md: fatos e fontes; DESIGN.md e .impeccable/design.json: sistema visual.
 
-Contrastes informados pelo principal: CTA 10,91:1; texto 15,19:1; secundário 6,53:1; grafite 13,27:1. Nenhuma medição foi refeita nesta passagem.
+## Contatos e conteúdo
 
-## Marca e implementação
+WhatsApp/telefone: (37) 99929-3550. Instagram: @marcelasantosadv. Endereço: Rua Silviano Brandão — Centro, Formiga — MG, 35570-112. Número do imóvel, e-mail, OAB e domínio não informados. Configurar NEXT_PUBLIC_SITE_URL somente com o domínio real; sem essa variável, imagens sociais são omitidas.
 
-Marcellus (peso 400) nos títulos e Source Sans 3 na leitura, via next/font/google com display swap. As amostras opacas do logo, quantizadas em passos de 16, são #800010, #202020, #303030, #707070 e #c0c0c0. O tema inclui tons derivados de vermelho e neutros em app/globals.css; DESIGN.md registra os tokens usados.
-
-Cabeçalho branco; hero claro com H1 à esquerda e retrato à direita no desktop, empilhados no celular; CTA vermelho; serviços em linhas; processo grafite; rodapé grafite com logo sobre branco. A seção Sobre reutiliza o logo original. A assinatura de movimento é a revelação do retrato por clip-path, com duração de 1s e alternativa para movimento reduzido.
-
-| Fonte | Responsabilidade |
-| --- | --- |
-| app/page.tsx | Seções, quatro serviços, FAQ, menu e diálogos |
-| app/globals.css | Tema Tailwind 4, cores, foco e movimento |
-| app/layout.tsx | Fontes, idioma pt-BR, metadados e imagem social |
-| app/components/GlowingButton.tsx | CTA plano vermelho, tamanhos sm/md/lg |
-| app/lib/brand.ts | Identidade, contatos, mensagens e depoimentos |
-
-Os quatro temas implementados são Direito Previdenciário, Planejamento previdenciário, Direito Trabalhista e Direito Civil e Contratos. Civil/Contratos é respaldado pela lista literal de serviços fornecida pelo usuário (“Litígio civil” e “Litígio de contratos”), transcrita em PRODUCT.md. A apresentação institucional mantém o foco Previdenciário/Trabalhista do briefing.
-
-O código inclui menu móvel com Escape e fechamento por seleção, FAQ com details/summary e diálogos com nome acessível, foco inicial no fechamento, ciclo Tab/Shift+Tab, Escape, retorno de foco, fundo inert e bloqueio de rolagem. Os fluxos constam do QA aprovado pelo principal, conforme o registro acima.
-
-## Dados fornecidos
-
-- WhatsApp: [(31) 97173-1592](https://wa.me/5531971731592), conforme link fornecido no Instagram. CTAs acrescentam mensagem; diálogos incluem o assunto.
-- Telefone cadastral: [(31) 97173-1591](tel:+5531971731591).
-- Instagram: [@rochaadvocaciaa](https://www.instagram.com/rochaadvocaciaa/).
-- Endereço: Rua Luiz Privat, 29A — Centro, Sete Lagoas — MG, 35700-001.
-- Google: nota 5,0/5 e 35 avaliações do material fornecido, sem integração ao vivo. O link implementado abre uma busca no Maps por nome e endereço; não identifica um perfil por CID.
-- Relatos: trechos literais de Rogerio Pontes, Fabienne Alves e Fernanda Lopes Mourão, em app/lib/brand.ts e transcritos em PRODUCT.md.
-
-OAB, e-mail, domínio, horários, anos de experiência e credenciais não foram informados; tampouco alcance nacional do atendimento. Não acrescentar esses dados. Configurar NEXT_PUBLIC_SITE_URL somente com o domínio real, quando disponível; sem ele, as imagens sociais são omitidas. Com ele, o logo é usado em Open Graph e Twitter.
+Google: 5,0 e 24 avaliações do material fornecido, sem integração ao vivo. Depoimentos literais de Emyrlaine Silva, Pâmela Lima e Rinaldo Victor. Link para o perfil com CID 15075427671493642874.
 
 ## Assets
 
-| Arquivo | Dimensões | Uso |
-| --- | --- | --- |
-| public/rocha-advocacia-logo.png | 1983 × 793 | Cabeçalho, Sobre, rodapé e imagem social condicional |
-| public/shirley-rocha-retrato.png | 1230 × 1278 | Retrato no hero |
+public/marcela-santos-logo.png (2172 × 724) e public/marcela-santos-retrato.png (666 × 842), cópias integrais dos anexos. Hashes comparados com os originais em .impeccable/asset-origins.json. Logo sem recoloração e retrato sem corte permanente.
 
-Os originais foram copiados integralmente. .impeccable/asset-origins.json registra origem, dimensões, sha256, sourceSha256 e identicalToSource: true para ambos. Esta passagem leu esse registro; não refez a validação dos hashes. next/image trata a exibição responsiva, preservando os arquivos originais e suas proporções; o clip-path é uma revelação temporária.
+## Validação
 
-## Documentação
+Build de produção, lint e verificação do diff aprovados. Navegador sem avisos/erros. Larguras 320, 390, 527, 768, 1024 e 1440px sem rolagem horizontal. Quatro imagens carregadas; quatro diálogos com WhatsApp contextual, Escape, foco contido e restaurado, fundo inert e bloqueio de rolagem. Menu móvel fecha por seleção/Escape; FAQ validado. Revisão visual independente: ship.
 
-- PRODUCT.md: fatos, público, limites e fontes.
-- DESIGN.md: tokens em frontmatter e sistema visual observado.
-- .impeccable/design.json: sidecar schemaVersion 2, com metadados, movimento, breakpoints e exemplos HTML/CSS independentes.
-- .impeccable/rocha-advocacia-direction.md: direção de superfície definida pelo briefing e registrada conforme a implementação.
-
-Resultados de execução, navegador, contraste e revisão visual foram fornecidos pelo principal. Esta passagem alterou apenas a documentação e não repetiu os checks.
+Contrastes: CTA 9,09:1; texto principal 14,95:1; secundário 6,16:1; bronze sobre marfim 6,41:1. Evidências em outputs/santos-*.png e .impeccable/review/santos-qa.json. Documentação final conferida diretamente pelo agente principal.

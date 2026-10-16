@@ -1,410 +1,317 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-16T09:08:38.798Z",
-  "title": "Design System: Rocha Advocacia",
+  "generatedAt": "2026-10-16T10:58:48.623Z",
+  "title": "Design System: Santos Advocacia",
   "extensions": {
     "colorMeta": {
       "ink": {
         "role": "neutral",
-        "displayName": "Grafite de leitura",
-        "canonical": "#202020",
+        "displayName": "ink",
+        "canonical": "#24221e",
         "tonalRamp": [
-          "#202020",
-          "#303030",
-          "#707070",
-          "#a0a0a0",
-          "#c0c0c0",
-          "#dededb",
-          "#e8e8e5",
-          "#f2f2f0",
-          "#f7f7f5",
+          "#171715",
+          "#24221e",
+          "#2c2923",
+          "#625d53",
+          "#eae3d5",
+          "#f4efe3",
+          "#faf8f2",
           "#ffffff"
         ]
       },
       "ink-soft": {
         "role": "neutral",
-        "displayName": "Cinza de leitura",
-        "canonical": "#595959",
+        "displayName": "ink-soft",
+        "canonical": "#625d53",
         "tonalRamp": [
-          "#202020",
-          "#303030",
-          "#707070",
-          "#a0a0a0",
-          "#c0c0c0",
-          "#dededb",
-          "#e8e8e5",
-          "#f2f2f0",
-          "#f7f7f5",
+          "#171715",
+          "#24221e",
+          "#2c2923",
+          "#625d53",
+          "#eae3d5",
+          "#f4efe3",
+          "#faf8f2",
           "#ffffff"
         ]
       },
       "paper": {
         "role": "neutral",
-        "displayName": "Branco de suporte",
+        "displayName": "paper",
         "canonical": "#ffffff",
         "tonalRamp": [
-          "#202020",
-          "#303030",
-          "#707070",
-          "#a0a0a0",
-          "#c0c0c0",
-          "#dededb",
-          "#e8e8e5",
-          "#f2f2f0",
-          "#f7f7f5",
+          "#171715",
+          "#24221e",
+          "#2c2923",
+          "#625d53",
+          "#eae3d5",
+          "#f4efe3",
+          "#faf8f2",
           "#ffffff"
         ]
       },
       "ivory": {
         "role": "neutral",
-        "displayName": "Fundo claro",
-        "canonical": "#f7f7f5",
+        "displayName": "ivory",
+        "canonical": "#faf8f2",
         "tonalRamp": [
-          "#202020",
-          "#303030",
-          "#707070",
-          "#a0a0a0",
-          "#c0c0c0",
-          "#dededb",
-          "#e8e8e5",
-          "#f2f2f0",
-          "#f7f7f5",
+          "#171715",
+          "#24221e",
+          "#2c2923",
+          "#625d53",
+          "#eae3d5",
+          "#f4efe3",
+          "#faf8f2",
           "#ffffff"
         ]
       },
       "linen": {
         "role": "neutral",
-        "displayName": "Neutro de superfície",
-        "canonical": "#e8e8e5",
+        "displayName": "linen",
+        "canonical": "#eae3d5",
         "tonalRamp": [
-          "#202020",
-          "#303030",
-          "#707070",
-          "#a0a0a0",
-          "#c0c0c0",
-          "#dededb",
-          "#e8e8e5",
-          "#f2f2f0",
-          "#f7f7f5",
+          "#171715",
+          "#24221e",
+          "#2c2923",
+          "#625d53",
+          "#eae3d5",
+          "#f4efe3",
+          "#faf8f2",
           "#ffffff"
         ]
       },
       "brand-50": {
-        "role": "neutral",
-        "displayName": "Neutro mais claro",
-        "canonical": "#f2f2f0",
+        "role": "primary",
+        "displayName": "brand-50",
+        "canonical": "#f4efe3",
         "tonalRamp": [
-          "#202020",
-          "#303030",
-          "#707070",
-          "#a0a0a0",
-          "#c0c0c0",
-          "#dededb",
-          "#e8e8e5",
-          "#f2f2f0",
-          "#f7f7f5",
-          "#ffffff"
+          "#704010",
+          "#805020",
+          "#a07030",
+          "#b48b43",
+          "#d0b070",
+          "#e0c080",
+          "#ebd6a5",
+          "#eee3cc"
         ]
       },
       "brand-100": {
-        "role": "neutral",
-        "displayName": "Neutro de apoio",
-        "canonical": "#e8e8e5",
+        "role": "primary",
+        "displayName": "brand-100",
+        "canonical": "#eee3cc",
         "tonalRamp": [
-          "#202020",
-          "#303030",
-          "#707070",
-          "#a0a0a0",
-          "#c0c0c0",
-          "#dededb",
-          "#e8e8e5",
-          "#f2f2f0",
-          "#f7f7f5",
-          "#ffffff"
+          "#704010",
+          "#805020",
+          "#a07030",
+          "#b48b43",
+          "#d0b070",
+          "#e0c080",
+          "#ebd6a5",
+          "#eee3cc"
         ]
       },
       "brand-200": {
-        "role": "neutral",
-        "displayName": "Neutro para texto sobre escuro",
-        "canonical": "#dededb",
+        "role": "primary",
+        "displayName": "brand-200",
+        "canonical": "#ebd6a5",
         "tonalRamp": [
-          "#202020",
-          "#303030",
-          "#707070",
-          "#a0a0a0",
-          "#c0c0c0",
-          "#dededb",
-          "#e8e8e5",
-          "#f2f2f0",
-          "#f7f7f5",
-          "#ffffff"
+          "#704010",
+          "#805020",
+          "#a07030",
+          "#b48b43",
+          "#d0b070",
+          "#e0c080",
+          "#ebd6a5",
+          "#eee3cc"
         ]
       },
       "brand-300": {
-        "role": "neutral",
-        "displayName": "Prata do logo",
-        "canonical": "#c0c0c0",
+        "role": "primary",
+        "displayName": "brand-300",
+        "canonical": "#e0c080",
         "tonalRamp": [
-          "#202020",
-          "#303030",
-          "#707070",
-          "#a0a0a0",
-          "#c0c0c0",
-          "#dededb",
-          "#e8e8e5",
-          "#f2f2f0",
-          "#f7f7f5",
-          "#ffffff"
+          "#704010",
+          "#805020",
+          "#a07030",
+          "#b48b43",
+          "#d0b070",
+          "#e0c080",
+          "#ebd6a5",
+          "#eee3cc"
         ]
       },
       "brand-400": {
-        "role": "neutral",
-        "displayName": "Cinza intermediário claro",
-        "canonical": "#a0a0a0",
+        "role": "primary",
+        "displayName": "brand-400",
+        "canonical": "#d0b070",
         "tonalRamp": [
-          "#202020",
-          "#303030",
-          "#707070",
-          "#a0a0a0",
-          "#c0c0c0",
-          "#dededb",
-          "#e8e8e5",
-          "#f2f2f0",
-          "#f7f7f5",
-          "#ffffff"
+          "#704010",
+          "#805020",
+          "#a07030",
+          "#b48b43",
+          "#d0b070",
+          "#e0c080",
+          "#ebd6a5",
+          "#eee3cc"
         ]
       },
       "brand-500": {
-        "role": "neutral",
-        "displayName": "Cinza do logo",
-        "canonical": "#707070",
+        "role": "primary",
+        "displayName": "brand-500",
+        "canonical": "#b48b43",
         "tonalRamp": [
-          "#202020",
-          "#303030",
-          "#707070",
-          "#a0a0a0",
-          "#c0c0c0",
-          "#dededb",
-          "#e8e8e5",
-          "#f2f2f0",
-          "#f7f7f5",
-          "#ffffff"
+          "#704010",
+          "#805020",
+          "#a07030",
+          "#b48b43",
+          "#d0b070",
+          "#e0c080",
+          "#ebd6a5",
+          "#eee3cc"
         ]
       },
       "brand-600": {
         "role": "primary",
-        "displayName": "Vermelho de acento",
-        "canonical": "#a01010",
+        "displayName": "brand-600",
+        "canonical": "#a07030",
         "tonalRamp": [
-          "#65000d",
-          "#800010",
-          "#a01010"
+          "#704010",
+          "#805020",
+          "#a07030",
+          "#b48b43",
+          "#d0b070",
+          "#e0c080",
+          "#ebd6a5",
+          "#eee3cc"
         ]
       },
       "brand-700": {
         "role": "primary",
-        "displayName": "Vermelho do logo",
-        "canonical": "#800010",
+        "displayName": "brand-700",
+        "canonical": "#805020",
         "tonalRamp": [
-          "#65000d",
-          "#800010",
-          "#a01010"
+          "#704010",
+          "#805020",
+          "#a07030",
+          "#b48b43",
+          "#d0b070",
+          "#e0c080",
+          "#ebd6a5",
+          "#eee3cc"
         ]
       },
       "brand-800": {
         "role": "primary",
-        "displayName": "Vermelho profundo",
-        "canonical": "#65000d",
+        "displayName": "brand-800",
+        "canonical": "#704010",
         "tonalRamp": [
-          "#65000d",
-          "#800010",
-          "#a01010"
+          "#704010",
+          "#805020",
+          "#a07030",
+          "#b48b43",
+          "#d0b070",
+          "#e0c080",
+          "#ebd6a5",
+          "#eee3cc"
         ]
       },
       "brand-900": {
-        "role": "neutral",
-        "displayName": "Grafite de apoio",
-        "canonical": "#303030",
+        "role": "primary",
+        "displayName": "brand-900",
+        "canonical": "#2c2923",
         "tonalRamp": [
-          "#202020",
-          "#303030",
-          "#707070",
-          "#a0a0a0",
-          "#c0c0c0",
-          "#dededb",
-          "#e8e8e5",
-          "#f2f2f0",
-          "#f7f7f5",
-          "#ffffff"
+          "#704010",
+          "#805020",
+          "#a07030",
+          "#b48b43",
+          "#d0b070",
+          "#e0c080",
+          "#ebd6a5",
+          "#eee3cc"
         ]
       },
       "brand-950": {
-        "role": "neutral",
-        "displayName": "Grafite principal",
-        "canonical": "#202020",
+        "role": "primary",
+        "displayName": "brand-950",
+        "canonical": "#171715",
         "tonalRamp": [
-          "#202020",
-          "#303030",
-          "#707070",
-          "#a0a0a0",
-          "#c0c0c0",
-          "#dededb",
-          "#e8e8e5",
-          "#f2f2f0",
-          "#f7f7f5",
-          "#ffffff"
+          "#704010",
+          "#805020",
+          "#a07030",
+          "#b48b43",
+          "#d0b070",
+          "#e0c080",
+          "#ebd6a5",
+          "#eee3cc"
         ]
       },
-      "ink-divider": {
-        "role": "neutral",
-        "displayName": "Divisória sobre claro",
-        "canonical": "rgb(32 32 32 / 15%)"
+      "gold-border": {
+        "role": "primary",
+        "displayName": "gold-border",
+        "canonical": "rgb(224 192 128 / 40%)",
+        "tonalRamp": [
+          "#704010",
+          "#805020",
+          "#a07030",
+          "#b48b43",
+          "#d0b070",
+          "#e0c080",
+          "#ebd6a5",
+          "#eee3cc"
+        ]
       },
-      "ink-border": {
-        "role": "neutral",
-        "displayName": "Borda sutil",
-        "canonical": "rgb(32 32 32 / 10%)"
-      },
-      "silver-divider": {
-        "role": "neutral",
-        "displayName": "Divisória prata do rodapé",
-        "canonical": "rgb(192 192 192 / 25%)"
+      "gold-divider": {
+        "role": "primary",
+        "displayName": "gold-divider",
+        "canonical": "rgb(224 192 128 / 25%)",
+        "tonalRamp": [
+          "#704010",
+          "#805020",
+          "#a07030",
+          "#b48b43",
+          "#d0b070",
+          "#e0c080",
+          "#ebd6a5",
+          "#eee3cc"
+        ]
       }
     },
     "typographyMeta": {
       "display": {
-        "displayName": "H1 móvel",
-        "purpose": "Título principal do hero."
-      },
-      "display-tablet": {
-        "displayName": "H1 a partir de sm",
-        "purpose": "Título principal do hero."
-      },
-      "display-desktop": {
-        "displayName": "H1 a partir de lg",
-        "purpose": "Título principal do hero."
-      },
-      "headline": {
-        "displayName": "Título de seção",
-        "purpose": "Hierarquia compartilhada pelo componente Heading."
-      },
-      "headline-tablet": {
-        "displayName": "Título de seção em sm",
-        "purpose": "Hierarquia compartilhada pelo componente Heading."
-      },
-      "headline-desktop": {
-        "displayName": "Título de seção em lg",
-        "purpose": "Hierarquia compartilhada pelo componente Heading."
-      },
-      "service-title": {
-        "displayName": "Título de serviço",
-        "purpose": "Linhas de atuação no celular."
-      },
-      "service-title-tablet": {
-        "displayName": "Título de serviço em sm",
-        "purpose": "Linhas de atuação a partir de sm."
-      },
-      "title": {
-        "displayName": "Título de apoio",
-        "purpose": "Legenda do retrato, etapas e painel de endereço."
-      },
-      "professional-name": {
-        "displayName": "Nome profissional",
-        "purpose": "Apresentação da Dra. Shirley Rocha na seção Sobre."
-      },
-      "feature": {
-        "displayName": "Destaque compacto",
-        "purpose": "Informações de atendimento em sm e título móvel do diálogo; o diálogo passa a text-3xl em sm."
+        "displayName": "Cinzel",
+        "purpose": "Títulos e nomes"
       },
       "body": {
-        "displayName": "Texto principal",
-        "purpose": "Descrições institucionais e depoimentos."
-      },
-      "body-hero-tablet": {
-        "displayName": "Descrição do hero em sm",
-        "purpose": "Texto introdutório a partir de sm."
-      },
-      "body-small": {
-        "displayName": "Texto secundário",
-        "purpose": "FAQ, diálogo e endereço."
-      },
-      "compact-body": {
-        "displayName": "Texto compacto",
-        "purpose": "Resumo dos serviços e descrição das etapas."
-      },
-      "feature-caption": {
-        "displayName": "Legenda de atendimento",
-        "purpose": "Explicação curta junto aos destaques."
-      },
-      "navigation": {
-        "displayName": "Navegação desktop",
-        "purpose": "Links no cabeçalho branco."
-      },
-      "label": {
-        "displayName": "CTA sm e md",
-        "purpose": "Texto do CTA compartilhado; sem caixa alta automática."
-      },
-      "label-large": {
-        "displayName": "CTA lg",
-        "purpose": "Texto do CTA amplo."
-      },
-      "label-compact": {
-        "displayName": "Link compacto",
-        "purpose": "Links em caixa alta para consulta no Google Maps."
+        "displayName": "Lato",
+        "purpose": "Leitura e controles"
       }
     },
     "shadows": [
       {
         "name": "card",
-        "value": "0 18px 48px rgb(32 32 32 / 18%)",
-        "purpose": "Token --shadow-card aplicado ao diálogo, sem sombra nos serviços ou CTAs."
+        "value": "0 18px 48px rgb(36 34 30 / 18%)",
+        "purpose": "Diálogo"
       }
     ],
     "motion": [
       {
-        "name": "navigation",
-        "value": "180ms ease",
-        "purpose": "Cor e sublinhado dos links do cabeçalho; cor dos links do rodapé."
-      },
-      {
-        "name": "cta",
-        "value": "200ms",
-        "purpose": "Cores de fundo e borda do CTA compartilhado."
+        "name": "signature",
+        "value": "1000ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Revelação do retrato"
       },
       {
         "name": "menu",
         "value": "220ms",
-        "purpose": "Opacidade e altura do menu móvel."
+        "purpose": "Menu móvel"
       },
       {
         "name": "dialog",
         "value": "240ms",
-        "purpose": "Entrada e saída do diálogo."
-      },
-      {
-        "name": "signature",
-        "value": "1000ms cubic-bezier(0.16, 1, 0.3, 1) both",
-        "purpose": "Revelação única do retrato: clip-path inset(0 0 12% 0) a inset(0)."
-      },
-      {
-        "name": "reveal-variant",
-        "value": "680ms cubic-bezier(0.22, 1, 0.36, 1)",
-        "purpose": "Variante declarada opacity 0/y 24 para opacity 1/y 0; blocos editoriais usam initial=false."
-      },
-      {
-        "name": "stagger",
-        "value": "100ms; delayChildren 40ms",
-        "purpose": "Intervalos declarados da variante stagger."
-      },
-      {
-        "name": "portrait-motion",
-        "value": "900ms; delay 160ms; cubic-bezier(0.22, 1, 0.36, 1)",
-        "purpose": "Configuração motion do retrato com initial=false; assinatura visível definida em CSS."
+        "purpose": "Diálogos"
       },
       {
         "name": "reduced-motion",
-        "value": "animation:none (hero-signature); 0.01ms (CSS); reducedMotion:user (MotionConfig)",
-        "purpose": "Desativa assinatura, reduz durações CSS e usa rolagem automática."
+        "value": "animation:none; transition-duration:0.01ms; reducedMotion:user",
+        "purpose": "Respeitar a preferência de movimento reduzido"
       }
     ],
     "breakpoints": [
@@ -431,87 +338,69 @@
       "name": "CTA principal",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Contato por WhatsApp no tamanho md, plano e vermelho.",
-      "html": "<a class=\"ds-primary\" href=\"https://wa.me/5531971731592?text=Ol%C3%A1%2C%20Dra.%20Shirley!%20Gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20o%20meu%20caso.\" target=\"_blank\" rel=\"noopener noreferrer\">Converse com a Dra. Shirley <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></a>",
-      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:14px 24px;border:1px solid var(--color-brand-700,#800010);border-radius:4px;background:var(--color-brand-700,#800010);color:var(--color-paper,#fff);font:600 14px/20px var(--font-body,\"Source Sans 3\"),system-ui,sans-serif;text-align:center;text-decoration:none;transition:background-color 200ms,border-color 200ms;user-select:none}.ds-primary:hover{background:var(--color-brand-800,#65000d);border-color:var(--color-brand-800,#65000d)}.ds-primary:focus-visible{outline:2px solid var(--color-brand-700,#800010);outline-offset:3px}@media(prefers-reduced-motion:reduce){.ds-primary{transition-duration:.01ms}}"
+      "description": "Contato direto pelo WhatsApp.",
+      "html": "<a class=\"ds-cta\" href=\"https://wa.me/5537999293550\">Converse com a Dra. Marcela</a>",
+      "css": ".ds-cta{display:inline-flex;align-items:center;justify-content:center;min-height:44px;box-sizing:border-box;padding:14px 24px;border:1px solid var(--color-brand-300,#e0c080);border-radius:4px;background:var(--color-brand-300,#e0c080);color:var(--color-ink,#24221e);font:600 14px/20px var(--font-body,Lato),sans-serif;text-decoration:none;transition:background 200ms}.ds-cta:hover{background:var(--color-brand-200,#ebd6a5)}.ds-cta:focus-visible{outline:2px solid var(--color-brand-700,#805020);outline-offset:3px}"
     },
     {
-      "name": "CTA compacto",
-      "kind": "button",
-      "refersTo": "button-primary-small",
-      "description": "WhatsApp no cabeçalho, tamanho sm.",
-      "html": "<a class=\"ds-primary ds-small\" href=\"https://wa.me/5531971731592?text=Ol%C3%A1%2C%20Dra.%20Shirley!%20Gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20o%20meu%20caso.\" target=\"_blank\" rel=\"noopener noreferrer\">WhatsApp <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></a>",
-      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:14px 24px;border:1px solid var(--color-brand-700,#800010);border-radius:4px;background:var(--color-brand-700,#800010);color:var(--color-paper,#fff);font:600 14px/20px var(--font-body,\"Source Sans 3\"),system-ui,sans-serif;text-align:center;text-decoration:none;transition:background-color 200ms,border-color 200ms;user-select:none}.ds-primary:hover{background:var(--color-brand-800,#65000d);border-color:var(--color-brand-800,#65000d)}.ds-primary:focus-visible{outline:2px solid var(--color-brand-700,#800010);outline-offset:3px}@media(prefers-reduced-motion:reduce){.ds-primary{transition-duration:.01ms}}.ds-small{padding:12px 20px}"
-    },
-    {
-      "name": "CTA amplo",
-      "kind": "button",
-      "refersTo": "button-primary-large",
-      "description": "Contato destacado no hero e na seção de contato, tamanho lg.",
-      "html": "<a class=\"ds-primary ds-large\" href=\"https://wa.me/5531971731592?text=Ol%C3%A1%2C%20Dra.%20Shirley!%20Gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20o%20meu%20caso.\" target=\"_blank\" rel=\"noopener noreferrer\">Converse com a Dra. Shirley <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></a>",
-      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:14px 24px;border:1px solid var(--color-brand-700,#800010);border-radius:4px;background:var(--color-brand-700,#800010);color:var(--color-paper,#fff);font:600 14px/20px var(--font-body,\"Source Sans 3\"),system-ui,sans-serif;text-align:center;text-decoration:none;transition:background-color 200ms,border-color 200ms;user-select:none}.ds-primary:hover{background:var(--color-brand-800,#65000d);border-color:var(--color-brand-800,#65000d)}.ds-primary:focus-visible{outline:2px solid var(--color-brand-700,#800010);outline-offset:3px}@media(prefers-reduced-motion:reduce){.ds-primary{transition-duration:.01ms}}.ds-large{padding:16px 28px;font-size:16px;line-height:24px}"
-    },
-    {
-      "name": "Navegação principal",
+      "name": "Navegação",
       "kind": "nav",
-      "description": "Links cinza com sublinhado vermelho revelado no hover.",
-      "html": "<nav class=\"ds-nav\" aria-label=\"Navegação principal\"><a href=\"#inicio\">Início</a><a href=\"#atuacao\">Atuação</a><a href=\"#sobre\">Sobre</a><a href=\"#avaliacoes\">Avaliações</a><a href=\"#contato\">Contato</a></nav>",
-      "css": ".ds-nav{display:flex;flex-wrap:wrap;gap:28px;background:var(--color-paper,#fff)}.ds-nav a{position:relative;padding:12px 0;color:var(--color-ink-soft,#595959);font:600 15px/1.5 var(--font-body,\"Source Sans 3\"),system-ui,sans-serif;text-decoration:none;transition:color 180ms ease}.ds-nav a::after{position:absolute;inset:auto 0 0;height:1px;content:\"\";background:var(--color-brand-700,#800010);transform:scaleX(0);transform-origin:left;transition:transform 180ms ease}.ds-nav a:hover{color:var(--color-brand-700,#800010)}.ds-nav a:hover::after{transform:scaleX(1)}.ds-nav a:focus-visible{outline:2px solid var(--color-brand-700,#800010);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-nav a,.ds-nav a::after{transition-duration:.01ms}}"
+      "description": "Links claros sobre grafite.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#inicio\">Início</a><a href=\"#atuacao\">Atendimento</a><a href=\"#contato\">Contato</a></nav>",
+      "css": ".ds-nav{display:flex;flex-wrap:wrap;gap:28px;padding:20px;background:var(--color-brand-950,#171715)}.ds-nav a{padding:12px 0;color:var(--color-brand-100,#eee3cc);font:600 15px/1.5 var(--font-body,Lato),sans-serif;text-decoration:none}.ds-nav a:hover{color:var(--color-brand-300,#e0c080);text-decoration:underline;text-underline-offset:8px}.ds-nav a:focus-visible{outline:2px solid #e0c080;outline-offset:4px}"
     },
     {
-      "name": "Pergunta frequente",
+      "name": "Área de atuação",
       "kind": "custom",
-      "description": "Disclosure nativo com o endereço fornecido.",
-      "html": "<details class=\"ds-faq\"><summary>Onde fica o escritório?</summary><p>O escritório fica na Rua Luiz Privat, 29A — Centro, Sete Lagoas — MG, 35700-001. Entre em contato para combinar sua visita.</p></details>",
-      "css": ".ds-faq{padding:24px 0;border-block:1px solid rgb(32 32 32 / 15%);background:var(--color-brand-50,#f2f2f0);color:var(--color-ink,#202020);font:400 14px/28px var(--font-body,\"Source Sans 3\"),system-ui,sans-serif}.ds-faq summary{cursor:pointer;font-size:16px;line-height:24px;font-weight:600}.ds-faq summary::marker{color:var(--color-brand-700,#800010)}.ds-faq summary:focus-visible{outline:2px solid var(--color-brand-700,#800010);outline-offset:4px}.ds-faq p{max-width:36rem;margin:16px 0 0;color:var(--color-ink-soft,#595959)}"
+      "description": "Linha editorial com ação de detalhe.",
+      "html": "<article class=\"ds-service\"><h3>Direito do Consumidor</h3><p>Orientação para questões relacionadas a compras, cobranças e prestação de serviços.</p><button>Saiba mais</button></article>",
+      "css": ".ds-service{padding:32px 0;border-block:1px solid rgb(36 34 30 / 15%);background:var(--color-ivory,#faf8f2)}.ds-service h3{margin:0;color:var(--color-ink,#24221e);font:400 1.8rem/1.25 var(--font-display-face,Cinzel),Georgia,serif}.ds-service p{max-width:36rem;color:var(--color-ink-soft,#625d53);font:400 13px/24px var(--font-body,Lato),sans-serif}.ds-service button{min-height:44px;border:0;background:transparent;color:var(--color-brand-800,#704010);font:600 12px/16px var(--font-body,Lato),sans-serif;cursor:pointer}.ds-service button:hover{color:#805020}.ds-service button:focus-visible{outline:2px solid #805020;outline-offset:4px}"
     },
     {
-      "name": "Painel de endereço",
-      "kind": "card",
-      "description": "Superfície branca com endereço e link de busca no Google Maps.",
-      "html": "<section class=\"ds-address\"><h3>Nosso escritório em Sete Lagoas</h3><p>Rocha Advocacia · Shirley Rocha</p><address>Rua Luiz Privat, 29A — Centro, Sete Lagoas — MG, 35700-001</address><div class=\"ds-address-action\"><span>Entre em contato para agendar sua visita.</span><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Rocha%20Advocacia%2C%20Rua%20Luiz%20Privat%2C%2029A%20%E2%80%94%20Centro%2C%20Sete%20Lagoas%20%E2%80%94%20MG%2C%2035700-001\" target=\"_blank\" rel=\"noopener noreferrer\">Ver no Google Maps <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></a></div></section>",
-      "css": ".ds-address{position:relative;padding:28px;border:1px solid rgb(32 32 32 / 10%);background:var(--color-paper,#fff);color:var(--color-ink,#202020);font-family:var(--font-body,\"Source Sans 3\"),system-ui,sans-serif}.ds-address::before{content:\"\";position:absolute;right:0;top:0;width:112px;height:4px;background:var(--color-brand-600,#a01010)}.ds-address h3{margin:0;font:400 24px/32px var(--font-display-face,\"Marcellus\"),Georgia,serif;letter-spacing:-.025em}.ds-address p{margin:24px 0 8px;font-size:14px;line-height:20px;font-weight:600;color:var(--color-brand-700,#800010)}.ds-address address{max-width:28rem;font:400 14px/28px var(--font-body,\"Source Sans 3\"),system-ui,sans-serif;color:var(--color-ink-soft,#595959)}.ds-address-action{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;margin-top:28px;padding-top:28px;border-top:1px solid rgb(32 32 32 / 10%);font-size:12px;color:var(--color-ink-soft,#595959)}.ds-address a{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border:1px solid rgb(32 32 32 / 15%);border-radius:9999px;color:var(--color-ink,#202020);font:600 10px/15px var(--font-body,\"Source Sans 3\"),system-ui,sans-serif;text-transform:uppercase;letter-spacing:.13em;text-decoration:none;transition:color 150ms,border-color 150ms}.ds-address a:hover{border-color:var(--color-brand-700,#800010);color:var(--color-brand-700,#800010)}.ds-address a:focus-visible{outline:2px solid var(--color-brand-700,#800010);outline-offset:4px}@media(min-width:640px){.ds-address{padding:40px}}@media(prefers-reduced-motion:reduce){.ds-address a{transition-duration:.01ms}}"
-    },
-    {
-      "name": "Linha de serviço",
+      "name": "FAQ",
       "kind": "custom",
-      "description": "Prévia visual de uma linha de atuação; a abertura de diálogo depende do app.",
-      "html": "<article class=\"ds-service\"><span class=\"ds-service-icon\"><svg width=\"21\" height=\"21\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M9 5H7a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 2h6v4H9zM9 12h6M9 16h6\"/></svg></span><div><h3>Planejamento previdenciário</h3><p>Entenda seu histórico de contribuições e organize os próximos passos da sua aposentadoria.</p></div><button type=\"button\" aria-haspopup=\"dialog\" aria-label=\"Saiba mais sobre planejamento previdenciário\">Saiba mais <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></button></article>",
-      "css": ".ds-service{display:grid;gap:20px;padding:32px 0;border-block:1px solid rgb(32 32 32 / 15%);background:var(--color-ivory,#f7f7f5)}.ds-service-icon{display:grid;place-items:center;width:48px;height:48px;border-radius:9999px;background:var(--color-brand-50,#f2f2f0);color:var(--color-brand-700,#800010)}.ds-service h3{margin:0;max-width:36rem;font:400 1.55rem/1.25 var(--font-display-face,\"Marcellus\"),Georgia,serif;letter-spacing:-.025em;color:var(--color-ink,#202020)}.ds-service p{margin:12px 0 0;max-width:36rem;font:400 13px/24px var(--font-body,\"Source Sans 3\"),system-ui,sans-serif;color:var(--color-ink-soft,#595959)}.ds-service button{display:inline-flex;align-items:center;gap:8px;min-height:44px;width:fit-content;padding:0;border:0;background:transparent;color:var(--color-brand-800,#65000d);font:600 12px/16px var(--font-body,\"Source Sans 3\"),system-ui,sans-serif;cursor:pointer}.ds-service button:hover{color:var(--color-brand-700,#800010)}.ds-service button:focus-visible{outline:2px solid var(--color-brand-700,#800010);outline-offset:4px}@media(min-width:640px){.ds-service{grid-template-columns:48px 1fr auto;gap:28px;padding:36px 0}.ds-service h3{font-size:1.8rem}.ds-service button{align-self:center}}"
+      "description": "Expansão nativa de perguntas.",
+      "html": "<details class=\"ds-faq\"><summary>O atendimento é só em Formiga?</summary><p>A Dra. Marcela atende em todo o Brasil, com sede em Formiga, Minas Gerais.</p></details>",
+      "css": ".ds-faq{padding:24px 0;border-block:1px solid rgb(36 34 30 / 15%);color:#24221e;font:400 14px/28px var(--font-body,Lato),sans-serif}.ds-faq summary{cursor:pointer;font-weight:600}.ds-faq summary::marker{color:#805020}.ds-faq p{color:#625d53}.ds-faq summary:hover{color:#805020}.ds-faq summary:focus-visible{outline:2px solid #805020;outline-offset:4px}"
+    },
+    {
+      "name": "Link de contato",
+      "kind": "button",
+      "description": "Ação secundária em bronze.",
+      "html": "<a class=\"ds-contact\" href=\"tel:+5537999293550\">Ligue: (37) 99929-3550</a>",
+      "css": ".ds-contact{display:inline-flex;align-items:center;min-height:44px;color:var(--color-brand-700,#805020);font:400 14px/20px var(--font-body,Lato),sans-serif;text-decoration:none}.ds-contact:hover{color:var(--color-brand-800,#704010)}.ds-contact:focus-visible{outline:2px solid #805020;outline-offset:4px}"
     }
   ],
   "narrative": {
     "northStar": "Clareza com presença",
-    "overview": "A identidade preserva o logo e o retrato originais da Rocha Advocacia. O vermelho orienta ações e destaques, os grafites sustentam trechos institucionais e os neutros claros oferecem espaço para leitura. Marcellus identifica títulos e nomes; Source Sans 3 mantém a comunicação direta.\n\nO sistema é predominantemente plano: divisórias finas, diferenças de superfície e imagens reais organizam o conteúdo. O logo conserva a assinatura e as proporções do anexo; a descrição institucional não acrescenta credenciais a partir da imagem. Este registro foi extraído dos fontes, com direção estética já escolhida pelo briefing.",
+    "overview": "Logo e retrato originais definem a identidade da Santos Advocacia. Dourado e bronze acompanham o grafite e as superfícies claras de marfim. Cinzel aproxima os títulos das serifas do logo; Lato mantém a leitura dos textos e controles.",
     "keyCharacteristics": [
-      "Logo e retrato originais preservados integralmente.",
-      "Vermelho nas ações, grafite nas seções escuras e superfícies claras na leitura.",
-      "Marcellus nos títulos e Source Sans 3 nos textos e controles.",
-      "Linhas com divisórias, CTAs planos e revelação temporária do retrato por clip-path."
+      "Logo original sobre escuro, preservando suas proporções.",
+      "Dourado nas ações; bronze nos destaques sobre claro.",
+      "Cinzel nos títulos e Lato nos textos e controles.",
+      "Divisórias finas e superfícies planas, com sombra reservada ao diálogo."
     ],
     "rules": [
       {
         "name": "The Logo Integrity Rule",
-        "body": "Preservar a imagem original, sem recoloração, distorção ou recorte permanente; oferecer superfície clara para manter sua leitura.",
+        "body": "Preservar o arquivo original, sem recoloração ou distorção; apresentar sobre uma superfície escura.",
         "section": "colors"
       },
       {
         "name": "The Flat Surface Rule",
-        "body": "Organizar a página por superfícies e divisórias; reservar a sombra registrada para o diálogo.",
+        "body": "Reservar sombras para o diálogo; usar divisórias e diferenças de superfície nos demais componentes.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "Do preservar integralmente logo e retrato, com suas proporções originais.",
-      "Do usar vermelho para ações e os grafites com texto claro nas superfícies escuras.",
-      "Do manter foco visível, navegação por teclado e a alternativa de movimento reduzido.",
-      "Do manter os tokens alinhados a app/globals.css, app/page.tsx e ao CTA compartilhado."
+      "Do preservar os arquivos originais e suas proporções.",
+      "Do usar bronze para texto sobre claro e dourado para ações com texto escuro.",
+      "Do manter foco visível e respeitar movimento reduzido."
     ],
     "donts": [
-      "Don't recolorir o logo ou aplicar corte permanente ao retrato.",
-      "Don't acrescentar brilhos ao CTA plano ou sombras aos serviços em linhas.",
-      "Don't ocultar conteúdo até a rolagem nem exigir animação para acessar informações.",
-      "Don't inventar credenciais, contatos, horários, anos de experiência, alcance nacional ou promessas de resultado."
+      "Don't recolorir o logo ou cortar permanentemente o retrato.",
+      "Don't usar dourado claro como texto pequeno sobre branco.",
+      "Don't inventar credenciais, especialidades ou contatos."
     ]
   }
 }

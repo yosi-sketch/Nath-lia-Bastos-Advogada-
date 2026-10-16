@@ -17,8 +17,8 @@ import {
   Menu,
   Scale,
   BriefcaseBusiness,
+  ShoppingBag,
   FileCheck2,
-  ScrollText,
   Camera,
   Star,
   X,
@@ -42,30 +42,31 @@ const stagger: Variants = {
   visible: { transition: { staggerChildren: 0.1, delayChildren: 0.04 } },
 };
 
+// Áreas de atuação confirmadas pela profissional no briefing.
 const areas = [
   {
     title: "Direito Previdenciário", icon: Scale,
-    summary: "Orientação sobre aposentadorias e benefícios do INSS, com atenção à sua trajetória de trabalho.",
-    details: "Dúvidas sobre aposentadoria ou um benefício do INSS merecem uma análise individual. A Dra. Shirley examina sua situação e os documentos disponíveis para orientar sobre o requerimento, o acompanhamento e as providências administrativas ou judiciais cabíveis.",
-    topics: ["Análise de aposentadorias e benefícios", "Orientação sobre a documentação necessária", "Requerimentos e acompanhamento junto ao INSS", "Avaliação de medidas administrativas e judiciais"],
-  },
-  {
-    title: "Planejamento previdenciário", icon: ScrollText,
-    summary: "Entenda seu histórico de contribuições e organize os próximos passos da sua aposentadoria.",
-    details: "Planejar começa por compreender a sua história. O atendimento analisa o histórico contributivo e a documentação apresentada, identifica pontos que precisam de atenção e explica os cenários de aposentadoria aplicáveis à sua situação.",
-    topics: ["Análise do histórico de contribuições", "Organização de documentos e registros", "Avaliação dos cenários de aposentadoria", "Orientação para os próximos passos"],
+    summary: "Orientação sobre aposentadorias e benefícios do INSS, com atenção à sua trajetória.",
+    details: "Aposentadorias e benefícios previdenciários exigem atenção ao histórico e aos documentos de cada pessoa. A Dra. Marcela analisa sua situação para esclarecer dúvidas e orientar sobre os caminhos administrativos ou judiciais cabíveis.",
+    topics: ["Análise de aposentadorias e benefícios", "Orientação sobre documentos e contribuições", "Avaliação de requerimentos e demandas previdenciárias"],
   },
   {
     title: "Direito Trabalhista", icon: BriefcaseBusiness,
-    summary: "Informação e acompanhamento para questões da relação de trabalho, do contrato à rescisão.",
-    details: "Questões no trabalho podem gerar insegurança. A consulta permite conhecer sua relação de emprego, analisar contratos e comprovantes e esclarecer dúvidas sobre verbas, desligamento e outros conflitos trabalhistas, conforme as particularidades do caso.",
-    topics: ["Análise de contratos e documentos de trabalho", "Orientação sobre verbas e rescisão", "Avaliação de conflitos na relação de emprego", "Acompanhamento de demandas trabalhistas"],
+    summary: "Esclarecimento de dúvidas sobre relações de trabalho, contratos e desligamentos.",
+    details: "Questões da relação de trabalho merecem uma análise cuidadosa dos fatos e dos documentos. O atendimento permite compreender sua situação, esclarecer dúvidas sobre direitos e obrigações e avaliar as providências adequadas ao caso.",
+    topics: ["Análise de contratos e documentos de trabalho", "Orientação sobre rescisão e verbas trabalhistas", "Avaliação de conflitos na relação de emprego"],
   },
   {
-    title: "Direito Civil e Contratos", icon: FileCheck2,
-    summary: "Análise cuidadosa de contratos e conflitos civis para apoiar suas decisões com clareza.",
-    details: "Uma orientação antes de decidir pode ajudar a compreender as consequências de um contrato ou de um conflito. O escritório avalia os documentos e as circunstâncias apresentadas para explicar os caminhos possíveis e acompanhar a demanda quando necessário.",
-    topics: ["Avaliação individual do caso", "Análise de contratos e documentos", "Orientação sobre conflitos civis", "Acompanhamento das providências cabíveis"],
+    title: "Direito Civil", icon: FileCheck2,
+    summary: "Análise de contratos e questões do dia a dia para apoiar suas decisões com clareza.",
+    details: "Um contrato ou um conflito civil pode trazer dúvidas sobre como agir. A Dra. Marcela avalia os documentos e as circunstâncias apresentados para explicar as alternativas e orientar os próximos passos conforme a demanda.",
+    topics: ["Análise de contratos e documentos", "Orientação sobre direitos e obrigações civis", "Avaliação de medidas para a solução de conflitos"],
+  },
+  {
+    title: "Direito do Consumidor", icon: ShoppingBag,
+    summary: "Orientação para questões relacionadas a compras, cobranças e prestação de serviços.",
+    details: "Problemas em uma relação de consumo precisam ser compreendidos a partir dos fatos, dos comprovantes e das comunicações com o fornecedor. O escritório analisa sua demanda para esclarecer direitos e avaliar as alternativas de solução.",
+    topics: ["Análise de cobranças e contratos de consumo", "Questões com produtos e serviços", "Orientação sobre reclamações e providências cabíveis"],
   },
 ];
 
@@ -157,22 +158,22 @@ export default function Home() {
       <main className="bg-ivory text-ink">
         <div ref={contentRef}>
         <a href="#inicio" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-sm focus:bg-white focus:p-4 focus:text-ink">Ir para o conteúdo</a>
-        <header className="brand-header sticky top-0 z-40 border-b border-ink/10 bg-white text-ink">
-          <div className="mx-auto flex h-[100px] max-w-7xl items-center justify-between gap-5 px-5 sm:h-[112px] sm:px-8 lg:px-12">
+        <header className="brand-header sticky top-0 z-40 border-b border-brand-300/20 bg-brand-950 text-white">
+          <div className="mx-auto flex h-[92px] max-w-7xl items-center justify-between gap-5 px-5 sm:h-[104px] sm:px-8 lg:px-12">
             <a
               href="#inicio"
-              aria-label="Rocha Advocacia — início"
+              aria-label="Santos Advocacia — início"
               onClick={closeMenu}
               className="shrink-0"
             >
               <Image
                 src={brand.logo}
-                width={1983}
-                height={793}
+                width={2172}
+                height={724}
                 alt={brand.businessName}
                 preload
-                className="h-auto w-[220px] min-[360px]:w-[250px] sm:w-[280px]"
-                sizes="(max-width: 359px) 220px, (max-width: 640px) 250px, 280px"
+                className="h-auto w-[210px] min-[360px]:w-[238px] sm:w-[280px]"
+                sizes="(max-width: 359px) 210px, (max-width: 640px) 238px, 280px"
               />
             </a>
             <nav
@@ -183,7 +184,7 @@ export default function Home() {
                 Início
               </a>
               <a className="nav-link" href="#atuacao">
-                Atuação
+                Atendimento
               </a>
               <a className="nav-link" href="#sobre">
                 Sobre
@@ -200,7 +201,7 @@ export default function Home() {
                 href={contact}
                 target="_blank"
                 rel="noreferrer"
-                aria-label="WhatsApp da Dra. Shirley Rocha"
+                aria-label="WhatsApp da Dra. Marcela Santos"
                 className="grid size-11 place-items-center rounded-full border border-ink/20 text-brand-700 transition-colors hover:border-brand-700 hover:bg-brand-50"
               >
                 <WhatsAppMark size={17} strokeWidth={1.7} />
@@ -239,7 +240,7 @@ export default function Home() {
                 <div className="mx-auto flex max-h-[calc(100dvh-96px)] max-w-7xl flex-col gap-1 overflow-y-auto py-4 sm:max-h-[calc(100dvh-112px)]">
                   {[
                     ["Início", "#inicio"],
-                    ["Atuação", "#atuacao"],
+                    ["Atendimento", "#atuacao"],
                     ["Sobre", "#sobre"],
                     ["Avaliações no Google", "#avaliacoes"],
                     ["Contato", "#contato"],
@@ -254,7 +255,7 @@ export default function Home() {
                     </a>
                   ))}
                   <a
-                    className="mt-3 inline-flex items-center justify-center gap-2 rounded-sm bg-brand-700 px-5 py-3.5 text-sm font-semibold text-white"
+                    className="mt-3 inline-flex items-center justify-center gap-2 rounded-sm bg-brand-300 px-5 py-3.5 text-sm font-semibold text-ink"
                     href={whatsapp}
                     target="_blank"
                     rel="noreferrer"
@@ -283,14 +284,14 @@ export default function Home() {
                 variants={reveal}
                 className="max-w-[720px] font-display text-[2.6rem] leading-[1.13] tracking-[-0.025em] text-ink sm:text-[3.5rem] lg:text-[3.8rem]"
               >
-                Seus direitos merecem atenção.{" "}
-                <span className="text-brand-700">Sua história, respeito.</span>
+                Orientação jurídica com clareza.{" "}
+                <span className="text-brand-700">Sua história merece atenção.</span>
               </motion.h1>
               <motion.p
                 variants={reveal}
                 className="mt-7 max-w-xl text-[15px] leading-7 text-ink-soft sm:text-base sm:leading-8"
               >
-                Advocacia previdenciária e trabalhista com a Dra. Shirley Rocha, em Sete Lagoas. Orientação clara para cuidar da sua aposentadoria, dos seus direitos no trabalho e de cada próximo passo.
+                Direito Previdenciário, Trabalhista, Civil e do Consumidor com a Dra. Marcela Santos. Em Formiga e em todo o Brasil, orientação para compreender seus direitos e os próximos passos.
               </motion.p>
               <motion.div
                 variants={reveal}
@@ -302,7 +303,7 @@ export default function Home() {
                   size="lg"
                   className="rounded-sm"
                 >
-                  <WhatsAppMark size={17} /> Converse com a Dra. Shirley
+                  <WhatsAppMark size={17} /> Converse com a Dra. Marcela
                 </GlowingButton>
                 <a
                   href="#atuacao"
@@ -325,7 +326,7 @@ export default function Home() {
                 </span>
                 <span className="inline-flex items-center gap-2">
                   <MessageCircle size={15} className="text-brand-700" />
-                  Previdenciário e trabalhista
+                  Atendimento em todo o Brasil
                 </span>
                 <a href="#avaliacoes" className="inline-flex items-center gap-2 py-2 text-sm text-brand-700 underline underline-offset-4">
                   <Star size={15} aria-hidden="true" /> Avaliações no Google
@@ -345,16 +346,16 @@ export default function Home() {
               <figure className="hero-signature">
                 <Image
                   src={brand.portrait}
-                  alt="Dra. Shirley Rocha, advogada da Rocha Advocacia, em retrato profissional"
-                  width={1230}
-                  height={1278}
+                  alt="Dra. Marcela Santos, advogada da Santos Advocacia, em retrato profissional"
+                  width={666}
+                  height={842}
                   preload
                   sizes="(max-width: 640px) 90vw, 440px"
                   className="h-auto w-full"
                 />
                 <figcaption className="flex flex-col gap-2 border-t border-ink/10 bg-white px-5 py-5 text-center leading-6 text-ink-soft">
-                  <span className="font-display text-2xl text-ink">Dra. Shirley Rocha</span>
-                  <span className="text-xs tracking-[0.06em]">Direito Previdenciário e Trabalhista</span>
+                  <span className="font-display text-2xl text-ink">Dra. Marcela Santos</span>
+                  <span className="text-xs tracking-[0.06em]">Advogada · Santos Advocacia</span>
                 </figcaption>
               </figure>
             </motion.div>
@@ -368,7 +369,7 @@ export default function Home() {
           <div className="mx-auto grid max-w-7xl gap-6 px-5 py-7 sm:grid-cols-3 sm:gap-4 sm:px-8 lg:px-12">
             {[
               ["Atenção", "Escuta e análise do seu caso"],
-              ["Proximidade", "No centro de Sete Lagoas"],
+              ["Proximidade", "No centro de Formiga"],
               ["Clareza", "Orientação em cada etapa"],
             ].map(([value, label], index) => (
               <div
@@ -404,13 +405,13 @@ export default function Home() {
             >
               <Heading
 
-                description="Da aposentadoria às relações de trabalho, compreenda seus direitos e os caminhos que podem fazer sentido para o seu caso."
+                description="Da aposentadoria às relações de trabalho e de consumo, conheça as áreas de atuação e encontre orientação para a sua situação."
               >
                 Orientação para decidir.{" "}
                 <span className="text-brand-700">Cuidado para seguir.</span>
               </Heading>
               <p className="max-w-[250px] pb-1 text-xs leading-6 text-ink-soft">
-                Encontre o assunto sobre o qual deseja conversar. Cada história recebe uma análise individual.
+                Atendimento em todo o Brasil. Cada caso é analisado de forma individual, com atenção às suas particularidades.
               </p>
             </motion.div>
             <motion.div
@@ -463,16 +464,16 @@ export default function Home() {
 
         <section id="sobre" className="scroll-mt-28 bg-white py-20 sm:py-28 lg:py-32">
           <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-24 lg:px-12">
-            <figure className="mx-auto flex w-full max-w-[460px] flex-col justify-center bg-brand-50 px-7 py-14 sm:px-10 lg:mx-0">
-              <Image src={brand.logo} alt="Rocha Advocacia e Soluções Imobiliárias — logo original" width={1983} height={793} sizes="(max-width: 640px) 80vw, 380px" className="h-auto w-full" />
-              <figcaption className="border-b border-brand-800/20 py-5 text-sm text-ink-soft">Uma advocacia próxima da sua história.</figcaption>
+            <figure className="about-signature mx-auto flex w-full max-w-[460px] flex-col justify-center bg-brand-950 px-7 py-14 sm:px-10 lg:mx-0">
+              <Image src={brand.logo} alt="Marcela Santos — Advogada, logo original" width={2172} height={724} sizes="(max-width: 640px) 80vw, 380px" className="h-auto w-full" />
+              <figcaption className="border-b border-brand-300/30 py-5 text-sm text-brand-200">Uma advocacia próxima da sua história.</figcaption>
             </figure>
             <div>
               <Heading>Clareza para orientar.{" "}<span className="text-brand-700">Sensibilidade para acolher.</span></Heading>
-              <h3 className="mt-7 font-display text-3xl text-brand-800">Dra. Shirley Rocha</h3>
-              <p className="mt-2 text-xs font-medium tracking-[0.04em] text-ink-soft">Advogada previdenciária e trabalhista · Sete Lagoas, MG</p>
-              <p className="mt-6 max-w-xl text-[15px] leading-7 text-ink-soft">À frente da Rocha Advocacia, a Dra. Shirley Rocha atua em Direito Previdenciário e Trabalhista, com atendimento em Sete Lagoas, Minas Gerais. Cada história é o ponto de partida para compreender a situação, analisar os documentos e orientar os próximos passos.</p>
-              <p className="mt-4 max-w-xl text-[15px] leading-7 text-ink-soft">A proposta do escritório é tornar as questões jurídicas mais compreensíveis, com escuta, atenção e acompanhamento. Da organização de um planejamento previdenciário às dúvidas sobre uma relação de trabalho, você encontra espaço para conversar e entender as possibilidades do seu caso.</p>
+              <h3 className="mt-7 font-display text-3xl text-brand-800">Dra. Marcela Santos</h3>
+              <p className="mt-2 text-xs font-medium tracking-[0.04em] text-ink-soft">Previdenciário · Trabalhista · Civil · Consumidor</p>
+              <p className="mt-6 max-w-xl text-[15px] leading-7 text-ink-soft">À frente da Santos Advocacia, a Dra. Marcela Santos atua em Direito Previdenciário, Trabalhista, Civil e do Consumidor. Com sede em Formiga, Minas Gerais, atende em todo o Brasil. Cada história é o ponto de partida para compreender a situação, analisar os documentos e orientar os próximos passos.</p>
+              <p className="mt-4 max-w-xl text-[15px] leading-7 text-ink-soft">A proposta do escritório é tornar as questões jurídicas mais compreensíveis, com escuta, atenção e acompanhamento. Você encontra espaço para apresentar suas dúvidas, compreender as orientações e participar das decisões sobre o seu caso.</p>
               <a href={contact} target="_blank" rel="noopener noreferrer" className="group mt-8 inline-flex min-h-11 items-center gap-2 border-b border-brand-700/40 py-2 text-sm font-semibold text-brand-800 transition-colors hover:text-brand-700">Conheça o atendimento <ArrowUpRight size={16} /></a>
             </div>
           </div>
@@ -498,7 +499,7 @@ export default function Home() {
               {[
                 [
                   "Primeiro, a sua história",
-                  "Conte sua situação pelo WhatsApp e receba as informações para agendar seu atendimento com a Dra. Shirley, em Sete Lagoas.",
+                  "Conte sua situação pelo WhatsApp e receba as informações para agendar seu atendimento com a Dra. Marcela, em Formiga.",
                 ],
                 [
                   "Depois, os documentos",
@@ -533,8 +534,8 @@ export default function Home() {
               {[
                 ["Como funciona o primeiro contato?", `Envie uma mensagem pelo WhatsApp ou ligue para ${brand.phone}. Conte brevemente sua situação para receber informações sobre o atendimento e os documentos iniciais necessários.`],
                 ["Onde fica o escritório?", `O escritório fica na ${brand.address}. Entre em contato para combinar sua visita.`],
-                ["Posso conversar sobre aposentadoria e trabalho?", "Sim. A Dra. Shirley atua em questões previdenciárias e trabalhistas. No primeiro contato, conte sua dúvida para receber as informações sobre o atendimento adequado ao seu caso."],
-                ["Quais documentos devo separar?", "Os documentos variam conforme a situação. Documentos pessoais, histórico de contribuições, comunicações do INSS ou documentos de trabalho podem ser úteis à análise. A Dra. Shirley orientará quais são pertinentes ao seu caso durante o agendamento."],
+                ["O atendimento é só em Formiga?", "A Dra. Marcela atende em todo o Brasil, com sede em Formiga, Minas Gerais. Entre em contato pelo WhatsApp para combinar a forma de atendimento e o agendamento."],
+                ["Quais documentos devo separar?", "Os documentos variam conforme a situação. Documentos pessoais, contratos, comprovantes e comunicações relacionados à sua demanda podem ser úteis à análise. A Dra. Marcela orientará quais são pertinentes ao seu caso durante o agendamento."],
               ].map(([question, answer]) => (
                 <details key={question} className="group py-6">
                   <summary className="cursor-pointer text-base font-semibold text-ink marker:text-brand-700">{question}</summary>
@@ -575,14 +576,14 @@ export default function Home() {
                   </blockquote>
                   <figcaption>
                     <p className="font-display text-xl text-brand-700">{testimonial.name}</p>
-                    <p className="mt-1 text-xs text-ink-soft">Trecho de avaliação no Google</p>
+                    <p className="mt-1 text-xs text-ink-soft">Avaliação publicada no Google</p>
                   </figcaption>
                 </figure>
               ))}
             </div>
             <div className="mt-7 flex flex-col justify-between gap-5 sm:flex-row sm:items-center">
               <p className="max-w-xl text-xs leading-6 text-ink-soft">
-                Nota e quantidade de avaliações conforme o material fornecido. Consulte o perfil no Google para ler os relatos completos e os dados atuais.
+                Relatos publicados no Google. A nota e a quantidade de avaliações podem mudar; consulte o perfil para ver os dados atuais.
               </p>
               <a
                 href={reviews}
@@ -605,7 +606,7 @@ export default function Home() {
             <div>
               <Heading
 
-                description="Tem uma dúvida sobre aposentadoria, INSS ou seus direitos no trabalho? Fale com a Dra. Shirley e receba informações para agendar seu atendimento."
+                description="Precisa de orientação jurídica? Fale com a Dra. Marcela, conte brevemente sua situação e receba informações para agendar seu atendimento."
               >
                 Um primeiro contato com{" "}
                 <span className="text-brand-700">tranquilidade.</span>
@@ -617,7 +618,7 @@ export default function Home() {
                   size="lg"
                   className="rounded-sm"
                 >
-                  <WhatsAppMark size={17} /> Converse com a Dra. Shirley
+                  <WhatsAppMark size={17} /> Converse com a Dra. Marcela
                 </GlowingButton>
                 <a href={telephone} className="inline-flex min-h-11 items-center gap-2 text-sm text-brand-700 hover:text-brand-800"><Phone size={16} /> Ligue: {brand.phone}</a>
                 <a href={brand.instagram} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-2 py-2 text-sm text-brand-700 hover:text-brand-800"><Camera size={16} /> {brand.instagramHandle}</a>
@@ -630,10 +631,10 @@ export default function Home() {
                   <MapPin size={21} strokeWidth={1.6} />
                 </span>
                 <div>
-                  <h3 className="font-display text-2xl text-ink">Nosso escritório em Sete Lagoas</h3>
+                  <h3 className="font-display text-2xl text-ink">Nosso escritório em Formiga</h3>
                 </div>
               </div>
-              <p className="mt-6 text-sm font-semibold text-brand-700">Rocha Advocacia · Shirley Rocha</p>
+              <p className="mt-6 text-sm font-semibold text-brand-700">Santos Advocacia · Marcela Santos</p>
               <address className="mt-2 max-w-md not-italic text-[14px] leading-7 text-ink-soft">
                 {brand.address}
               </address>
@@ -676,18 +677,18 @@ export default function Home() {
         <footer className="brand-footer bg-brand-950 px-5 py-12 text-brand-100 sm:px-8 lg:px-12">
           <div className="mx-auto grid max-w-7xl gap-10 sm:grid-cols-2 lg:grid-cols-[1.1fr_0.9fr_1fr]">
             <div>
-              <div className="inline-flex bg-white px-3 py-2">
+              <div className="inline-flex max-w-full py-2">
                 <Image
                   src={brand.logo}
-                  width={1983}
-                  height={793}
+                  width={2172}
+                  height={724}
                   alt={brand.businessName}
                   className="h-auto w-[250px]"
                   sizes="250px"
                 />
               </div>
               <p className="mt-4 max-w-xs text-xs leading-6 text-ink-soft">
-                Direito Previdenciário e Trabalhista. Orientação clara, atenção e acompanhamento em Sete Lagoas, Minas Gerais.
+                Direito Previdenciário, Trabalhista, Civil e do Consumidor. Sede em Formiga, Minas Gerais. Atendimento em todo o Brasil.
               </p>
             </div>
             <div>
@@ -699,7 +700,7 @@ export default function Home() {
                   Áreas de atuação
                 </a>
                 <a className="footer-link" href="#sobre">
-                  Sobre o escritório
+                  Conheça a Marcela
                 </a>
                 <a className="footer-link" href="#avaliacoes">
                   Perfil no Google
@@ -769,7 +770,7 @@ export default function Home() {
               >
                 <button
                   type="button"
-                  aria-label="Fechar detalhes da área"
+                  aria-label="Fechar detalhes do atendimento"
                   onClick={() => setActiveArea(null)}
                   className="absolute right-5 top-5 grid size-10 place-items-center rounded-full border border-ink/15 text-ink transition-colors hover:text-brand-700"
                 >
@@ -802,7 +803,7 @@ export default function Home() {
                   size="md"
                   className="mt-8 w-full rounded-sm sm:w-auto"
                 >
-                  <Phone size={15} /> Conversar sobre esta área
+                  <Phone size={15} /> Conversar sobre o atendimento
                   <ArrowUpRight size={15} />
                 </GlowingButton>
               </motion.section>
