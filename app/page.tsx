@@ -16,7 +16,7 @@ import {
   MapPin,
   Menu,
   Scale,
-  House,
+  BriefcaseBusiness,
   FileCheck2,
   ScrollText,
   Camera,
@@ -44,28 +44,28 @@ const stagger: Variants = {
 
 const areas = [
   {
-    title: "Inventário", icon: ScrollText,
-    summary: "Cuidado com a história da sua família e orientação para organizar a transmissão do patrimônio.",
-    details: "Após a perda de alguém, lidar com documentos e bens pode trazer muitas dúvidas. O atendimento acolhe a família, analisa o patrimônio e a documentação disponível e orienta sobre os caminhos para conduzir o inventário, conforme as particularidades do caso.",
-    topics: ["Análise da documentação da família e dos bens", "Orientação sobre inventário judicial ou extrajudicial", "Organização das etapas da partilha", "Acompanhamento do procedimento"],
+    title: "Direito Previdenciário", icon: Scale,
+    summary: "Orientação sobre aposentadorias e benefícios do INSS, com atenção à sua trajetória de trabalho.",
+    details: "Dúvidas sobre aposentadoria ou um benefício do INSS merecem uma análise individual. A Dra. Shirley examina sua situação e os documentos disponíveis para orientar sobre o requerimento, o acompanhamento e as providências administrativas ou judiciais cabíveis.",
+    topics: ["Análise de aposentadorias e benefícios", "Orientação sobre a documentação necessária", "Requerimentos e acompanhamento junto ao INSS", "Avaliação de medidas administrativas e judiciais"],
   },
   {
-    title: "Usucapião", icon: House,
-    summary: "Análise da história do seu imóvel para compreender as possibilidades de reconhecimento da propriedade.",
-    details: "Você ocupa um imóvel, mas ainda não tem o registro em seu nome? A consulta permite conhecer a origem e as condições da posse, analisar os documentos existentes e avaliar se a usucapião é um caminho adequado para a sua situação.",
-    topics: ["Análise da posse e do histórico do imóvel", "Levantamento de documentos e comprovantes", "Avaliação da via adequada ao caso", "Orientação e acompanhamento da demanda"],
+    title: "Planejamento previdenciário", icon: ScrollText,
+    summary: "Entenda seu histórico de contribuições e organize os próximos passos da sua aposentadoria.",
+    details: "Planejar começa por compreender a sua história. O atendimento analisa o histórico contributivo e a documentação apresentada, identifica pontos que precisam de atenção e explica os cenários de aposentadoria aplicáveis à sua situação.",
+    topics: ["Análise do histórico de contribuições", "Organização de documentos e registros", "Avaliação dos cenários de aposentadoria", "Orientação para os próximos passos"],
   },
   {
-    title: "Regularização de imóveis", icon: FileCheck2,
-    summary: "Atenção à documentação, à escritura e ao registro para cuidar do que é seu.",
-    details: "Pendências na documentação podem dificultar decisões sobre um imóvel. A análise individual identifica a situação registral, os documentos disponíveis e as providências que precisam ser avaliadas para a regularização.",
-    topics: ["Análise de matrícula e documentos do imóvel", "Orientação sobre escritura e registro", "Identificação de pendências documentais", "Acompanhamento dos encaminhamentos em cartório"],
+    title: "Direito Trabalhista", icon: BriefcaseBusiness,
+    summary: "Informação e acompanhamento para questões da relação de trabalho, do contrato à rescisão.",
+    details: "Questões no trabalho podem gerar insegurança. A consulta permite conhecer sua relação de emprego, analisar contratos e comprovantes e esclarecer dúvidas sobre verbas, desligamento e outros conflitos trabalhistas, conforme as particularidades do caso.",
+    topics: ["Análise de contratos e documentos de trabalho", "Orientação sobre verbas e rescisão", "Avaliação de conflitos na relação de emprego", "Acompanhamento de demandas trabalhistas"],
   },
   {
-    title: "Consultoria imobiliária e registral", icon: Scale,
-    summary: "Informação clara para tomar decisões sobre imóveis, documentos e patrimônio.",
-    details: "Uma conversa para compreender sua dúvida antes de dar o próximo passo. A consultoria reúne a análise dos documentos apresentados e a orientação individual sobre questões imobiliárias, notariais e registrais, com linguagem acessível.",
-    topics: ["Esclarecimento de dúvidas sobre imóveis", "Análise da documentação apresentada", "Orientação sobre procedimentos em cartório", "Planejamento dos próximos passos"],
+    title: "Direito Civil e Contratos", icon: FileCheck2,
+    summary: "Análise cuidadosa de contratos e conflitos civis para apoiar suas decisões com clareza.",
+    details: "Uma orientação antes de decidir pode ajudar a compreender as consequências de um contrato ou de um conflito. O escritório avalia os documentos e as circunstâncias apresentadas para explicar os caminhos possíveis e acompanhar a demanda quando necessário.",
+    topics: ["Avaliação individual do caso", "Análise de contratos e documentos", "Orientação sobre conflitos civis", "Acompanhamento das providências cabíveis"],
   },
 ];
 
@@ -157,22 +157,22 @@ export default function Home() {
       <main className="bg-ivory text-ink">
         <div ref={contentRef}>
         <a href="#inicio" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-sm focus:bg-white focus:p-4 focus:text-ink">Ir para o conteúdo</a>
-        <header className="brand-header sticky top-0 z-40 border-b border-brand-300/20 bg-brand-900 text-ivory">
-          <div className="mx-auto flex h-[96px] max-w-7xl items-center justify-between gap-5 px-5 sm:h-[112px] sm:px-8 lg:px-12">
+        <header className="brand-header sticky top-0 z-40 border-b border-ink/10 bg-white text-ink">
+          <div className="mx-auto flex h-[100px] max-w-7xl items-center justify-between gap-5 px-5 sm:h-[112px] sm:px-8 lg:px-12">
             <a
               href="#inicio"
-              aria-label="Luana Oliveira Advocacia — início"
+              aria-label="Rocha Advocacia — início"
               onClick={closeMenu}
               className="shrink-0"
             >
               <Image
                 src={brand.logo}
-                width={2172}
-                height={724}
+                width={1983}
+                height={793}
                 alt={brand.businessName}
                 preload
-                className="h-auto w-[195px] min-[360px]:w-[215px] sm:w-[260px]"
-                sizes="(max-width: 359px) 195px, (max-width: 640px) 215px, 260px"
+                className="h-auto w-[220px] min-[360px]:w-[250px] sm:w-[280px]"
+                sizes="(max-width: 359px) 220px, (max-width: 640px) 250px, 280px"
               />
             </a>
             <nav
@@ -200,8 +200,8 @@ export default function Home() {
                 href={contact}
                 target="_blank"
                 rel="noreferrer"
-                aria-label="WhatsApp da Dra. Luana Oliveira"
-                className="grid size-11 place-items-center rounded-full border border-brand-300/40 text-brand-200 transition-colors hover:border-brand-300 hover:text-brand-300"
+                aria-label="WhatsApp da Dra. Shirley Rocha"
+                className="grid size-11 place-items-center rounded-full border border-ink/20 text-brand-700 transition-colors hover:border-brand-700 hover:bg-brand-50"
               >
                 <WhatsAppMark size={17} strokeWidth={1.7} />
               </a>
@@ -219,7 +219,7 @@ export default function Home() {
               aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
               aria-expanded={menuOpen}
               aria-controls="mobile-navigation"
-              className="grid size-11 shrink-0 place-items-center rounded-sm border border-brand-300/40 lg:hidden"
+              className="grid size-11 shrink-0 place-items-center rounded-sm border border-ink/20 text-brand-700 lg:hidden"
               onClick={() => setMenuOpen((open) => !open)}
             >
               {menuOpen ? <X size={20} /> : <Menu size={20} />}
@@ -254,7 +254,7 @@ export default function Home() {
                     </a>
                   ))}
                   <a
-                    className="mt-3 inline-flex items-center justify-center gap-2 rounded-sm bg-brand-300 px-5 py-3.5 text-xs font-semibold text-brand-950"
+                    className="mt-3 inline-flex items-center justify-center gap-2 rounded-sm bg-brand-700 px-5 py-3.5 text-sm font-semibold text-white"
                     href={whatsapp}
                     target="_blank"
                     rel="noreferrer"
@@ -270,9 +270,9 @@ export default function Home() {
 
         <section
           id="inicio"
-          className="brand-hero relative isolate overflow-hidden scroll-mt-24 border-b border-ink/10 bg-brand-950"
+          className="brand-hero relative isolate overflow-hidden scroll-mt-28 border-b border-ink/10 bg-ivory"
         >
-          <div className="mx-auto grid min-h-[640px] max-w-7xl items-center gap-12 px-5 py-14 sm:px-8 sm:py-20 lg:min-h-[680px] lg:grid-cols-[1.05fr_0.95fr] lg:gap-10 lg:px-12 lg:py-20">
+          <div className="mx-auto grid min-h-[600px] max-w-7xl items-center gap-12 px-5 py-12 sm:px-8 sm:py-16 lg:min-h-[640px] lg:grid-cols-[1.05fr_0.95fr] lg:gap-14 lg:px-12 lg:py-16">
             <motion.div
               initial={false}
               animate="visible"
@@ -281,16 +281,16 @@ export default function Home() {
             >
               <motion.h1
                 variants={reveal}
-                className="max-w-[720px] font-display text-[3.25rem] leading-[1.04] tracking-[-0.025em] text-ivory sm:text-[4.4rem] lg:text-[4.8rem]"
+                className="max-w-[720px] font-display text-[2.6rem] leading-[1.13] tracking-[-0.025em] text-ink sm:text-[3.5rem] lg:text-[3.8rem]"
               >
-                Seu patrimônio tem história.{" "}
-                <span className="text-brand-300">Cuide do próximo capítulo.</span>
+                Seus direitos merecem atenção.{" "}
+                <span className="text-brand-700">Sua história, respeito.</span>
               </motion.h1>
               <motion.p
                 variants={reveal}
                 className="mt-7 max-w-xl text-[15px] leading-7 text-ink-soft sm:text-base sm:leading-8"
               >
-                Inventário, usucapião e regularização de imóveis com a Dra. Luana Oliveira. Orientação clara e um olhar atento para proteger seu patrimônio e sua família, em Caratinga e on-line em todo o Brasil.
+                Advocacia previdenciária e trabalhista com a Dra. Shirley Rocha, em Sete Lagoas. Orientação clara para cuidar da sua aposentadoria, dos seus direitos no trabalho e de cada próximo passo.
               </motion.p>
               <motion.div
                 variants={reveal}
@@ -302,7 +302,7 @@ export default function Home() {
                   size="lg"
                   className="rounded-sm"
                 >
-                  <WhatsAppMark size={17} /> Converse com a Dra. Luana
+                  <WhatsAppMark size={17} /> Converse com a Dra. Shirley
                 </GlowingButton>
                 <a
                   href="#atuacao"
@@ -325,9 +325,9 @@ export default function Home() {
                 </span>
                 <span className="inline-flex items-center gap-2">
                   <MessageCircle size={15} className="text-brand-700" />
-                  On-line em todo o Brasil
+                  Previdenciário e trabalhista
                 </span>
-                <a href="#avaliacoes" className="inline-flex items-center gap-2 py-2 text-sm text-brand-200 underline underline-offset-4">
+                <a href="#avaliacoes" className="inline-flex items-center gap-2 py-2 text-sm text-brand-700 underline underline-offset-4">
                   <Star size={15} aria-hidden="true" /> Avaliações no Google
                 </a>
               </motion.div>
@@ -340,21 +340,21 @@ export default function Home() {
                 delay: 0.16,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="relative mx-auto w-full max-w-[360px] sm:max-w-[400px] lg:ml-auto lg:mr-0"
+              className="relative mx-auto w-full max-w-[400px] sm:max-w-[440px] lg:ml-auto lg:mr-0"
             >
               <figure className="hero-signature">
                 <Image
                   src={brand.portrait}
-                  alt="Dra. Luana Oliveira, de blusa vinho e colete preto"
-                  width={340}
-                  height={510}
+                  alt="Dra. Shirley Rocha, advogada da Rocha Advocacia, em retrato profissional"
+                  width={1230}
+                  height={1278}
                   preload
-                  sizes="(max-width: 640px) 90vw, 400px"
+                  sizes="(max-width: 640px) 90vw, 440px"
                   className="h-auto w-full"
                 />
-                <figcaption className="flex flex-col gap-2 border-t border-brand-300/25 px-5 pb-7 pt-6 text-center leading-6 text-brand-100">
-                  <span className="font-display text-3xl text-brand-300">Dra. Luana Oliveira</span>
-                  <span className="text-xs tracking-[0.06em]">Inventário & regularização de imóveis</span>
+                <figcaption className="flex flex-col gap-2 border-t border-ink/10 bg-white px-5 py-5 text-center leading-6 text-ink-soft">
+                  <span className="font-display text-2xl text-ink">Dra. Shirley Rocha</span>
+                  <span className="text-xs tracking-[0.06em]">Direito Previdenciário e Trabalhista</span>
                 </figcaption>
               </figure>
             </motion.div>
@@ -367,8 +367,8 @@ export default function Home() {
         >
           <div className="mx-auto grid max-w-7xl gap-6 px-5 py-7 sm:grid-cols-3 sm:gap-4 sm:px-8 lg:px-12">
             {[
-              ["Experiência", "8 anos no Registro de Imóveis"],
-              ["Proximidade", "Em Caratinga e on-line"],
+              ["Atenção", "Escuta e análise do seu caso"],
+              ["Proximidade", "No centro de Sete Lagoas"],
               ["Clareza", "Orientação em cada etapa"],
             ].map(([value, label], index) => (
               <div
@@ -404,10 +404,10 @@ export default function Home() {
             >
               <Heading
 
-                description="Do inventário à documentação do seu imóvel, cada situação recebe uma análise cuidadosa e orientação sobre os caminhos possíveis."
+                description="Da aposentadoria às relações de trabalho, compreenda seus direitos e os caminhos que podem fazer sentido para o seu caso."
               >
-                Seu patrimônio em ordem.{" "}
-                <span className="text-brand-700">Sua família amparada.</span>
+                Orientação para decidir.{" "}
+                <span className="text-brand-700">Cuidado para seguir.</span>
               </Heading>
               <p className="max-w-[250px] pb-1 text-xs leading-6 text-ink-soft">
                 Encontre o assunto sobre o qual deseja conversar. Cada história recebe uma análise individual.
@@ -463,16 +463,16 @@ export default function Home() {
 
         <section id="sobre" className="scroll-mt-28 bg-white py-20 sm:py-28 lg:py-32">
           <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-24 lg:px-12">
-            <figure className="mx-auto w-full max-w-[460px] lg:mx-0">
-              <Image src={brand.aboutImage} alt="Apresentação de Luana Oliveira: advogada, pós-graduada em Direito Imobiliário pela PUC Minas e em Direito Notarial e Registral pela Doctum, com oito anos de experiência em Cartório de Registro de Imóveis" width={510} height={510} sizes="(max-width: 640px) 90vw, 460px" className="h-auto w-full" />
-              <figcaption className="border-b border-brand-800/20 py-5 text-sm text-ink-soft">Conhecimento técnico, cuidado com cada história.</figcaption>
+            <figure className="mx-auto flex w-full max-w-[460px] flex-col justify-center bg-brand-50 px-7 py-14 sm:px-10 lg:mx-0">
+              <Image src={brand.logo} alt="Rocha Advocacia e Soluções Imobiliárias — logo original" width={1983} height={793} sizes="(max-width: 640px) 80vw, 380px" className="h-auto w-full" />
+              <figcaption className="border-b border-brand-800/20 py-5 text-sm text-ink-soft">Uma advocacia próxima da sua história.</figcaption>
             </figure>
             <div>
-              <Heading>Experiência para orientar.{" "}<span className="text-brand-700">Sensibilidade para acolher.</span></Heading>
-              <h3 className="mt-7 font-display text-3xl text-brand-800">Dra. Luana Oliveira</h3>
-              <p className="mt-2 text-xs font-medium tracking-[0.04em] text-ink-soft">Advogada · Caratinga, MG · Atendimento on-line no Brasil</p>
-              <p className="mt-6 max-w-xl text-[15px] leading-7 text-ink-soft">Ao longo de oito anos de trabalho em Cartório de Registro de Imóveis, Luana conheceu de perto os detalhes que fazem parte da história de cada propriedade. Hoje, traz essa experiência para a advocacia, com atuação em inventário, usucapião e regularização de imóveis.</p>
-              <p className="mt-4 max-w-xl text-[15px] leading-7 text-ink-soft">Pós-graduada em Direito Imobiliário pela PUC Minas e em Direito Notarial e Registral pela Doctum, une conhecimento técnico e explicações acessíveis para que você compreenda cada etapa. Sua vida e sua profissão são guiadas por princípios cristãos, respeito e atenção às pessoas.</p>
+              <Heading>Clareza para orientar.{" "}<span className="text-brand-700">Sensibilidade para acolher.</span></Heading>
+              <h3 className="mt-7 font-display text-3xl text-brand-800">Dra. Shirley Rocha</h3>
+              <p className="mt-2 text-xs font-medium tracking-[0.04em] text-ink-soft">Advogada previdenciária e trabalhista · Sete Lagoas, MG</p>
+              <p className="mt-6 max-w-xl text-[15px] leading-7 text-ink-soft">À frente da Rocha Advocacia, a Dra. Shirley Rocha atua em Direito Previdenciário e Trabalhista, com atendimento em Sete Lagoas, Minas Gerais. Cada história é o ponto de partida para compreender a situação, analisar os documentos e orientar os próximos passos.</p>
+              <p className="mt-4 max-w-xl text-[15px] leading-7 text-ink-soft">A proposta do escritório é tornar as questões jurídicas mais compreensíveis, com escuta, atenção e acompanhamento. Da organização de um planejamento previdenciário às dúvidas sobre uma relação de trabalho, você encontra espaço para conversar e entender as possibilidades do seu caso.</p>
               <a href={contact} target="_blank" rel="noopener noreferrer" className="group mt-8 inline-flex min-h-11 items-center gap-2 border-b border-brand-700/40 py-2 text-sm font-semibold text-brand-800 transition-colors hover:text-brand-700">Conheça o atendimento <ArrowUpRight size={16} /></a>
             </div>
           </div>
@@ -483,7 +483,7 @@ export default function Home() {
             <Heading
 
               light
-              description="Decisões sobre seu patrimônio merecem informação e cuidado. Do primeiro contato ao acompanhamento, entenda como funciona o atendimento."
+              description="Decisões sobre seus direitos merecem informação e cuidado. Do primeiro contato ao acompanhamento, entenda como funciona o atendimento."
             >
               Clareza para compreender cada{" "}
               <span className="text-brand-200">etapa.</span>
@@ -498,11 +498,11 @@ export default function Home() {
               {[
                 [
                   "Primeiro, a sua história",
-                  "Conte sua situação pelo WhatsApp e combine o atendimento, presencial em Caratinga ou on-line em todo o Brasil.",
+                  "Conte sua situação pelo WhatsApp e receba as informações para agendar seu atendimento com a Dra. Shirley, em Sete Lagoas.",
                 ],
                 [
                   "Depois, os documentos",
-                  "A documentação é analisada com atenção ao imóvel, ao patrimônio e às particularidades da sua família.",
+                  "Seu histórico e os documentos apresentados são analisados com atenção às particularidades da sua demanda.",
                 ],
                 [
                   "Um caminho compreensível",
@@ -533,8 +533,8 @@ export default function Home() {
               {[
                 ["Como funciona o primeiro contato?", `Envie uma mensagem pelo WhatsApp ou ligue para ${brand.phone}. Conte brevemente sua situação para receber informações sobre o atendimento e os documentos iniciais necessários.`],
                 ["Onde fica o escritório?", `O escritório fica na ${brand.address}. Entre em contato para combinar sua visita.`],
-                ["O atendimento pode ser on-line?", "Sim. Além do atendimento presencial em Caratinga, Minas Gerais, a Dra. Luana atende on-line em todo o Brasil. Entre em contato para combinar sua consulta."],
-                ["Quais documentos devo separar?", "Os documentos variam conforme a situação. Documentos pessoais, certidões e documentos do imóvel podem ser úteis à análise. A Dra. Luana orientará quais são pertinentes ao seu caso durante o agendamento."],
+                ["Posso conversar sobre aposentadoria e trabalho?", "Sim. A Dra. Shirley atua em questões previdenciárias e trabalhistas. No primeiro contato, conte sua dúvida para receber as informações sobre o atendimento adequado ao seu caso."],
+                ["Quais documentos devo separar?", "Os documentos variam conforme a situação. Documentos pessoais, histórico de contribuições, comunicações do INSS ou documentos de trabalho podem ser úteis à análise. A Dra. Shirley orientará quais são pertinentes ao seu caso durante o agendamento."],
               ].map(([question, answer]) => (
                 <details key={question} className="group py-6">
                   <summary className="cursor-pointer text-base font-semibold text-ink marker:text-brand-700">{question}</summary>
@@ -551,7 +551,7 @@ export default function Home() {
         >
           <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
             <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
-              <Heading description="Relatos de quem já contou com a atenção e a orientação da Dra. Luana Oliveira, publicados no Google.">
+              <Heading description="A atenção no atendimento e a clareza nas orientações, nas palavras de quem já passou pelo escritório.">
                 Confiança que se{" "}
                 <span className="text-brand-700">compartilha.</span>
               </Heading>
@@ -605,7 +605,7 @@ export default function Home() {
             <div>
               <Heading
 
-                description="Converse com a Dra. Luana sobre seu imóvel ou inventário. Atendimento presencial em Caratinga e on-line em todo o Brasil."
+                description="Tem uma dúvida sobre aposentadoria, INSS ou seus direitos no trabalho? Fale com a Dra. Shirley e receba informações para agendar seu atendimento."
               >
                 Um primeiro contato com{" "}
                 <span className="text-brand-700">tranquilidade.</span>
@@ -617,7 +617,7 @@ export default function Home() {
                   size="lg"
                   className="rounded-sm"
                 >
-                  <WhatsAppMark size={17} /> Converse com a Dra. Luana
+                  <WhatsAppMark size={17} /> Converse com a Dra. Shirley
                 </GlowingButton>
                 <a href={telephone} className="inline-flex min-h-11 items-center gap-2 text-sm text-brand-700 hover:text-brand-800"><Phone size={16} /> Ligue: {brand.phone}</a>
                 <a href={brand.instagram} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-2 py-2 text-sm text-brand-700 hover:text-brand-800"><Camera size={16} /> {brand.instagramHandle}</a>
@@ -630,10 +630,10 @@ export default function Home() {
                   <MapPin size={21} strokeWidth={1.6} />
                 </span>
                 <div>
-                  <h3 className="font-display text-2xl text-ink">Nosso escritório em Caratinga</h3>
+                  <h3 className="font-display text-2xl text-ink">Nosso escritório em Sete Lagoas</h3>
                 </div>
               </div>
-              <p className="mt-6 text-sm font-semibold text-brand-700">Luana Oliveira · Advocacia</p>
+              <p className="mt-6 text-sm font-semibold text-brand-700">Rocha Advocacia · Shirley Rocha</p>
               <address className="mt-2 max-w-md not-italic text-[14px] leading-7 text-ink-soft">
                 {brand.address}
               </address>
@@ -655,7 +655,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-linen px-5 py-14 text-ink sm:px-8 sm:py-16 lg:px-12">
+        <section className="bg-brand-700 px-5 py-14 text-white sm:px-8 sm:py-16 lg:px-12">
           <div className="mx-auto flex max-w-7xl flex-col justify-between gap-7 sm:flex-row sm:items-center">
             <div>
               <h2 className="mt-3 max-w-2xl font-display text-3xl leading-tight sm:text-4xl">
@@ -676,18 +676,18 @@ export default function Home() {
         <footer className="brand-footer bg-brand-950 px-5 py-12 text-brand-100 sm:px-8 lg:px-12">
           <div className="mx-auto grid max-w-7xl gap-10 sm:grid-cols-2 lg:grid-cols-[1.1fr_0.9fr_1fr]">
             <div>
-              <div className="inline-flex py-3">
+              <div className="inline-flex bg-white px-3 py-2">
                 <Image
                   src={brand.logo}
-                  width={2172}
-                  height={724}
+                  width={1983}
+                  height={793}
                   alt={brand.businessName}
                   className="h-auto w-[250px]"
                   sizes="250px"
                 />
               </div>
               <p className="mt-4 max-w-xs text-xs leading-6 text-ink-soft">
-                Inventário, usucapião e regularização de imóveis. Em Caratinga, Minas Gerais, e on-line em todo o Brasil.
+                Direito Previdenciário e Trabalhista. Orientação clara, atenção e acompanhamento em Sete Lagoas, Minas Gerais.
               </p>
             </div>
             <div>

@@ -1,33 +1,32 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Lato } from "next/font/google";
+import { Marcellus, Source_Sans_3 } from "next/font/google";
 import { brand } from "./lib/brand";
 import "./globals.css";
 
-const displayFont = Cormorant_Garamond({
+const displayFont = Marcellus({
   variable: "--font-display-face",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: "400",
   display: "swap",
 });
 
-const bodyFont = Lato({
+const bodyFont = Source_Sans_3({
   variable: "--font-body",
   subsets: ["latin"],
-  weight: ["400", "700"],
   display: "swap",
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 const metadataBase = siteUrl ? new URL(siteUrl) : undefined;
 const shareImage = brand.logo;
-const title = "Luana Oliveira | Inventário e Regularização de Imóveis em Caratinga";
-const description = "Dra. Luana Oliveira: inventário, usucapião e regularização de imóveis em Caratinga, MG. Atendimento on-line em todo o Brasil. WhatsApp: (33) 98739-4137.";
+const title = "Rocha Advocacia | Shirley Rocha · Previdenciário e Trabalhista em Sete Lagoas";
+const description = "Orientação previdenciária e trabalhista com a Dra. Shirley Rocha, em Sete Lagoas, MG. Aposentadorias, benefícios do INSS e direitos do trabalho. WhatsApp: (31) 97173-1592.";
 
 export const metadata: Metadata = {
   ...(metadataBase ? { metadataBase } : {}),
   title,
   description,
-  keywords: ["Luana Oliveira", "advogada em Caratinga", "inventário", "usucapião", "regularização de imóveis", "direito imobiliário", "direito notarial e registral"],
+  keywords: ["Rocha Advocacia", "Shirley Rocha", "advogada em Sete Lagoas", "direito previdenciário", "direito trabalhista", "planejamento previdenciário", "aposentadoria", "INSS"],
   icons: { icon: [{ url: "/icon.svg", type: "image/svg+xml" }] },
   openGraph: {
     title,
@@ -39,8 +38,8 @@ export const metadata: Metadata = {
       ? [
           {
             url: shareImage,
-            width: 2172,
-            height: 724,
+            width: 1983,
+            height: 793,
             alt: brand.businessName,
           },
         ]
@@ -55,7 +54,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#420d1b",
+  themeColor: "#800010",
 };
 
 export default function RootLayout({

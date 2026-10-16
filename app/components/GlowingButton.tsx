@@ -20,13 +20,13 @@ export default function GlowingButton({
   size = "md",
 }: GlowingButtonProps) {
   const sizeClasses = {
-    sm: "px-5 py-3 text-[10px] tracking-[0.13em]",
-    md: "px-6 py-3.5 text-xs tracking-[0.14em]",
-    lg: "px-7 py-4 text-xs tracking-[0.14em]",
+    sm: "px-5 py-3 text-sm",
+    md: "px-6 py-3.5 text-sm",
+    lg: "px-7 py-4 text-base",
   }[size];
 
   const classes =
-    "inline-flex min-h-11 items-center justify-center gap-2 rounded-sm border border-brand-300 bg-brand-300 font-semibold text-brand-950 transition-colors duration-200 hover:border-brand-200 hover:bg-brand-200 focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-brand-700 " +
+    "inline-flex min-h-11 items-center justify-center gap-2 rounded-sm border border-brand-700 bg-brand-700 font-semibold text-white transition-colors duration-200 hover:border-brand-800 hover:bg-brand-800 focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-brand-700 " +
     "select-none text-center " +
     sizeClasses +
     " " +

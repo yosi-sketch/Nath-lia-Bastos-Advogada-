@@ -1,414 +1,410 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-16T00:24:35.016Z",
-  "title": "Design System: Luana Oliveira",
+  "generatedAt": "2026-10-16T09:08:38.798Z",
+  "title": "Design System: Rocha Advocacia",
   "extensions": {
     "colorMeta": {
       "ink": {
         "role": "neutral",
-        "displayName": "ink",
-        "canonical": "#321b23",
+        "displayName": "Grafite de leitura",
+        "canonical": "#202020",
         "tonalRamp": [
-          "#501020",
-          "#420d1b",
-          "#64162c",
-          "#731d35",
-          "#836337",
-          "#b09060",
-          "#d0b080",
-          "#e0c090",
-          "#fff0d0",
-          "#eee0cf",
-          "#f3ede3"
+          "#202020",
+          "#303030",
+          "#707070",
+          "#a0a0a0",
+          "#c0c0c0",
+          "#dededb",
+          "#e8e8e5",
+          "#f2f2f0",
+          "#f7f7f5",
+          "#ffffff"
         ]
       },
       "ink-soft": {
         "role": "neutral",
-        "displayName": "ink-soft",
-        "canonical": "#6c555b",
+        "displayName": "Cinza de leitura",
+        "canonical": "#595959",
         "tonalRamp": [
-          "#501020",
-          "#420d1b",
-          "#64162c",
-          "#731d35",
-          "#836337",
-          "#b09060",
-          "#d0b080",
-          "#e0c090",
-          "#fff0d0",
-          "#eee0cf",
-          "#f3ede3"
+          "#202020",
+          "#303030",
+          "#707070",
+          "#a0a0a0",
+          "#c0c0c0",
+          "#dededb",
+          "#e8e8e5",
+          "#f2f2f0",
+          "#f7f7f5",
+          "#ffffff"
         ]
       },
       "paper": {
         "role": "neutral",
-        "displayName": "paper",
+        "displayName": "Branco de suporte",
         "canonical": "#ffffff",
         "tonalRamp": [
-          "#501020",
-          "#420d1b",
-          "#64162c",
-          "#731d35",
-          "#836337",
-          "#b09060",
-          "#d0b080",
-          "#e0c090",
-          "#fff0d0",
-          "#eee0cf",
-          "#f3ede3"
+          "#202020",
+          "#303030",
+          "#707070",
+          "#a0a0a0",
+          "#c0c0c0",
+          "#dededb",
+          "#e8e8e5",
+          "#f2f2f0",
+          "#f7f7f5",
+          "#ffffff"
         ]
       },
       "ivory": {
         "role": "neutral",
-        "displayName": "ivory",
-        "canonical": "#faf7f0",
+        "displayName": "Fundo claro",
+        "canonical": "#f7f7f5",
         "tonalRamp": [
-          "#501020",
-          "#420d1b",
-          "#64162c",
-          "#731d35",
-          "#836337",
-          "#b09060",
-          "#d0b080",
-          "#e0c090",
-          "#fff0d0",
-          "#eee0cf",
-          "#f3ede3"
+          "#202020",
+          "#303030",
+          "#707070",
+          "#a0a0a0",
+          "#c0c0c0",
+          "#dededb",
+          "#e8e8e5",
+          "#f2f2f0",
+          "#f7f7f5",
+          "#ffffff"
         ]
       },
       "linen": {
         "role": "neutral",
-        "displayName": "linen",
-        "canonical": "#e5d9c9",
+        "displayName": "Neutro de superfície",
+        "canonical": "#e8e8e5",
         "tonalRamp": [
-          "#501020",
-          "#420d1b",
-          "#64162c",
-          "#731d35",
-          "#836337",
-          "#b09060",
-          "#d0b080",
-          "#e0c090",
-          "#fff0d0",
-          "#eee0cf",
-          "#f3ede3"
+          "#202020",
+          "#303030",
+          "#707070",
+          "#a0a0a0",
+          "#c0c0c0",
+          "#dededb",
+          "#e8e8e5",
+          "#f2f2f0",
+          "#f7f7f5",
+          "#ffffff"
         ]
       },
       "brand-50": {
         "role": "neutral",
-        "displayName": "brand-50",
-        "canonical": "#f3ede3",
+        "displayName": "Neutro mais claro",
+        "canonical": "#f2f2f0",
         "tonalRamp": [
-          "#501020",
-          "#420d1b",
-          "#64162c",
-          "#731d35",
-          "#836337",
-          "#b09060",
-          "#d0b080",
-          "#e0c090",
-          "#fff0d0",
-          "#eee0cf",
-          "#f3ede3"
+          "#202020",
+          "#303030",
+          "#707070",
+          "#a0a0a0",
+          "#c0c0c0",
+          "#dededb",
+          "#e8e8e5",
+          "#f2f2f0",
+          "#f7f7f5",
+          "#ffffff"
         ]
       },
       "brand-100": {
         "role": "neutral",
-        "displayName": "brand-100",
-        "canonical": "#eee0cf",
+        "displayName": "Neutro de apoio",
+        "canonical": "#e8e8e5",
         "tonalRamp": [
-          "#501020",
-          "#420d1b",
-          "#64162c",
-          "#731d35",
-          "#836337",
-          "#b09060",
-          "#d0b080",
-          "#e0c090",
-          "#fff0d0",
-          "#eee0cf",
-          "#f3ede3"
+          "#202020",
+          "#303030",
+          "#707070",
+          "#a0a0a0",
+          "#c0c0c0",
+          "#dededb",
+          "#e8e8e5",
+          "#f2f2f0",
+          "#f7f7f5",
+          "#ffffff"
         ]
       },
       "brand-200": {
-        "role": "primary",
-        "displayName": "brand-200",
-        "canonical": "#fff0d0",
+        "role": "neutral",
+        "displayName": "Neutro para texto sobre escuro",
+        "canonical": "#dededb",
         "tonalRamp": [
-          "#501020",
-          "#420d1b",
-          "#64162c",
-          "#731d35",
-          "#836337",
-          "#b09060",
-          "#d0b080",
-          "#e0c090",
-          "#fff0d0",
-          "#eee0cf",
-          "#f3ede3"
+          "#202020",
+          "#303030",
+          "#707070",
+          "#a0a0a0",
+          "#c0c0c0",
+          "#dededb",
+          "#e8e8e5",
+          "#f2f2f0",
+          "#f7f7f5",
+          "#ffffff"
         ]
       },
       "brand-300": {
-        "role": "primary",
-        "displayName": "brand-300",
-        "canonical": "#e0c090",
+        "role": "neutral",
+        "displayName": "Prata do logo",
+        "canonical": "#c0c0c0",
         "tonalRamp": [
-          "#501020",
-          "#420d1b",
-          "#64162c",
-          "#731d35",
-          "#836337",
-          "#b09060",
-          "#d0b080",
-          "#e0c090",
-          "#fff0d0",
-          "#eee0cf",
-          "#f3ede3"
+          "#202020",
+          "#303030",
+          "#707070",
+          "#a0a0a0",
+          "#c0c0c0",
+          "#dededb",
+          "#e8e8e5",
+          "#f2f2f0",
+          "#f7f7f5",
+          "#ffffff"
         ]
       },
       "brand-400": {
         "role": "neutral",
-        "displayName": "brand-400",
-        "canonical": "#d0b080",
+        "displayName": "Cinza intermediário claro",
+        "canonical": "#a0a0a0",
         "tonalRamp": [
-          "#501020",
-          "#420d1b",
-          "#64162c",
-          "#731d35",
-          "#836337",
-          "#b09060",
-          "#d0b080",
-          "#e0c090",
-          "#fff0d0",
-          "#eee0cf",
-          "#f3ede3"
+          "#202020",
+          "#303030",
+          "#707070",
+          "#a0a0a0",
+          "#c0c0c0",
+          "#dededb",
+          "#e8e8e5",
+          "#f2f2f0",
+          "#f7f7f5",
+          "#ffffff"
         ]
       },
       "brand-500": {
         "role": "neutral",
-        "displayName": "brand-500",
-        "canonical": "#b09060",
+        "displayName": "Cinza do logo",
+        "canonical": "#707070",
         "tonalRamp": [
-          "#501020",
-          "#420d1b",
-          "#64162c",
-          "#731d35",
-          "#836337",
-          "#b09060",
-          "#d0b080",
-          "#e0c090",
-          "#fff0d0",
-          "#eee0cf",
-          "#f3ede3"
+          "#202020",
+          "#303030",
+          "#707070",
+          "#a0a0a0",
+          "#c0c0c0",
+          "#dededb",
+          "#e8e8e5",
+          "#f2f2f0",
+          "#f7f7f5",
+          "#ffffff"
         ]
       },
       "brand-600": {
-        "role": "secondary",
-        "displayName": "brand-600",
-        "canonical": "#836337",
+        "role": "primary",
+        "displayName": "Vermelho de acento",
+        "canonical": "#a01010",
         "tonalRamp": [
-          "#501020",
-          "#420d1b",
-          "#64162c",
-          "#731d35",
-          "#836337",
-          "#b09060",
-          "#d0b080",
-          "#e0c090",
-          "#fff0d0",
-          "#eee0cf",
-          "#f3ede3"
+          "#65000d",
+          "#800010",
+          "#a01010"
         ]
       },
       "brand-700": {
-        "role": "secondary",
-        "displayName": "brand-700",
-        "canonical": "#731d35",
+        "role": "primary",
+        "displayName": "Vermelho do logo",
+        "canonical": "#800010",
         "tonalRamp": [
-          "#501020",
-          "#420d1b",
-          "#64162c",
-          "#731d35",
-          "#836337",
-          "#b09060",
-          "#d0b080",
-          "#e0c090",
-          "#fff0d0",
-          "#eee0cf",
-          "#f3ede3"
+          "#65000d",
+          "#800010",
+          "#a01010"
         ]
       },
       "brand-800": {
-        "role": "secondary",
-        "displayName": "brand-800",
-        "canonical": "#64162c",
+        "role": "primary",
+        "displayName": "Vermelho profundo",
+        "canonical": "#65000d",
         "tonalRamp": [
-          "#501020",
-          "#420d1b",
-          "#64162c",
-          "#731d35",
-          "#836337",
-          "#b09060",
-          "#d0b080",
-          "#e0c090",
-          "#fff0d0",
-          "#eee0cf",
-          "#f3ede3"
+          "#65000d",
+          "#800010",
+          "#a01010"
         ]
       },
       "brand-900": {
         "role": "neutral",
-        "displayName": "brand-900",
-        "canonical": "#420d1b",
+        "displayName": "Grafite de apoio",
+        "canonical": "#303030",
         "tonalRamp": [
-          "#501020",
-          "#420d1b",
-          "#64162c",
-          "#731d35",
-          "#836337",
-          "#b09060",
-          "#d0b080",
-          "#e0c090",
-          "#fff0d0",
-          "#eee0cf",
-          "#f3ede3"
+          "#202020",
+          "#303030",
+          "#707070",
+          "#a0a0a0",
+          "#c0c0c0",
+          "#dededb",
+          "#e8e8e5",
+          "#f2f2f0",
+          "#f7f7f5",
+          "#ffffff"
         ]
       },
       "brand-950": {
         "role": "neutral",
-        "displayName": "brand-950",
-        "canonical": "#501020",
+        "displayName": "Grafite principal",
+        "canonical": "#202020",
         "tonalRamp": [
-          "#501020",
-          "#420d1b",
-          "#64162c",
-          "#731d35",
-          "#836337",
-          "#b09060",
-          "#d0b080",
-          "#e0c090",
-          "#fff0d0",
-          "#eee0cf",
-          "#f3ede3"
+          "#202020",
+          "#303030",
+          "#707070",
+          "#a0a0a0",
+          "#c0c0c0",
+          "#dededb",
+          "#e8e8e5",
+          "#f2f2f0",
+          "#f7f7f5",
+          "#ffffff"
         ]
       },
-      "gold-divider": {
+      "ink-divider": {
         "role": "neutral",
-        "displayName": "Divisória dourada",
-        "canonical": "rgb(224 192 144 / 25%)"
+        "displayName": "Divisória sobre claro",
+        "canonical": "rgb(32 32 32 / 15%)"
       },
-      "gold-frame": {
+      "ink-border": {
         "role": "neutral",
-        "displayName": "Moldura dourada",
-        "canonical": "rgb(224 192 144 / 40%)"
+        "displayName": "Borda sutil",
+        "canonical": "rgb(32 32 32 / 10%)"
+      },
+      "silver-divider": {
+        "role": "neutral",
+        "displayName": "Divisória prata do rodapé",
+        "canonical": "rgb(192 192 192 / 25%)"
       }
     },
     "typographyMeta": {
       "display": {
-        "displayName": "display",
-        "purpose": "Título principal"
+        "displayName": "H1 móvel",
+        "purpose": "Título principal do hero."
       },
       "display-tablet": {
-        "displayName": "display-tablet",
-        "purpose": "Título principal"
+        "displayName": "H1 a partir de sm",
+        "purpose": "Título principal do hero."
       },
       "display-desktop": {
-        "displayName": "display-desktop",
-        "purpose": "Título principal"
+        "displayName": "H1 a partir de lg",
+        "purpose": "Título principal do hero."
       },
       "headline": {
-        "displayName": "headline",
-        "purpose": "Títulos de seção"
+        "displayName": "Título de seção",
+        "purpose": "Hierarquia compartilhada pelo componente Heading."
       },
       "headline-tablet": {
-        "displayName": "headline-tablet",
-        "purpose": "Títulos de seção"
+        "displayName": "Título de seção em sm",
+        "purpose": "Hierarquia compartilhada pelo componente Heading."
       },
       "headline-desktop": {
-        "displayName": "headline-desktop",
-        "purpose": "Títulos de seção"
+        "displayName": "Título de seção em lg",
+        "purpose": "Hierarquia compartilhada pelo componente Heading."
       },
       "service-title": {
-        "displayName": "service-title",
-        "purpose": "Papel tipográfico implementado"
+        "displayName": "Título de serviço",
+        "purpose": "Linhas de atuação no celular."
       },
       "service-title-tablet": {
-        "displayName": "service-title-tablet",
-        "purpose": "Papel tipográfico implementado"
+        "displayName": "Título de serviço em sm",
+        "purpose": "Linhas de atuação a partir de sm."
       },
       "title": {
-        "displayName": "title",
-        "purpose": "Papel tipográfico implementado"
+        "displayName": "Título de apoio",
+        "purpose": "Legenda do retrato, etapas e painel de endereço."
       },
       "professional-name": {
-        "displayName": "professional-name",
-        "purpose": "Papel tipográfico implementado"
-      },
-      "body": {
-        "displayName": "body",
-        "purpose": "Papel tipográfico implementado"
-      },
-      "body-small": {
-        "displayName": "body-small",
-        "purpose": "Papel tipográfico implementado"
-      },
-      "compact-body": {
-        "displayName": "compact-body",
-        "purpose": "Papel tipográfico implementado"
-      },
-      "navigation": {
-        "displayName": "navigation",
-        "purpose": "Papel tipográfico implementado"
-      },
-      "label": {
-        "displayName": "label",
-        "purpose": "Papel tipográfico implementado"
-      },
-      "label-small": {
-        "displayName": "label-small",
-        "purpose": "Papel tipográfico implementado"
+        "displayName": "Nome profissional",
+        "purpose": "Apresentação da Dra. Shirley Rocha na seção Sobre."
       },
       "feature": {
-        "displayName": "Destaque de atendimento",
-        "purpose": "Serifa de 1,7rem nos destaques e no título de diálogo"
+        "displayName": "Destaque compacto",
+        "purpose": "Informações de atendimento em sm e título móvel do diálogo; o diálogo passa a text-3xl em sm."
+      },
+      "body": {
+        "displayName": "Texto principal",
+        "purpose": "Descrições institucionais e depoimentos."
+      },
+      "body-hero-tablet": {
+        "displayName": "Descrição do hero em sm",
+        "purpose": "Texto introdutório a partir de sm."
+      },
+      "body-small": {
+        "displayName": "Texto secundário",
+        "purpose": "FAQ, diálogo e endereço."
+      },
+      "compact-body": {
+        "displayName": "Texto compacto",
+        "purpose": "Resumo dos serviços e descrição das etapas."
       },
       "feature-caption": {
         "displayName": "Legenda de atendimento",
-        "purpose": "Legenda de 11px"
+        "purpose": "Explicação curta junto aos destaques."
+      },
+      "navigation": {
+        "displayName": "Navegação desktop",
+        "purpose": "Links no cabeçalho branco."
+      },
+      "label": {
+        "displayName": "CTA sm e md",
+        "purpose": "Texto do CTA compartilhado; sem caixa alta automática."
+      },
+      "label-large": {
+        "displayName": "CTA lg",
+        "purpose": "Texto do CTA amplo."
+      },
+      "label-compact": {
+        "displayName": "Link compacto",
+        "purpose": "Links em caixa alta para consulta no Google Maps."
       }
     },
     "shadows": [
       {
-        "name": "dialog",
-        "value": "0 18px 48px rgb(50 27 35 / 18%)",
-        "purpose": "Diálogo de serviço"
+        "name": "card",
+        "value": "0 18px 48px rgb(32 32 32 / 18%)",
+        "purpose": "Token --shadow-card aplicado ao diálogo, sem sombra nos serviços ou CTAs."
       }
     ],
     "motion": [
       {
         "name": "navigation",
         "value": "180ms ease",
-        "purpose": "Links"
+        "purpose": "Cor e sublinhado dos links do cabeçalho; cor dos links do rodapé."
       },
       {
         "name": "cta",
         "value": "200ms",
-        "purpose": "CTA"
+        "purpose": "Cores de fundo e borda do CTA compartilhado."
       },
       {
         "name": "menu",
         "value": "220ms",
-        "purpose": "Menu móvel"
+        "purpose": "Opacidade e altura do menu móvel."
       },
       {
         "name": "dialog",
         "value": "240ms",
-        "purpose": "Diálogo"
+        "purpose": "Entrada e saída do diálogo."
       },
       {
         "name": "signature",
-        "value": "1200ms cubic-bezier(0.16, 1, 0.3, 1)",
-        "purpose": "Revelação da moldura do retrato; desativada com movimento reduzido"
+        "value": "1000ms cubic-bezier(0.16, 1, 0.3, 1) both",
+        "purpose": "Revelação única do retrato: clip-path inset(0 0 12% 0) a inset(0)."
+      },
+      {
+        "name": "reveal-variant",
+        "value": "680ms cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Variante declarada opacity 0/y 24 para opacity 1/y 0; blocos editoriais usam initial=false."
+      },
+      {
+        "name": "stagger",
+        "value": "100ms; delayChildren 40ms",
+        "purpose": "Intervalos declarados da variante stagger."
+      },
+      {
+        "name": "portrait-motion",
+        "value": "900ms; delay 160ms; cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Configuração motion do retrato com initial=false; assinatura visível definida em CSS."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation:none (hero-signature); 0.01ms (CSS); reducedMotion:user (MotionConfig)",
+        "purpose": "Desativa assinatura, reduz durações CSS e usa rolagem automática."
       }
     ],
     "breakpoints": [
@@ -435,64 +431,87 @@
       "name": "CTA principal",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Contato direto pelo WhatsApp da Dra. Luana.",
-      "html": "<a class=\"ds-primary\" href=\"https://wa.me/5533987394137\">Converse com a Dra. Luana</a>",
-      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:14px 24px;border:1px solid var(--color-brand-300,#e0c090);border-radius:4px;background:var(--color-brand-300,#e0c090);color:var(--color-brand-950,#501020);font:600 12px/16px var(--font-body,Lato),sans-serif;letter-spacing:.14em;text-decoration:none;transition:background 200ms,border-color 200ms}.ds-primary:hover{background:var(--color-brand-200,#fff0d0);border-color:var(--color-brand-200,#fff0d0)}.ds-primary:focus-visible{outline:2px solid var(--color-brand-700,#731d35);outline-offset:3px}.ds-small{padding:12px 20px;font-size:10px;letter-spacing:.13em}.ds-large{padding:16px 28px}"
+      "description": "Contato por WhatsApp no tamanho md, plano e vermelho.",
+      "html": "<a class=\"ds-primary\" href=\"https://wa.me/5531971731592?text=Ol%C3%A1%2C%20Dra.%20Shirley!%20Gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20o%20meu%20caso.\" target=\"_blank\" rel=\"noopener noreferrer\">Converse com a Dra. Shirley <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></a>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:14px 24px;border:1px solid var(--color-brand-700,#800010);border-radius:4px;background:var(--color-brand-700,#800010);color:var(--color-paper,#fff);font:600 14px/20px var(--font-body,\"Source Sans 3\"),system-ui,sans-serif;text-align:center;text-decoration:none;transition:background-color 200ms,border-color 200ms;user-select:none}.ds-primary:hover{background:var(--color-brand-800,#65000d);border-color:var(--color-brand-800,#65000d)}.ds-primary:focus-visible{outline:2px solid var(--color-brand-700,#800010);outline-offset:3px}@media(prefers-reduced-motion:reduce){.ds-primary{transition-duration:.01ms}}"
     },
     {
       "name": "CTA compacto",
       "kind": "button",
       "refersTo": "button-primary-small",
-      "description": "Contato direto pelo WhatsApp da Dra. Luana.",
-      "html": "<a class=\"ds-primary ds-small\" href=\"https://wa.me/5533987394137\">WhatsApp</a>",
-      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:14px 24px;border:1px solid var(--color-brand-300,#e0c090);border-radius:4px;background:var(--color-brand-300,#e0c090);color:var(--color-brand-950,#501020);font:600 12px/16px var(--font-body,Lato),sans-serif;letter-spacing:.14em;text-decoration:none;transition:background 200ms,border-color 200ms}.ds-primary:hover{background:var(--color-brand-200,#fff0d0);border-color:var(--color-brand-200,#fff0d0)}.ds-primary:focus-visible{outline:2px solid var(--color-brand-700,#731d35);outline-offset:3px}.ds-small{padding:12px 20px;font-size:10px;line-height:1.5;letter-spacing:.13em}.ds-large{padding:16px 28px}"
+      "description": "WhatsApp no cabeçalho, tamanho sm.",
+      "html": "<a class=\"ds-primary ds-small\" href=\"https://wa.me/5531971731592?text=Ol%C3%A1%2C%20Dra.%20Shirley!%20Gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20o%20meu%20caso.\" target=\"_blank\" rel=\"noopener noreferrer\">WhatsApp <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></a>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:14px 24px;border:1px solid var(--color-brand-700,#800010);border-radius:4px;background:var(--color-brand-700,#800010);color:var(--color-paper,#fff);font:600 14px/20px var(--font-body,\"Source Sans 3\"),system-ui,sans-serif;text-align:center;text-decoration:none;transition:background-color 200ms,border-color 200ms;user-select:none}.ds-primary:hover{background:var(--color-brand-800,#65000d);border-color:var(--color-brand-800,#65000d)}.ds-primary:focus-visible{outline:2px solid var(--color-brand-700,#800010);outline-offset:3px}@media(prefers-reduced-motion:reduce){.ds-primary{transition-duration:.01ms}}.ds-small{padding:12px 20px}"
     },
     {
       "name": "CTA amplo",
       "kind": "button",
       "refersTo": "button-primary-large",
-      "description": "Contato direto pelo WhatsApp da Dra. Luana.",
-      "html": "<a class=\"ds-primary ds-large\" href=\"https://wa.me/5533987394137\">Converse com a Dra. Luana</a>",
-      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:14px 24px;border:1px solid var(--color-brand-300,#e0c090);border-radius:4px;background:var(--color-brand-300,#e0c090);color:var(--color-brand-950,#501020);font:600 12px/16px var(--font-body,Lato),sans-serif;letter-spacing:.14em;text-decoration:none;transition:background 200ms,border-color 200ms}.ds-primary:hover{background:var(--color-brand-200,#fff0d0);border-color:var(--color-brand-200,#fff0d0)}.ds-primary:focus-visible{outline:2px solid var(--color-brand-700,#731d35);outline-offset:3px}.ds-small{padding:12px 20px;font-size:10px;letter-spacing:.13em}.ds-large{padding:16px 28px}"
+      "description": "Contato destacado no hero e na seção de contato, tamanho lg.",
+      "html": "<a class=\"ds-primary ds-large\" href=\"https://wa.me/5531971731592?text=Ol%C3%A1%2C%20Dra.%20Shirley!%20Gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20o%20meu%20caso.\" target=\"_blank\" rel=\"noopener noreferrer\">Converse com a Dra. Shirley <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></a>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:14px 24px;border:1px solid var(--color-brand-700,#800010);border-radius:4px;background:var(--color-brand-700,#800010);color:var(--color-paper,#fff);font:600 14px/20px var(--font-body,\"Source Sans 3\"),system-ui,sans-serif;text-align:center;text-decoration:none;transition:background-color 200ms,border-color 200ms;user-select:none}.ds-primary:hover{background:var(--color-brand-800,#65000d);border-color:var(--color-brand-800,#65000d)}.ds-primary:focus-visible{outline:2px solid var(--color-brand-700,#800010);outline-offset:3px}@media(prefers-reduced-motion:reduce){.ds-primary{transition-duration:.01ms}}.ds-large{padding:16px 28px;font-size:16px;line-height:24px}"
     },
     {
-      "name": "Navegação",
+      "name": "Navegação principal",
       "kind": "nav",
-      "description": "Links claros no cabeçalho vinho escuro.",
-      "html": "<nav class=\"ds-nav\"><a href=\"#inicio\">Início</a><a href=\"#atuacao\">Atuação</a><a href=\"#contato\">Contato</a></nav>",
-      "css": ".ds-nav{display:flex;gap:28px;padding:16px;background:var(--color-brand-900,#420d1b)}.ds-nav a{padding:12px 0;color:var(--color-brand-100,#eee0cf);font:600 14px/1.5 var(--font-body,Lato),sans-serif;text-decoration:none}.ds-nav a:hover{color:var(--color-brand-300,#e0c090)}.ds-nav a:focus-visible{outline:2px solid #fff0d0;outline-offset:4px}"
+      "description": "Links cinza com sublinhado vermelho revelado no hover.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navegação principal\"><a href=\"#inicio\">Início</a><a href=\"#atuacao\">Atuação</a><a href=\"#sobre\">Sobre</a><a href=\"#avaliacoes\">Avaliações</a><a href=\"#contato\">Contato</a></nav>",
+      "css": ".ds-nav{display:flex;flex-wrap:wrap;gap:28px;background:var(--color-paper,#fff)}.ds-nav a{position:relative;padding:12px 0;color:var(--color-ink-soft,#595959);font:600 15px/1.5 var(--font-body,\"Source Sans 3\"),system-ui,sans-serif;text-decoration:none;transition:color 180ms ease}.ds-nav a::after{position:absolute;inset:auto 0 0;height:1px;content:\"\";background:var(--color-brand-700,#800010);transform:scaleX(0);transform-origin:left;transition:transform 180ms ease}.ds-nav a:hover{color:var(--color-brand-700,#800010)}.ds-nav a:hover::after{transform:scaleX(1)}.ds-nav a:focus-visible{outline:2px solid var(--color-brand-700,#800010);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-nav a,.ds-nav a::after{transition-duration:.01ms}}"
     },
     {
       "name": "Pergunta frequente",
       "kind": "custom",
-      "description": "Disclosure nativo com resposta sobre a localização.",
-      "html": "<details class=\"ds-faq\"><summary>Onde fica o escritório?</summary><p>Rua Raul Soares, 134 — Centro, Caratinga — MG, 35300-020.</p></details>",
-      "css": ".ds-faq{padding:24px 0;border-block:1px solid rgb(50 27 35 / 15%);background:var(--color-brand-50,#f3ede3);color:var(--color-ink,#321b23);font:400 14px/28px var(--font-body,Lato),sans-serif}.ds-faq summary{cursor:pointer;font-size:16px;font-weight:600}.ds-faq summary::marker{color:var(--color-brand-700,#731d35)}.ds-faq summary:hover{color:var(--color-brand-700,#731d35)}.ds-faq summary:focus-visible{outline:2px solid var(--color-brand-600,#836337);outline-offset:4px}.ds-faq p{margin-top:16px;color:var(--color-ink-soft,#6c555b)}"
+      "description": "Disclosure nativo com o endereço fornecido.",
+      "html": "<details class=\"ds-faq\"><summary>Onde fica o escritório?</summary><p>O escritório fica na Rua Luiz Privat, 29A — Centro, Sete Lagoas — MG, 35700-001. Entre em contato para combinar sua visita.</p></details>",
+      "css": ".ds-faq{padding:24px 0;border-block:1px solid rgb(32 32 32 / 15%);background:var(--color-brand-50,#f2f2f0);color:var(--color-ink,#202020);font:400 14px/28px var(--font-body,\"Source Sans 3\"),system-ui,sans-serif}.ds-faq summary{cursor:pointer;font-size:16px;line-height:24px;font-weight:600}.ds-faq summary::marker{color:var(--color-brand-700,#800010)}.ds-faq summary:focus-visible{outline:2px solid var(--color-brand-700,#800010);outline-offset:4px}.ds-faq p{max-width:36rem;margin:16px 0 0;color:var(--color-ink-soft,#595959)}"
     },
     {
-      "name": "Endereço",
+      "name": "Painel de endereço",
       "kind": "card",
-      "description": "Painel de contato do escritório.",
-      "html": "<section class=\"ds-address\"><h3>Nosso escritório em Caratinga</h3><p>Luana Oliveira · Advocacia</p><address>Rua Raul Soares, 134 — Centro, Caratinga — MG, 35300-020</address></section>",
-      "css": ".ds-address{padding:28px;border:1px solid rgb(50 27 35 / 10%);background:var(--color-paper,#fff);color:var(--color-ink,#321b23)}.ds-address h3{margin:0;font:400 24px/32px var(--font-display-face,\"Cormorant Garamond\"),Georgia,serif;letter-spacing:-.025em}.ds-address p{margin-top:24px;font:600 14px/24px var(--font-body,Lato),sans-serif;color:var(--color-brand-700,#731d35)}.ds-address address{font:400 14px/28px var(--font-body,Lato),sans-serif;font-style:normal;color:var(--color-ink-soft,#6c555b)}"
+      "description": "Superfície branca com endereço e link de busca no Google Maps.",
+      "html": "<section class=\"ds-address\"><h3>Nosso escritório em Sete Lagoas</h3><p>Rocha Advocacia · Shirley Rocha</p><address>Rua Luiz Privat, 29A — Centro, Sete Lagoas — MG, 35700-001</address><div class=\"ds-address-action\"><span>Entre em contato para agendar sua visita.</span><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Rocha%20Advocacia%2C%20Rua%20Luiz%20Privat%2C%2029A%20%E2%80%94%20Centro%2C%20Sete%20Lagoas%20%E2%80%94%20MG%2C%2035700-001\" target=\"_blank\" rel=\"noopener noreferrer\">Ver no Google Maps <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></a></div></section>",
+      "css": ".ds-address{position:relative;padding:28px;border:1px solid rgb(32 32 32 / 10%);background:var(--color-paper,#fff);color:var(--color-ink,#202020);font-family:var(--font-body,\"Source Sans 3\"),system-ui,sans-serif}.ds-address::before{content:\"\";position:absolute;right:0;top:0;width:112px;height:4px;background:var(--color-brand-600,#a01010)}.ds-address h3{margin:0;font:400 24px/32px var(--font-display-face,\"Marcellus\"),Georgia,serif;letter-spacing:-.025em}.ds-address p{margin:24px 0 8px;font-size:14px;line-height:20px;font-weight:600;color:var(--color-brand-700,#800010)}.ds-address address{max-width:28rem;font:400 14px/28px var(--font-body,\"Source Sans 3\"),system-ui,sans-serif;color:var(--color-ink-soft,#595959)}.ds-address-action{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;margin-top:28px;padding-top:28px;border-top:1px solid rgb(32 32 32 / 10%);font-size:12px;color:var(--color-ink-soft,#595959)}.ds-address a{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border:1px solid rgb(32 32 32 / 15%);border-radius:9999px;color:var(--color-ink,#202020);font:600 10px/15px var(--font-body,\"Source Sans 3\"),system-ui,sans-serif;text-transform:uppercase;letter-spacing:.13em;text-decoration:none;transition:color 150ms,border-color 150ms}.ds-address a:hover{border-color:var(--color-brand-700,#800010);color:var(--color-brand-700,#800010)}.ds-address a:focus-visible{outline:2px solid var(--color-brand-700,#800010);outline-offset:4px}@media(min-width:640px){.ds-address{padding:40px}}@media(prefers-reduced-motion:reduce){.ds-address a{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Linha de serviço",
+      "kind": "custom",
+      "description": "Prévia visual de uma linha de atuação; a abertura de diálogo depende do app.",
+      "html": "<article class=\"ds-service\"><span class=\"ds-service-icon\"><svg width=\"21\" height=\"21\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M9 5H7a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 2h6v4H9zM9 12h6M9 16h6\"/></svg></span><div><h3>Planejamento previdenciário</h3><p>Entenda seu histórico de contribuições e organize os próximos passos da sua aposentadoria.</p></div><button type=\"button\" aria-haspopup=\"dialog\" aria-label=\"Saiba mais sobre planejamento previdenciário\">Saiba mais <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></button></article>",
+      "css": ".ds-service{display:grid;gap:20px;padding:32px 0;border-block:1px solid rgb(32 32 32 / 15%);background:var(--color-ivory,#f7f7f5)}.ds-service-icon{display:grid;place-items:center;width:48px;height:48px;border-radius:9999px;background:var(--color-brand-50,#f2f2f0);color:var(--color-brand-700,#800010)}.ds-service h3{margin:0;max-width:36rem;font:400 1.55rem/1.25 var(--font-display-face,\"Marcellus\"),Georgia,serif;letter-spacing:-.025em;color:var(--color-ink,#202020)}.ds-service p{margin:12px 0 0;max-width:36rem;font:400 13px/24px var(--font-body,\"Source Sans 3\"),system-ui,sans-serif;color:var(--color-ink-soft,#595959)}.ds-service button{display:inline-flex;align-items:center;gap:8px;min-height:44px;width:fit-content;padding:0;border:0;background:transparent;color:var(--color-brand-800,#65000d);font:600 12px/16px var(--font-body,\"Source Sans 3\"),system-ui,sans-serif;cursor:pointer}.ds-service button:hover{color:var(--color-brand-700,#800010)}.ds-service button:focus-visible{outline:2px solid var(--color-brand-700,#800010);outline-offset:4px}@media(min-width:640px){.ds-service{grid-template-columns:48px 1fr auto;gap:28px;padding:36px 0}.ds-service h3{font-size:1.8rem}.ds-service button{align-self:center}}"
     }
   ],
   "narrative": {
-    "northStar": "Cuidado com o próximo capítulo",
-    "overview": "Dourado do monograma LO, vinho e bege dos anexos, Cormorant Garamond e Lato. Cabeçalho e rodapé escuros preservam a assinatura dourada original.",
+    "northStar": "Clareza com presença",
+    "overview": "A identidade preserva o logo e o retrato originais da Rocha Advocacia. O vermelho orienta ações e destaques, os grafites sustentam trechos institucionais e os neutros claros oferecem espaço para leitura. Marcellus identifica títulos e nomes; Source Sans 3 mantém a comunicação direta.\n\nO sistema é predominantemente plano: divisórias finas, diferenças de superfície e imagens reais organizam o conteúdo. O logo conserva a assinatura e as proporções do anexo; a descrição institucional não acrescenta credenciais a partir da imagem. Este registro foi extraído dos fontes, com direção estética já escolhida pelo briefing.",
     "keyCharacteristics": [
-      "Logo, retrato e arte Sobre originais preservados integralmente.",
-      "Vinho profundo, dourado e superfícies claras.",
-      "Serviços em linhas, divisórias finas e CTAs planos."
+      "Logo e retrato originais preservados integralmente.",
+      "Vermelho nas ações, grafite nas seções escuras e superfícies claras na leitura.",
+      "Marcellus nos títulos e Source Sans 3 nos textos e controles.",
+      "Linhas com divisórias, CTAs planos e revelação temporária do retrato por clip-path."
     ],
-    "rules": [],
+    "rules": [
+      {
+        "name": "The Logo Integrity Rule",
+        "body": "Preservar a imagem original, sem recoloração, distorção ou recorte permanente; oferecer superfície clara para manter sua leitura.",
+        "section": "colors"
+      },
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Organizar a página por superfícies e divisórias; reservar a sombra registrada para o diálogo.",
+        "section": "elevation"
+      }
+    ],
     "dos": [
-      "Preservar as proporções dos anexos.",
-      "Manter foco visível e movimento reduzido."
+      "Do preservar integralmente logo e retrato, com suas proporções originais.",
+      "Do usar vermelho para ações e os grafites com texto claro nas superfícies escuras.",
+      "Do manter foco visível, navegação por teclado e a alternativa de movimento reduzido.",
+      "Do manter os tokens alinhados a app/globals.css, app/page.tsx e ao CTA compartilhado."
     ],
     "donts": [
-      "Não inventar credenciais, contatos, horários ou avaliações.",
-      "Não confundir tempo de cartório com tempo de advocacia."
+      "Don't recolorir o logo ou aplicar corte permanente ao retrato.",
+      "Don't acrescentar brilhos ao CTA plano ou sombras aos serviços em linhas.",
+      "Don't ocultar conteúdo até a rolagem nem exigir animação para acessar informações.",
+      "Don't inventar credenciais, contatos, horários, anos de experiência, alcance nacional ou promessas de resultado."
     ]
   }
 }

@@ -1,52 +1,52 @@
 @import "tailwindcss";
 
-/* Tailwind CSS 4: configuração do tema em CSS.
-   Logo: dourado #e0c090, champagne #f0d0a0 e luz #fff0d0.
-   Arte de apresentação: vinho #501020 e bege #d0c0b0.
-   Amostras quantizadas em passos de 16; demais tons derivados para contraste. */
+/* Tailwind CSS 4: os tokens do tema são configurados em CSS.
+   Amostras opacas do logo, quantizadas em passos de 16: vermelho #800010,
+   grafite #202020 e #303030, cinza #707070 e prata #c0c0c0.
+   A escala complementar deriva dessas amostras para contraste e estados. */
 :root {
   color-scheme: light;
-  --brand-ink: #321b23;
-  --brand-ink-soft: #6c555b;
-  --brand-paper: #faf7f0;
+  --brand-ink: #202020;
+  --brand-ink-soft: #595959;
+  --brand-paper: #f7f7f5;
 }
 @theme inline {
-  --font-display: var(--font-display-face), "Cormorant Garamond", Georgia, serif;
-  --font-sans: var(--font-body), "Lato", system-ui, sans-serif;
-  --color-ink: #321b23;
-  --color-ink-soft: #6c555b;
+  --font-display: var(--font-display-face), "Marcellus", Georgia, serif;
+  --font-sans: var(--font-body), "Source Sans 3", system-ui, sans-serif;
+  --color-ink: #202020;
+  --color-ink-soft: #595959;
   --color-paper: #ffffff;
-  --color-ivory: #faf7f0;
-  --color-linen: #e5d9c9;
-  --color-brand-50: #f3ede3;
-  --color-brand-100: #eee0cf;
-  --color-brand-200: #fff0d0;
-  --color-brand-300: #e0c090;
-  --color-brand-400: #d0b080;
-  --color-brand-500: #b09060;
-  --color-brand-600: #836337;
-  --color-brand-700: #731d35;
-  --color-brand-800: #64162c;
-  --color-brand-900: #420d1b;
-  --color-brand-950: #501020;
-  --shadow-card: 0 18px 48px rgb(50 27 35 / 18%);
+  --color-ivory: #f7f7f5;
+  --color-linen: #e8e8e5;
+  --color-brand-50: #f2f2f0;
+  --color-brand-100: #e8e8e5;
+  --color-brand-200: #dededb;
+  --color-brand-300: #c0c0c0;
+  --color-brand-400: #a0a0a0;
+  --color-brand-500: #707070;
+  --color-brand-600: #a01010;
+  --color-brand-700: #800010;
+  --color-brand-800: #65000d;
+  --color-brand-900: #303030;
+  --color-brand-950: #202020;
+  --shadow-card: 0 18px 48px rgb(32 32 32 / 18%);
 }
-html { scroll-padding-top: 2rem; }
+html { scroll-padding-top: 7rem; scroll-behavior: smooth; }
 img { max-width: 100%; }
 body {
   background: var(--brand-paper);
   color: var(--brand-ink);
-  font-family: var(--font-body), "Lato", system-ui, sans-serif;
+  font-family: var(--font-body), "Source Sans 3", system-ui, sans-serif;
   caret-color: var(--color-brand-700);
 }
-::selection { background: var(--color-brand-300); color: var(--color-brand-950); }
+::selection { background: var(--color-brand-700); color: white; }
 h1, h2 { text-wrap: balance; }
 .font-display { font-weight: 400; letter-spacing: -0.025em; }
 .nav-link {
   position: relative;
   padding-block: 0.75rem;
-  color: var(--color-brand-100);
-  font-size: 0.875rem;
+  color: var(--color-ink-soft);
+  font-size: 0.9375rem;
   font-weight: 600;
   transition: color 180ms ease;
 }
@@ -54,24 +54,29 @@ h1, h2 { text-wrap: balance; }
   position: absolute;
   inset: auto 0 0;
   height: 1px;
-  background: var(--color-brand-300);
+  background: var(--color-brand-700);
   content: "";
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 180ms ease;
 }
-.nav-link:hover { color: var(--color-brand-300); }
+.nav-link:hover { color: var(--color-brand-700); }
 .nav-link:hover::after { transform: scaleX(1); }
 .footer-link { transition: color 180ms ease; }
-.footer-link:hover { color: var(--color-brand-300); }
-:focus-visible { outline: 2px solid var(--color-brand-600); outline-offset: 4px; }
-:is(.brand-header, .brand-hero, .brand-footer, .bg-brand-950) :focus-visible { outline-color: var(--color-brand-200); }
-.brand-header #mobile-navigation :focus-visible { outline-color: var(--color-brand-800); }
-.brand-hero .text-ink-soft { color: var(--color-brand-100); }
-.brand-hero .text-ink { color: var(--color-ivory); }
-.brand-hero .text-brand-700 { color: var(--color-brand-300); }
-.brand-hero .border-ink\/10 { border-color: rgb(224 192 144 / 25%); }
-
+.footer-link:hover { color: white; text-decoration: underline; text-underline-offset: 4px; }
+:focus-visible { outline: 2px solid var(--color-brand-700); outline-offset: 4px; }
+:is(.brand-footer, .bg-brand-950, .bg-brand-700) :focus-visible { outline-color: white; }
+.hero-signature {
+  background: var(--color-brand-100);
+  animation: signature-reveal 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+@keyframes signature-reveal {
+  from { clip-path: inset(0 0 12% 0); }
+  to { clip-path: inset(0); }
+}
+.brand-footer .text-ink-soft { color: var(--color-brand-200); }
+.brand-footer .text-brand-700 { color: white; }
+.brand-footer .border-ink\/15 { border-color: rgb(192 192 192 / 25%); }
 ::-webkit-scrollbar { width: 9px; }
 ::-webkit-scrollbar-track { background: var(--color-brand-50); }
 ::-webkit-scrollbar-thumb {
@@ -88,19 +93,5 @@ h1, h2 { text-wrap: balance; }
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
-}
-
-.brand-footer .text-ink-soft { color: var(--color-brand-100); }
-.brand-footer .text-brand-700 { color: var(--color-brand-300); }
-.brand-footer .border-ink\/15 { border-color: rgb(224 192 144 / 25%); }
-.hero-signature {
-  border: 1px solid rgb(224 192 144 / 40%);
-  animation: signature-reveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
-}
-@keyframes signature-reveal {
-  from { clip-path: inset(0 0 25% 0); }
-  to { clip-path: inset(0); }
-}
-@media (prefers-reduced-motion: reduce) {
   .hero-signature { animation: none; }
 }

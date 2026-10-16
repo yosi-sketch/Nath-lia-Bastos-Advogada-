@@ -1,32 +1,22 @@
 [
   {
-    "path": "public/luana-oliveira-logo.png",
-    "origin": "C:/Users/matheus/Downloads/Logo Dourado Luana Oliveira Advocacia.png",
-    "width": 2172,
-    "height": 724,
+    "path": "public/rocha-advocacia-logo.png",
+    "origin": "C:/Users/matheus/Downloads/Logo Rocha Advocacia e Imobiliária.png",
+    "width": 1983,
+    "height": 793,
     "transformation": "Cópia binária integral do anexo, sem edição.",
-    "sha256": "25d9ecbaf21a1689ee512722817c43fef8eeb1f8682f2063af93deed03289408",
-    "sourceSha256": "25d9ecbaf21a1689ee512722817c43fef8eeb1f8682f2063af93deed03289408",
+    "sha256": "1481b8663a46399ddbaa545b8caecb8ec59b4582465342d8958cdc829252a110",
+    "sourceSha256": "1481b8663a46399ddbaa545b8caecb8ec59b4582465342d8958cdc829252a110",
     "identicalToSource": true
   },
   {
-    "path": "public/luana-oliveira-retrato.png",
-    "origin": "C:/Users/matheus/AppData/Local/Temp/codex-clipboard-d693f149-2be4-43d3-a92b-b5d5104d353e.png",
-    "width": 340,
-    "height": 510,
+    "path": "public/shirley-rocha-retrato.png",
+    "origin": "C:/Users/matheus/Downloads/Retrato Corporativo Profissional com Logo Rocha.png",
+    "width": 1230,
+    "height": 1278,
     "transformation": "Cópia binária integral do anexo, sem edição.",
-    "sha256": "be5a10398afbf535c3dadbece8f9c61293038fe97b9363c9442d1bf5180be4e2",
-    "sourceSha256": "be5a10398afbf535c3dadbece8f9c61293038fe97b9363c9442d1bf5180be4e2",
-    "identicalToSource": true
-  },
-  {
-    "path": "public/luana-oliveira-sobre.png",
-    "origin": "C:/Users/matheus/AppData/Local/Temp/codex-clipboard-cd6f3ccd-5342-4689-b628-637d745a7a22.png",
-    "width": 510,
-    "height": 510,
-    "transformation": "Cópia binária integral do anexo, sem edição.",
-    "sha256": "7cbaee5ce0111ac209fd79c0406f8e4267a0969ded5c3082587b570fd30bbfe6",
-    "sourceSha256": "7cbaee5ce0111ac209fd79c0406f8e4267a0969ded5c3082587b570fd30bbfe6",
+    "sha256": "11531e278d4af06c77dfbcf47e64dc99c3e600fdcc3f7ee1733ccc8d91c7192b",
+    "sourceSha256": "11531e278d4af06c77dfbcf47e64dc99c3e600fdcc3f7ee1733ccc8d91c7192b",
     "identicalToSource": true
   }
 ]
