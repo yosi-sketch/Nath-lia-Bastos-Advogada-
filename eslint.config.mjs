@@ -12,6 +12,10 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Bundled skill tools and temporary review scripts are not application code.
+    ".agents/**",
+    ".impeccable/**",
+    "outputs/**",
   ]),
 ]);
 

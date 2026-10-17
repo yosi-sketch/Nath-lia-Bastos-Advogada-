@@ -1,22 +1,31 @@
 {
-  "client": "Santos Advocacia — Marcela Santos",
+  "client": "Nathália Bastos — Advocacia e Consultoria Jurídica",
   "assets": [
     {
-      "source": "C:/Users/matheus/Downloads/Logotipo Jurídico Marcela Santos.png",
-      "destination": "public/marcela-santos-logo.png",
-      "width": 2172,
-      "height": 724,
-      "sha256": "bf216ddac25d6e0324101c8e01e5446d13f8f800fbaae288a96b79bc3bd0028e",
-      "sourceSha256": "bf216ddac25d6e0324101c8e01e5446d13f8f800fbaae288a96b79bc3bd0028e",
+      "source": "C:/Users/matheus/Downloads/Logotipo Premium N&B Advocacia.png",
+      "destination": "public/nathalia-bastos-logo.png",
+      "width": 1942,
+      "height": 809,
+      "sha256": "ad6ba5f1c6e2bbe5261ad0862b78f6a5f3a5ab68672b3c121d5e736a774487cb",
+      "sourceSha256": "ad6ba5f1c6e2bbe5261ad0862b78f6a5f3a5ab68672b3c121d5e736a774487cb",
       "identicalToSource": true
     },
     {
-      "source": "C:/Users/matheus/AppData/Local/Temp/codex-clipboard-98ad3770-d601-4b42-a03f-9f2b8d9d90eb.png",
-      "destination": "public/marcela-santos-retrato.png",
-      "width": 666,
-      "height": 842,
-      "sha256": "bfd00001bda5636f29b2df170c06bcaa3775ef312c71c14f12f803a8aac67a5d",
-      "sourceSha256": "bfd00001bda5636f29b2df170c06bcaa3775ef312c71c14f12f803a8aac67a5d",
+      "source": "C:/Users/matheus/AppData/Local/Temp/codex-clipboard-2ad1ca1c-a464-471f-91a2-75e0f68b732a.png",
+      "destination": "public/nathalia-bastos-retrato.png",
+      "width": 287,
+      "height": 510,
+      "sha256": "50fd34300c2b23d48f4aaf0cbb709bd5b3f4e6eef0282907e21e50629bf653ab",
+      "sourceSha256": "50fd34300c2b23d48f4aaf0cbb709bd5b3f4e6eef0282907e21e50629bf653ab",
+      "identicalToSource": true
+    },
+    {
+      "source": "C:/Users/matheus/AppData/Local/Temp/codex-clipboard-2ec433b5-4da8-4828-b1a0-d1bc2b0d276e.png",
+      "destination": "public/nathalia-bastos-escritorio.png",
+      "width": 558,
+      "height": 510,
+      "sha256": "c419e81df93f784626ee0c519d7ffc347e386c660d8c1705c465a52a7d93166c",
+      "sourceSha256": "c419e81df93f784626ee0c519d7ffc347e386c660d8c1705c465a52a7d93166c",
       "identicalToSource": true
     }
   ]

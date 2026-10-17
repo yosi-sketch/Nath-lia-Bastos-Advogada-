@@ -1,17 +1,17 @@
 import type { Metadata, Viewport } from "next";
-import { Cinzel, Lato } from "next/font/google";
+import { Marcellus, Manrope } from "next/font/google";
 import { brand } from "./lib/brand";
 import "./globals.css";
 
-const displayFont = Cinzel({
+const displayFont = Marcellus({
   variable: "--font-display-face",
   subsets: ["latin"],
   weight: "400",
   display: "swap",
 });
 
-const bodyFont = Lato({
-  weight: ["400", "700"],
+const bodyFont = Manrope({
+  weight: ["400", "500", "600", "700"],
   variable: "--font-body",
   subsets: ["latin"],
   display: "swap",
@@ -20,14 +20,14 @@ const bodyFont = Lato({
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 const metadataBase = siteUrl ? new URL(siteUrl) : undefined;
 const shareImage = brand.logo;
-const title = "Santos Advocacia | Dra. Marcela Santos · Advogada em Formiga, MG";
-const description = "Dra. Marcela Santos: Direito Previdenciário, Trabalhista, Civil e do Consumidor. Sede em Formiga, MG, e atendimento em todo o Brasil. (37) 99929-3550.";
+const title = "Nathália Bastos | Advogada Bancária em Patrocínio, MG";
+const description = "Advocacia bancária com Nathália Bastos em Patrocínio, MG. Orientação sobre contratos, empréstimos, cobranças e fraudes bancárias. Agende pelo (34) 99165-9554.";
 
 export const metadata: Metadata = {
   ...(metadataBase ? { metadataBase } : {}),
   title,
   description,
-  keywords: ["Santos Advocacia", "Marcela Santos", "advogada em Formiga", "advocacia em Formiga MG", "orientação jurídica"],
+  keywords: ["Nathália Bastos", "advogada bancária", "Direito Bancário", "advogada em Patrocínio", "advocacia bancária em Patrocínio MG"],
   icons: { icon: [{ url: brand.logo, type: "image/png" }] },
   openGraph: {
     title,
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
       ? [
           {
             url: shareImage,
-            width: 2172,
-            height: 724,
+            width: 1942,
+            height: 809,
             alt: brand.businessName,
           },
         ]
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#171715",
+  themeColor: "#141311",
 };
 
 export default function RootLayout({

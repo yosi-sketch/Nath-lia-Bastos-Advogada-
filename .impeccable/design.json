@@ -1,36 +1,36 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-16T10:58:48.623Z",
-  "title": "Design System: Santos Advocacia",
+  "generatedAt": "2026-10-17T15:23:08.832Z",
+  "title": "Design System: Nathália Bastos",
   "extensions": {
     "colorMeta": {
       "ink": {
         "role": "neutral",
         "displayName": "ink",
-        "canonical": "#24221e",
+        "canonical": "#30251e",
         "tonalRamp": [
-          "#171715",
-          "#24221e",
-          "#2c2923",
-          "#625d53",
-          "#eae3d5",
-          "#f4efe3",
-          "#faf8f2",
+          "#141311",
+          "#30251e",
+          "#24201c",
+          "#6b5a4d",
+          "#e9dfd2",
+          "#f5ede2",
+          "#faf7f2",
           "#ffffff"
         ]
       },
       "ink-soft": {
         "role": "neutral",
         "displayName": "ink-soft",
-        "canonical": "#625d53",
+        "canonical": "#6b5a4d",
         "tonalRamp": [
-          "#171715",
-          "#24221e",
-          "#2c2923",
-          "#625d53",
-          "#eae3d5",
-          "#f4efe3",
-          "#faf8f2",
+          "#141311",
+          "#30251e",
+          "#24201c",
+          "#6b5a4d",
+          "#e9dfd2",
+          "#f5ede2",
+          "#faf7f2",
           "#ffffff"
         ]
       },
@@ -39,286 +39,304 @@
         "displayName": "paper",
         "canonical": "#ffffff",
         "tonalRamp": [
-          "#171715",
-          "#24221e",
-          "#2c2923",
-          "#625d53",
-          "#eae3d5",
-          "#f4efe3",
-          "#faf8f2",
+          "#141311",
+          "#30251e",
+          "#24201c",
+          "#6b5a4d",
+          "#e9dfd2",
+          "#f5ede2",
+          "#faf7f2",
           "#ffffff"
         ]
       },
       "ivory": {
         "role": "neutral",
         "displayName": "ivory",
-        "canonical": "#faf8f2",
+        "canonical": "#faf7f2",
         "tonalRamp": [
-          "#171715",
-          "#24221e",
-          "#2c2923",
-          "#625d53",
-          "#eae3d5",
-          "#f4efe3",
-          "#faf8f2",
+          "#141311",
+          "#30251e",
+          "#24201c",
+          "#6b5a4d",
+          "#e9dfd2",
+          "#f5ede2",
+          "#faf7f2",
           "#ffffff"
         ]
       },
       "linen": {
         "role": "neutral",
         "displayName": "linen",
-        "canonical": "#eae3d5",
+        "canonical": "#e9dfd2",
         "tonalRamp": [
-          "#171715",
-          "#24221e",
-          "#2c2923",
-          "#625d53",
-          "#eae3d5",
-          "#f4efe3",
-          "#faf8f2",
+          "#141311",
+          "#30251e",
+          "#24201c",
+          "#6b5a4d",
+          "#e9dfd2",
+          "#f5ede2",
+          "#faf7f2",
           "#ffffff"
         ]
       },
       "brand-50": {
         "role": "primary",
         "displayName": "brand-50",
-        "canonical": "#f4efe3",
+        "canonical": "#f5ede2",
         "tonalRamp": [
-          "#704010",
-          "#805020",
-          "#a07030",
-          "#b48b43",
-          "#d0b070",
-          "#e0c080",
-          "#ebd6a5",
-          "#eee3cc"
+          "#141311",
+          "#24201c",
+          "#65402b",
+          "#805135",
+          "#a06e48",
+          "#c09060",
+          "#f0d0a0",
+          "#f5ede2"
         ]
       },
       "brand-100": {
         "role": "primary",
         "displayName": "brand-100",
-        "canonical": "#eee3cc",
+        "canonical": "#f3e1cc",
         "tonalRamp": [
-          "#704010",
-          "#805020",
-          "#a07030",
-          "#b48b43",
-          "#d0b070",
-          "#e0c080",
-          "#ebd6a5",
-          "#eee3cc"
+          "#141311",
+          "#24201c",
+          "#65402b",
+          "#805135",
+          "#a06e48",
+          "#c09060",
+          "#f0d0a0",
+          "#f5ede2"
         ]
       },
       "brand-200": {
         "role": "primary",
         "displayName": "brand-200",
-        "canonical": "#ebd6a5",
+        "canonical": "#ffe0c0",
         "tonalRamp": [
-          "#704010",
-          "#805020",
-          "#a07030",
-          "#b48b43",
-          "#d0b070",
-          "#e0c080",
-          "#ebd6a5",
-          "#eee3cc"
+          "#141311",
+          "#24201c",
+          "#65402b",
+          "#805135",
+          "#a06e48",
+          "#c09060",
+          "#f0d0a0",
+          "#f5ede2"
         ]
       },
       "brand-300": {
         "role": "primary",
         "displayName": "brand-300",
-        "canonical": "#e0c080",
+        "canonical": "#f0d0a0",
         "tonalRamp": [
-          "#704010",
-          "#805020",
-          "#a07030",
-          "#b48b43",
-          "#d0b070",
-          "#e0c080",
-          "#ebd6a5",
-          "#eee3cc"
+          "#141311",
+          "#24201c",
+          "#65402b",
+          "#805135",
+          "#a06e48",
+          "#c09060",
+          "#f0d0a0",
+          "#f5ede2"
         ]
       },
       "brand-400": {
         "role": "primary",
         "displayName": "brand-400",
-        "canonical": "#d0b070",
+        "canonical": "#e0b080",
         "tonalRamp": [
-          "#704010",
-          "#805020",
-          "#a07030",
-          "#b48b43",
-          "#d0b070",
-          "#e0c080",
-          "#ebd6a5",
-          "#eee3cc"
+          "#141311",
+          "#24201c",
+          "#65402b",
+          "#805135",
+          "#a06e48",
+          "#c09060",
+          "#f0d0a0",
+          "#f5ede2"
         ]
       },
       "brand-500": {
         "role": "primary",
         "displayName": "brand-500",
-        "canonical": "#b48b43",
+        "canonical": "#c09060",
         "tonalRamp": [
-          "#704010",
-          "#805020",
-          "#a07030",
-          "#b48b43",
-          "#d0b070",
-          "#e0c080",
-          "#ebd6a5",
-          "#eee3cc"
+          "#141311",
+          "#24201c",
+          "#65402b",
+          "#805135",
+          "#a06e48",
+          "#c09060",
+          "#f0d0a0",
+          "#f5ede2"
         ]
       },
       "brand-600": {
-        "role": "primary",
+        "role": "secondary",
         "displayName": "brand-600",
-        "canonical": "#a07030",
+        "canonical": "#a06e48",
         "tonalRamp": [
-          "#704010",
-          "#805020",
-          "#a07030",
-          "#b48b43",
-          "#d0b070",
-          "#e0c080",
-          "#ebd6a5",
-          "#eee3cc"
+          "#141311",
+          "#24201c",
+          "#65402b",
+          "#805135",
+          "#a06e48",
+          "#c09060",
+          "#f0d0a0",
+          "#f5ede2"
         ]
       },
       "brand-700": {
-        "role": "primary",
+        "role": "secondary",
         "displayName": "brand-700",
-        "canonical": "#805020",
+        "canonical": "#805135",
         "tonalRamp": [
-          "#704010",
-          "#805020",
-          "#a07030",
-          "#b48b43",
-          "#d0b070",
-          "#e0c080",
-          "#ebd6a5",
-          "#eee3cc"
+          "#141311",
+          "#24201c",
+          "#65402b",
+          "#805135",
+          "#a06e48",
+          "#c09060",
+          "#f0d0a0",
+          "#f5ede2"
         ]
       },
       "brand-800": {
-        "role": "primary",
+        "role": "secondary",
         "displayName": "brand-800",
-        "canonical": "#704010",
+        "canonical": "#65402b",
         "tonalRamp": [
-          "#704010",
-          "#805020",
-          "#a07030",
-          "#b48b43",
-          "#d0b070",
-          "#e0c080",
-          "#ebd6a5",
-          "#eee3cc"
+          "#141311",
+          "#24201c",
+          "#65402b",
+          "#805135",
+          "#a06e48",
+          "#c09060",
+          "#f0d0a0",
+          "#f5ede2"
         ]
       },
       "brand-900": {
-        "role": "primary",
+        "role": "neutral",
         "displayName": "brand-900",
-        "canonical": "#2c2923",
+        "canonical": "#24201c",
         "tonalRamp": [
-          "#704010",
-          "#805020",
-          "#a07030",
-          "#b48b43",
-          "#d0b070",
-          "#e0c080",
-          "#ebd6a5",
-          "#eee3cc"
+          "#141311",
+          "#24201c",
+          "#65402b",
+          "#805135",
+          "#a06e48",
+          "#c09060",
+          "#f0d0a0",
+          "#f5ede2"
         ]
       },
       "brand-950": {
-        "role": "primary",
+        "role": "neutral",
         "displayName": "brand-950",
-        "canonical": "#171715",
+        "canonical": "#141311",
         "tonalRamp": [
-          "#704010",
-          "#805020",
-          "#a07030",
-          "#b48b43",
-          "#d0b070",
-          "#e0c080",
-          "#ebd6a5",
-          "#eee3cc"
-        ]
-      },
-      "gold-border": {
-        "role": "primary",
-        "displayName": "gold-border",
-        "canonical": "rgb(224 192 128 / 40%)",
-        "tonalRamp": [
-          "#704010",
-          "#805020",
-          "#a07030",
-          "#b48b43",
-          "#d0b070",
-          "#e0c080",
-          "#ebd6a5",
-          "#eee3cc"
-        ]
-      },
-      "gold-divider": {
-        "role": "primary",
-        "displayName": "gold-divider",
-        "canonical": "rgb(224 192 128 / 25%)",
-        "tonalRamp": [
-          "#704010",
-          "#805020",
-          "#a07030",
-          "#b48b43",
-          "#d0b070",
-          "#e0c080",
-          "#ebd6a5",
-          "#eee3cc"
+          "#141311",
+          "#24201c",
+          "#65402b",
+          "#805135",
+          "#a06e48",
+          "#c09060",
+          "#f0d0a0",
+          "#f5ede2"
         ]
       }
     },
     "typographyMeta": {
       "display": {
-        "displayName": "Cinzel",
-        "purpose": "Títulos e nomes"
+        "displayName": "display",
+        "purpose": "Título principal"
+      },
+      "display-tablet": {
+        "displayName": "display-tablet",
+        "purpose": "Título principal"
+      },
+      "display-mobile": {
+        "displayName": "display-mobile",
+        "purpose": "Título principal"
+      },
+      "headline": {
+        "displayName": "headline",
+        "purpose": "Títulos de seção"
+      },
+      "headline-tablet": {
+        "displayName": "headline-tablet",
+        "purpose": "Títulos de seção"
+      },
+      "headline-mobile": {
+        "displayName": "headline-mobile",
+        "purpose": "Títulos de seção"
+      },
+      "title": {
+        "displayName": "title",
+        "purpose": "Serviços"
+      },
+      "title-mobile": {
+        "displayName": "title-mobile",
+        "purpose": "Serviços"
+      },
+      "dialog-mobile": {
+        "displayName": "dialog-mobile",
+        "purpose": "Diálogo"
       },
       "body": {
-        "displayName": "Lato",
+        "displayName": "body",
+        "purpose": "Leitura e controles"
+      },
+      "body-spacious": {
+        "displayName": "body-spacious",
+        "purpose": "Leitura e controles"
+      },
+      "intro": {
+        "displayName": "intro",
+        "purpose": "Leitura e controles"
+      },
+      "label": {
+        "displayName": "label",
+        "purpose": "Leitura e controles"
+      },
+      "small": {
+        "displayName": "small",
+        "purpose": "Leitura e controles"
+      },
+      "metadata": {
+        "displayName": "metadata",
         "purpose": "Leitura e controles"
       }
     },
     "shadows": [
       {
-        "name": "card",
-        "value": "0 18px 48px rgb(36 34 30 / 18%)",
-        "purpose": "Diálogo"
+        "name": "dialog",
+        "value": "0 18px 48px rgb(48 37 30 / 18%)",
+        "purpose": "Diálogo de detalhes"
       }
     ],
     "motion": [
       {
         "name": "signature",
-        "value": "1000ms cubic-bezier(0.16, 1, 0.3, 1)",
-        "purpose": "Revelação do retrato"
+        "value": "1s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Revelação do retrato por clip-path"
       },
       {
-        "name": "menu",
-        "value": "220ms",
-        "purpose": "Menu móvel"
+        "name": "controls",
+        "value": "180–200ms",
+        "purpose": "Cor e sublinhado de controles"
       },
       {
         "name": "dialog",
         "value": "240ms",
-        "purpose": "Diálogos"
+        "purpose": "Abertura e fechamento do diálogo"
       },
       {
         "name": "reduced-motion",
         "value": "animation:none; transition-duration:0.01ms; reducedMotion:user",
-        "purpose": "Respeitar a preferência de movimento reduzido"
+        "purpose": "Respeitar a preferência de movimento"
       }
     ],
     "breakpoints": [
-      {
-        "name": "logo",
-        "value": "360px"
-      },
       {
         "name": "sm",
         "value": "640px"
@@ -335,72 +353,80 @@
   },
   "components": [
     {
-      "name": "CTA principal",
+      "name": "Botão principal",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Contato direto pelo WhatsApp.",
-      "html": "<a class=\"ds-cta\" href=\"https://wa.me/5537999293550\">Converse com a Dra. Marcela</a>",
-      "css": ".ds-cta{display:inline-flex;align-items:center;justify-content:center;min-height:44px;box-sizing:border-box;padding:14px 24px;border:1px solid var(--color-brand-300,#e0c080);border-radius:4px;background:var(--color-brand-300,#e0c080);color:var(--color-ink,#24221e);font:600 14px/20px var(--font-body,Lato),sans-serif;text-decoration:none;transition:background 200ms}.ds-cta:hover{background:var(--color-brand-200,#ebd6a5)}.ds-cta:focus-visible{outline:2px solid var(--color-brand-700,#805020);outline-offset:3px}"
+      "description": "Contato pelo WhatsApp.",
+      "html": "<a class=\"ds-cta\" href=\"https://wa.me/5534991659554\">Converse com a Dra. Nathália</a>",
+      "css": ".ds-cta{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:14px 24px;border:1px solid var(--color-brand-300,#f0d0a0);border-radius:4px;background:var(--color-brand-300,#f0d0a0);color:var(--color-ink,#30251e);font:600 14px/20px var(--font-body,Manrope),sans-serif;text-decoration:none;transition:background 200ms}.ds-cta:hover{background:var(--color-brand-200,#ffe0c0)}.ds-cta:focus-visible{outline:2px solid var(--color-brand-700,#805135);outline-offset:4px}"
     },
     {
       "name": "Navegação",
       "kind": "nav",
-      "description": "Links claros sobre grafite.",
-      "html": "<nav class=\"ds-nav\"><a href=\"#inicio\">Início</a><a href=\"#atuacao\">Atendimento</a><a href=\"#contato\">Contato</a></nav>",
-      "css": ".ds-nav{display:flex;flex-wrap:wrap;gap:28px;padding:20px;background:var(--color-brand-950,#171715)}.ds-nav a{padding:12px 0;color:var(--color-brand-100,#eee3cc);font:600 15px/1.5 var(--font-body,Lato),sans-serif;text-decoration:none}.ds-nav a:hover{color:var(--color-brand-300,#e0c080);text-decoration:underline;text-underline-offset:8px}.ds-nav a:focus-visible{outline:2px solid #e0c080;outline-offset:4px}"
+      "description": "Links sobre preto quente.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#inicio\">Início</a><a href=\"#atuacao\">Atendimento</a><a href=\"#sobre\">Sobre</a><a href=\"#contato\">Contato</a></nav>",
+      "css": ".ds-nav{display:flex;flex-wrap:wrap;gap:28px;padding:20px;background:var(--color-brand-950,#141311)}.ds-nav a{padding:12px 0;color:var(--color-brand-100,#f3e1cc);font:600 15px/1.5 var(--font-body,Manrope),sans-serif;text-decoration:none}.ds-nav a:hover{color:var(--color-brand-300,#f0d0a0);text-decoration:underline;text-underline-offset:8px}.ds-nav a:focus-visible{outline:2px solid #f0d0a0;outline-offset:4px}"
     },
     {
-      "name": "Área de atuação",
+      "name": "Serviço",
       "kind": "custom",
-      "description": "Linha editorial com ação de detalhe.",
-      "html": "<article class=\"ds-service\"><h3>Direito do Consumidor</h3><p>Orientação para questões relacionadas a compras, cobranças e prestação de serviços.</p><button>Saiba mais</button></article>",
-      "css": ".ds-service{padding:32px 0;border-block:1px solid rgb(36 34 30 / 15%);background:var(--color-ivory,#faf8f2)}.ds-service h3{margin:0;color:var(--color-ink,#24221e);font:400 1.8rem/1.25 var(--font-display-face,Cinzel),Georgia,serif}.ds-service p{max-width:36rem;color:var(--color-ink-soft,#625d53);font:400 13px/24px var(--font-body,Lato),sans-serif}.ds-service button{min-height:44px;border:0;background:transparent;color:var(--color-brand-800,#704010);font:600 12px/16px var(--font-body,Lato),sans-serif;cursor:pointer}.ds-service button:hover{color:#805020}.ds-service button:focus-visible{outline:2px solid #805020;outline-offset:4px}"
+      "description": "Linha de orientação bancária com ação de detalhe.",
+      "html": "<article class=\"ds-service\"><h3>Contratos bancários</h3><p>Clareza para entender cláusulas, encargos e obrigações na sua relação com o banco.</p><button type=\"button\">Saiba mais</button></article>",
+      "css": ".ds-service{padding:32px 0;border-block:1px solid rgb(48 37 30 / 15%);background:var(--color-ivory,#faf7f2)}.ds-service h3{margin:0;color:var(--color-ink,#30251e);font:400 1.8rem/1.25 var(--font-display-face,Marcellus),Georgia,serif;letter-spacing:-.025em}.ds-service p{max-width:36rem;color:var(--color-ink-soft,#6b5a4d);font:400 16px/28px var(--font-body,Manrope),sans-serif}.ds-service button{min-height:44px;border:0;background:transparent;color:var(--color-brand-800,#65402b);font:600 12px/16px var(--font-body,Manrope),sans-serif;cursor:pointer}.ds-service button:hover{color:#805135}.ds-service button:focus-visible{outline:2px solid #805135;outline-offset:4px}"
     },
     {
       "name": "FAQ",
       "kind": "custom",
-      "description": "Expansão nativa de perguntas.",
-      "html": "<details class=\"ds-faq\"><summary>O atendimento é só em Formiga?</summary><p>A Dra. Marcela atende em todo o Brasil, com sede em Formiga, Minas Gerais.</p></details>",
-      "css": ".ds-faq{padding:24px 0;border-block:1px solid rgb(36 34 30 / 15%);color:#24221e;font:400 14px/28px var(--font-body,Lato),sans-serif}.ds-faq summary{cursor:pointer;font-weight:600}.ds-faq summary::marker{color:#805020}.ds-faq p{color:#625d53}.ds-faq summary:hover{color:#805020}.ds-faq summary:focus-visible{outline:2px solid #805020;outline-offset:4px}"
+      "description": "Perguntas com expansão nativa.",
+      "html": "<details class=\"ds-faq\"><summary>Quais documentos devo separar?</summary><p>Contratos, extratos, comprovantes de pagamento e protocolos de contato com o banco podem ajudar.</p></details>",
+      "css": ".ds-faq{padding:24px 0;border-block:1px solid rgb(48 37 30 / 15%);color:var(--color-ink,#30251e);font:400 14px/28px var(--font-body,Manrope),sans-serif}.ds-faq summary{cursor:pointer;font-weight:600}.ds-faq summary::marker{color:#805135}.ds-faq p{color:var(--color-ink-soft,#6b5a4d)}.ds-faq summary:hover{color:#805135}.ds-faq summary:focus-visible{outline:2px solid #805135;outline-offset:4px}"
     },
     {
-      "name": "Link de contato",
+      "name": "Contato secundário",
       "kind": "button",
-      "description": "Ação secundária em bronze.",
-      "html": "<a class=\"ds-contact\" href=\"tel:+5537999293550\">Ligue: (37) 99929-3550</a>",
-      "css": ".ds-contact{display:inline-flex;align-items:center;min-height:44px;color:var(--color-brand-700,#805020);font:400 14px/20px var(--font-body,Lato),sans-serif;text-decoration:none}.ds-contact:hover{color:var(--color-brand-800,#704010)}.ds-contact:focus-visible{outline:2px solid #805020;outline-offset:4px}"
+      "description": "Telefone com texto em bronze.",
+      "html": "<a class=\"ds-contact\" href=\"tel:+5534991659554\">Ligue: (34) 99165-9554</a>",
+      "css": ".ds-contact{display:inline-flex;align-items:center;min-height:44px;color:var(--color-brand-700,#805135);font:400 14px/20px var(--font-body,Manrope),sans-serif;text-decoration:none}.ds-contact:hover{color:var(--color-brand-800,#65402b)}.ds-contact:focus-visible{outline:2px solid #805135;outline-offset:4px}"
+    },
+    {
+      "name": "Depoimento",
+      "kind": "custom",
+      "description": "Relato real do Google com autoria e origem.",
+      "html": "<figure class=\"ds-review\"><span class=\"ds-rating\">5 de 5 estrelas · Google</span><blockquote>Dra. Nathalia é excelente, recomendo muito! Conhecimento amplo e muita agilidade.</blockquote><figcaption>Maria Luiza Samuel<br><a href=\"https://www.google.com/maps?cid=1582243004221022442\">Avaliação publicada no Google</a></figcaption></figure>",
+      "css": ".ds-review{margin:0;padding:32px;background:var(--color-brand-950,#141311);color:var(--color-brand-100,#f3e1cc);border:1px solid rgb(240 208 160 / 20%);font:400 16px/32px var(--font-body,Manrope),sans-serif}.ds-rating{color:var(--color-brand-300,#f0d0a0);font-size:12px}.ds-review blockquote{margin:24px 0 32px}.ds-review figcaption{padding-top:20px;border-top:1px solid rgb(240 208 160 / 15%);font-size:14px;font-weight:600;color:white}.ds-review a{display:inline-flex;align-items:center;min-height:44px;color:var(--color-brand-200,#ffe0c0);font-size:12px;font-weight:400;text-decoration:none}.ds-review a:hover{text-decoration:underline;text-underline-offset:4px}.ds-review a:focus-visible{outline:2px solid #f0d0a0;outline-offset:4px}"
     }
   ],
   "narrative": {
     "northStar": "Clareza com presença",
-    "overview": "Logo e retrato originais definem a identidade da Santos Advocacia. Dourado e bronze acompanham o grafite e as superfícies claras de marfim. Cinzel aproxima os títulos das serifas do logo; Lato mantém a leitura dos textos e controles.",
+    "overview": "O logo champanhe e bronze de Nathália Bastos orienta uma identidade de tons quentes, com preto quente nas superfícies escuras e marfim na leitura. Marcellus traz proporções clássicas e terminais discretos; Manrope mantém a leitura clara nos textos e controles.",
     "keyCharacteristics": [
-      "Logo original sobre escuro, preservando suas proporções.",
-      "Dourado nas ações; bronze nos destaques sobre claro.",
-      "Cinzel nos títulos e Lato nos textos e controles.",
-      "Divisórias finas e superfícies planas, com sombra reservada ao diálogo."
+      "Logo original sobre preto quente, sem distorção ou recoloração.",
+      "Champanhe nas ações e bronze profundo no texto sobre claro.",
+      "Marcellus nos títulos e Manrope nos textos e controles.",
+      "Superfícies planas, divisórias finas e imagens fornecidas.",
+      "Hero, processo, avaliações e rodapé em preto quente, alternados com superfícies claras."
     ],
     "rules": [
       {
         "name": "The Logo Integrity Rule",
-        "body": "Preservar o arquivo original, sem recoloração ou distorção; apresentar sobre uma superfície escura.",
+        "body": "Preservar o arquivo original, suas proporções e cores; apresentar o logo sobre uma superfície escura.",
         "section": "colors"
       },
       {
         "name": "The Flat Surface Rule",
-        "body": "Reservar sombras para o diálogo; usar divisórias e diferenças de superfície nos demais componentes.",
+        "body": "Usar superfícies e divisórias para hierarquia; reservar a sombra ao diálogo.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "Do preservar os arquivos originais e suas proporções.",
-      "Do usar bronze para texto sobre claro e dourado para ações com texto escuro.",
-      "Do manter foco visível e respeitar movimento reduzido."
+      "Do preservar as proporções e os arquivos originais.",
+      "Do usar bronze profundo para destaques sobre claro e champanhe com texto escuro nas ações.",
+      "Do manter foco visível, leitura responsiva e movimento reduzido."
     ],
     "donts": [
-      "Don't recolorir o logo ou cortar permanentemente o retrato.",
-      "Don't usar dourado claro como texto pequeno sobre branco.",
-      "Don't inventar credenciais, especialidades ou contatos."
+      "Don't usar champanhe como texto pequeno sobre branco.",
+      "Don't ampliar excessivamente o retrato de resolução reduzida.",
+      "Don't adicionar credenciais, avaliações ou contatos sem fonte."
     ]
   }
 }

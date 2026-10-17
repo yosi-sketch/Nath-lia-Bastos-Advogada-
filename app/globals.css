@@ -1,42 +1,42 @@
 @import "tailwindcss";
 
-/* Tailwind CSS 4: configuração do tema em CSS.
-   Amostras opacas do logo original, quantizadas em passos de 16:
-   #704010, #e0c080, #805020, #f0d090, #fff0c0 e #d0b070.
-   Ouro antigo, marfim e grafite derivam dessas cores para leitura e ações. */
+/* Tailwind CSS 4: configuração central do tema via @theme.
+   Logo Nathália Bastos: pixels opacos quantizados em passos de 16.
+   Champanhe #f0d0a0, pêssego #f0c0a0, bronze #c09060 e luz #ffe0c0.
+   Os tons profundos e neutros são derivados para garantir contraste. */
 :root {
   color-scheme: light;
-  --brand-ink: #24221e;
-  --brand-ink-soft: #625d53;
-  --brand-paper: #faf8f2;
+  --brand-ink: #30251e;
+  --brand-ink-soft: #6b5a4d;
+  --brand-paper: #faf7f2;
 }
 @theme inline {
-  --font-display: var(--font-display-face), "Cinzel", Georgia, serif;
-  --font-sans: var(--font-body), "Lato", system-ui, sans-serif;
-  --color-ink: #24221e;
-  --color-ink-soft: #625d53;
+  --font-display: var(--font-display-face), "Marcellus", Georgia, serif;
+  --font-sans: var(--font-body), "Manrope", system-ui, sans-serif;
+  --color-ink: #30251e;
+  --color-ink-soft: #6b5a4d;
   --color-paper: #ffffff;
-  --color-ivory: #faf8f2;
-  --color-linen: #eae3d5;
-  --color-brand-50: #f4efe3;
-  --color-brand-100: #eee3cc;
-  --color-brand-200: #ebd6a5;
-  --color-brand-300: #e0c080;
-  --color-brand-400: #d0b070;
-  --color-brand-500: #b48b43;
-  --color-brand-600: #a07030;
-  --color-brand-700: #805020;
-  --color-brand-800: #704010;
-  --color-brand-900: #2c2923;
-  --color-brand-950: #171715;
-  --shadow-card: 0 18px 48px rgb(36 34 30 / 18%);
+  --color-ivory: #faf7f2;
+  --color-linen: #e9dfd2;
+  --color-brand-50: #f5ede2;
+  --color-brand-100: #f3e1cc;
+  --color-brand-200: #ffe0c0;
+  --color-brand-300: #f0d0a0;
+  --color-brand-400: #e0b080;
+  --color-brand-500: #c09060;
+  --color-brand-600: #a06e48;
+  --color-brand-700: #805135;
+  --color-brand-800: #65402b;
+  --color-brand-900: #24201c;
+  --color-brand-950: #141311;
+  --shadow-card: 0 18px 48px rgb(48 37 30 / 18%);
 }
 html { scroll-padding-top: 7rem; scroll-behavior: smooth; }
 img { max-width: 100%; }
 body {
   background: var(--brand-paper);
   color: var(--brand-ink);
-  font-family: var(--font-body), "Lato", system-ui, sans-serif;
+  font-family: var(--font-body), "Manrope", system-ui, sans-serif;
   caret-color: var(--color-brand-700);
 }
 ::selection { background: var(--color-brand-700); color: white; }
@@ -62,13 +62,14 @@ h1, h2 { text-wrap: balance; }
 }
 .nav-link:hover { color: var(--color-brand-700); }
 .nav-link:hover::after { transform: scaleX(1); }
-.brand-header .nav-link { color: var(--color-brand-100); }
+.brand-header > nav .text-ink-soft { color: var(--color-ink-soft); }
+.brand-header > div .nav-link { color: var(--color-brand-100); }
 .brand-header .nav-link:hover { color: var(--color-brand-300); }
 .brand-header .nav-link::after { background: var(--color-brand-300); }
 .brand-header > div > button,
 .brand-header a[aria-label^="WhatsApp"] {
   color: var(--color-brand-300);
-  border-color: rgb(224 192 128 / 40%);
+  border-color: rgb(240 208 160 / 40%);
 }
 .brand-header a[aria-label^="WhatsApp"]:hover { background: var(--color-brand-900); }
 .brand-header :focus-visible { outline-color: var(--color-brand-300); }
@@ -77,16 +78,18 @@ h1, h2 { text-wrap: balance; }
 :focus-visible { outline: 2px solid var(--color-brand-700); outline-offset: 4px; }
 :is(.brand-footer, .bg-brand-950, .bg-brand-700) :focus-visible { outline-color: white; }
 .hero-signature {
-  background: var(--color-brand-100);
+  background: var(--color-brand-950);
   animation: signature-reveal 1s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
+.brand-hero :focus-visible,
+.reviews-section :focus-visible { outline-color: var(--color-brand-300); }
 @keyframes signature-reveal {
   from { clip-path: inset(0 0 12% 0); }
   to { clip-path: inset(0); }
 }
 .brand-footer .text-ink-soft { color: var(--color-brand-200); }
 .brand-footer .text-brand-700 { color: var(--color-brand-300); }
-.brand-footer .border-ink\/15 { border-color: rgb(224 192 128 / 25%); }
+.brand-footer .border-ink\/15 { border-color: rgb(240 208 160 / 25%); }
 ::-webkit-scrollbar { width: 9px; }
 ::-webkit-scrollbar-track { background: var(--color-brand-50); }
 ::-webkit-scrollbar-thumb {

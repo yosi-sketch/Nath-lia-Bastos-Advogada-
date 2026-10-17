@@ -15,9 +15,9 @@ import {
   MessageCircle,
   MapPin,
   Menu,
-  Scale,
-  BriefcaseBusiness,
-  ShoppingBag,
+  Landmark,
+  CreditCard,
+  ShieldCheck,
   FileCheck2,
   Camera,
   Star,
@@ -42,31 +42,31 @@ const stagger: Variants = {
   visible: { transition: { staggerChildren: 0.1, delayChildren: 0.04 } },
 };
 
-// Áreas de atuação confirmadas pela profissional no briefing.
+// Frentes de orientação dentro da advocacia bancária.
 const areas = [
   {
-    title: "Direito Previdenciário", icon: Scale,
-    summary: "Orientação sobre aposentadorias e benefícios do INSS, com atenção à sua trajetória.",
-    details: "Aposentadorias e benefícios previdenciários exigem atenção ao histórico e aos documentos de cada pessoa. A Dra. Marcela analisa sua situação para esclarecer dúvidas e orientar sobre os caminhos administrativos ou judiciais cabíveis.",
-    topics: ["Análise de aposentadorias e benefícios", "Orientação sobre documentos e contribuições", "Avaliação de requerimentos e demandas previdenciárias"],
+    title: "Contratos bancários", icon: FileCheck2,
+    summary: "Clareza para entender cláusulas, encargos e obrigações na sua relação com o banco.",
+    details: "Antes de tomar uma decisão sobre um contrato bancário, é importante compreender o que foi contratado. A análise dos documentos permite esclarecer cláusulas, juros, tarifas e obrigações, considerando as particularidades da sua situação.",
+    topics: ["Leitura e análise de contratos bancários", "Esclarecimento sobre cláusulas e encargos", "Avaliação das alternativas para o seu caso"],
   },
   {
-    title: "Direito Trabalhista", icon: BriefcaseBusiness,
-    summary: "Esclarecimento de dúvidas sobre relações de trabalho, contratos e desligamentos.",
-    details: "Questões da relação de trabalho merecem uma análise cuidadosa dos fatos e dos documentos. O atendimento permite compreender sua situação, esclarecer dúvidas sobre direitos e obrigações e avaliar as providências adequadas ao caso.",
-    topics: ["Análise de contratos e documentos de trabalho", "Orientação sobre rescisão e verbas trabalhistas", "Avaliação de conflitos na relação de emprego"],
+    title: "Empréstimos e financiamentos", icon: Landmark,
+    summary: "Orientação sobre crédito, parcelas e condições de empréstimos e financiamentos.",
+    details: "Dúvidas sobre parcelas, descontos ou condições de crédito merecem uma avaliação cuidadosa. A Dra. Nathália analisa o contrato e o histórico apresentado para explicar as condições da operação e orientar sobre os próximos passos possíveis.",
+    topics: ["Análise de empréstimos e crédito consignado", "Esclarecimento sobre parcelas e descontos", "Avaliação de contratos de financiamento"],
   },
   {
-    title: "Direito Civil", icon: FileCheck2,
-    summary: "Análise de contratos e questões do dia a dia para apoiar suas decisões com clareza.",
-    details: "Um contrato ou um conflito civil pode trazer dúvidas sobre como agir. A Dra. Marcela avalia os documentos e as circunstâncias apresentados para explicar as alternativas e orientar os próximos passos conforme a demanda.",
-    topics: ["Análise de contratos e documentos", "Orientação sobre direitos e obrigações civis", "Avaliação de medidas para a solução de conflitos"],
+    title: "Cobranças e negativação", icon: CreditCard,
+    summary: "Análise de cobranças, dívidas e registros que você não reconhece ou deseja esclarecer.",
+    details: "Uma cobrança ou uma inscrição em cadastro de crédito pode gerar dúvidas sobre a origem e o valor de uma dívida. O atendimento reúne documentos, comprovantes e comunicações para compreender os fatos e avaliar as medidas cabíveis.",
+    topics: ["Análise da origem de cobranças bancárias", "Avaliação de registros em cadastros de crédito", "Orientação sobre documentos e contestação"],
   },
   {
-    title: "Direito do Consumidor", icon: ShoppingBag,
-    summary: "Orientação para questões relacionadas a compras, cobranças e prestação de serviços.",
-    details: "Problemas em uma relação de consumo precisam ser compreendidos a partir dos fatos, dos comprovantes e das comunicações com o fornecedor. O escritório analisa sua demanda para esclarecer direitos e avaliar as alternativas de solução.",
-    topics: ["Análise de cobranças e contratos de consumo", "Questões com produtos e serviços", "Orientação sobre reclamações e providências cabíveis"],
+    title: "Fraudes e operações não reconhecidas", icon: ShieldCheck,
+    summary: "Atenção a situações com transações, descontos ou contratações que você não reconhece.",
+    details: "Ao se deparar com uma operação não reconhecida, reunir o histórico da situação ajuda a compreender o ocorrido. A análise jurídica considera extratos, protocolos e comunicações com a instituição financeira para orientar as providências adequadas ao caso.",
+    topics: ["Análise de transações e contratações não reconhecidas", "Organização de extratos, protocolos e comprovantes", "Avaliação de medidas administrativas ou judiciais"],
   },
 ];
 
@@ -108,6 +108,7 @@ function Heading({
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showAllReviews, setShowAllReviews] = useState(false);
   const [activeArea, setActiveArea] =
     useState<(typeof areas)[number] | null>(null);
 
@@ -159,21 +160,22 @@ export default function Home() {
         <div ref={contentRef}>
         <a href="#inicio" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-sm focus:bg-white focus:p-4 focus:text-ink">Ir para o conteúdo</a>
         <header className="brand-header sticky top-0 z-40 border-b border-brand-300/20 bg-brand-950 text-white">
-          <div className="mx-auto flex h-[92px] max-w-7xl items-center justify-between gap-5 px-5 sm:h-[104px] sm:px-8 lg:px-12">
+          <div className="mx-auto flex h-[104px] max-w-7xl items-center justify-between gap-5 px-5 sm:h-[112px] sm:px-8 lg:px-12">
             <a
               href="#inicio"
-              aria-label="Santos Advocacia — início"
+              aria-label="Nathália Bastos — início"
               onClick={closeMenu}
               className="shrink-0"
             >
               <Image
                 src={brand.logo}
-                width={2172}
-                height={724}
+                width={1942}
+                height={809}
                 alt={brand.businessName}
                 preload
-                className="h-auto w-[210px] min-[360px]:w-[238px] sm:w-[280px]"
-                sizes="(max-width: 359px) 210px, (max-width: 640px) 238px, 280px"
+                unoptimized
+                className="h-auto w-[202px] sm:w-[225px]"
+                sizes="(max-width: 639px) 202px, 225px"
               />
             </a>
             <nav
@@ -201,7 +203,7 @@ export default function Home() {
                 href={contact}
                 target="_blank"
                 rel="noreferrer"
-                aria-label="WhatsApp da Dra. Marcela Santos"
+                aria-label="WhatsApp da Dra. Nathália Bastos"
                 className="grid size-11 place-items-center rounded-full border border-ink/20 text-brand-700 transition-colors hover:border-brand-700 hover:bg-brand-50"
               >
                 <WhatsAppMark size={17} strokeWidth={1.7} />
@@ -271,9 +273,9 @@ export default function Home() {
 
         <section
           id="inicio"
-          className="brand-hero relative isolate overflow-hidden scroll-mt-28 border-b border-ink/10 bg-ivory"
+          className="brand-hero relative isolate overflow-hidden scroll-mt-28 border-b border-brand-300/20 bg-brand-950 text-white"
         >
-          <div className="mx-auto grid min-h-[600px] max-w-7xl items-center gap-12 px-5 py-12 sm:px-8 sm:py-16 lg:min-h-[640px] lg:grid-cols-[1.05fr_0.95fr] lg:gap-14 lg:px-12 lg:py-16">
+          <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-12 sm:px-8 sm:py-16 lg:min-h-[650px] lg:grid-cols-[1.2fr_0.8fr] lg:gap-20 lg:px-12 lg:py-12">
             <motion.div
               initial={false}
               animate="visible"
@@ -282,16 +284,16 @@ export default function Home() {
             >
               <motion.h1
                 variants={reveal}
-                className="max-w-[720px] font-display text-[2.6rem] leading-[1.13] tracking-[-0.025em] text-ink sm:text-[3.5rem] lg:text-[3.8rem]"
+                className="max-w-[720px] font-display text-[2.75rem] leading-[1.1] tracking-[-0.025em] text-white sm:text-[3.6rem] lg:text-[4.2rem]"
               >
-                Orientação jurídica com clareza.{" "}
-                <span className="text-brand-700">Sua história merece atenção.</span>
+                Clareza nas suas relações com os bancos.{" "}
+                <span className="text-brand-300">Segurança para decidir.</span>
               </motion.h1>
               <motion.p
                 variants={reveal}
-                className="mt-7 max-w-xl text-[15px] leading-7 text-ink-soft sm:text-base sm:leading-8"
+                className="mt-7 max-w-xl text-[15px] leading-7 text-brand-100 sm:text-base sm:leading-8"
               >
-                Direito Previdenciário, Trabalhista, Civil e do Consumidor com a Dra. Marcela Santos. Em Formiga e em todo o Brasil, orientação para compreender seus direitos e os próximos passos.
+                Advocacia bancária com Nathália Bastos. Orientação para compreender contratos, cobranças e situações que envolvem sua vida financeira, com atenção ao seu caso.
               </motion.p>
               <motion.div
                 variants={reveal}
@@ -303,11 +305,11 @@ export default function Home() {
                   size="lg"
                   className="rounded-sm"
                 >
-                  <WhatsAppMark size={17} /> Converse com a Dra. Marcela
+                  <WhatsAppMark size={17} /> Converse com a Dra. Nathália
                 </GlowingButton>
                 <a
                   href="#atuacao"
-                  className="group inline-flex items-center gap-2 px-1 py-3 text-sm font-medium text-ink transition-colors hover:text-brand-700"
+                  className="group inline-flex items-center gap-2 px-1 py-3 text-sm font-medium text-brand-100 transition-colors hover:text-brand-300"
                 >
                   Áreas de atuação{" "}
                   <ArrowRight
@@ -318,18 +320,18 @@ export default function Home() {
               </motion.div>
               <motion.div
                 variants={reveal}
-                className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-ink/10 pt-5 text-xs text-ink-soft"
+                className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-brand-300/20 pt-5 text-xs text-brand-100"
               >
                 <span className="inline-flex items-center gap-2">
-                  <MapPin size={15} className="text-brand-700" />
+                  <MapPin size={15} className="text-brand-300" />
                   {brand.location}
                 </span>
                 <span className="inline-flex items-center gap-2">
-                  <MessageCircle size={15} className="text-brand-700" />
-                  Atendimento em todo o Brasil
+                  <MessageCircle size={15} className="text-brand-300" />
+                  Atendimento com agendamento
                 </span>
-                <a href="#avaliacoes" className="inline-flex items-center gap-2 py-2 text-sm text-brand-700 underline underline-offset-4">
-                  <Star size={15} aria-hidden="true" /> Avaliações no Google
+                <a href="#avaliacoes" className="inline-flex items-center gap-2 py-2 text-sm text-brand-300 underline underline-offset-4">
+                  <Star size={15} fill="currentColor" aria-hidden="true" /> {brand.googleRating} no Google · {brand.googleReviewCount} avaliações
                 </a>
               </motion.div>
             </motion.div>
@@ -341,21 +343,21 @@ export default function Home() {
                 delay: 0.16,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="relative mx-auto w-full max-w-[400px] sm:max-w-[440px] lg:ml-auto lg:mr-0"
+              className="relative mx-auto w-full max-w-[287px] sm:max-w-[310px] lg:ml-auto lg:mr-0"
             >
-              <figure className="hero-signature">
+              <figure className="hero-signature border border-brand-300/30 p-3">
                 <Image
                   src={brand.portrait}
-                  alt="Dra. Marcela Santos, advogada da Santos Advocacia, em retrato profissional"
-                  width={666}
-                  height={842}
+                  alt="Nathália Bastos, advogada bancária, em retrato profissional"
+                  width={287}
+                  height={510}
                   preload
-                  sizes="(max-width: 640px) 90vw, 440px"
+                  sizes="(max-width: 639px) 287px, 310px"
                   className="h-auto w-full"
                 />
-                <figcaption className="flex flex-col gap-2 border-t border-ink/10 bg-white px-5 py-5 text-center leading-6 text-ink-soft">
-                  <span className="font-display text-2xl text-ink">Dra. Marcela Santos</span>
-                  <span className="text-xs tracking-[0.06em]">Advogada · Santos Advocacia</span>
+                <figcaption className="flex flex-col gap-2 px-2 pb-2 pt-5 text-center leading-6 text-brand-200">
+                  <span className="font-display text-2xl text-brand-100">Dra. Nathália Bastos</span>
+                  <span className="text-xs tracking-[0.06em]">Advocacia e Consultoria Jurídica</span>
                 </figcaption>
               </figure>
             </motion.div>
@@ -369,7 +371,7 @@ export default function Home() {
           <div className="mx-auto grid max-w-7xl gap-6 px-5 py-7 sm:grid-cols-3 sm:gap-4 sm:px-8 lg:px-12">
             {[
               ["Atenção", "Escuta e análise do seu caso"],
-              ["Proximidade", "No centro de Formiga"],
+              ["Proximidade", "No centro de Patrocínio"],
               ["Clareza", "Orientação em cada etapa"],
             ].map(([value, label], index) => (
               <div
@@ -383,7 +385,7 @@ export default function Home() {
                 <span className="font-display text-2xl text-brand-700 sm:text-[1.7rem]">
                   {value}
                 </span>
-                <span className="max-w-[145px] text-[11px] leading-5 text-ink-soft">
+                <span className="max-w-[145px] text-xs leading-5 text-ink-soft">
                   {label}
                 </span>
               </div>
@@ -405,13 +407,13 @@ export default function Home() {
             >
               <Heading
 
-                description="Da aposentadoria às relações de trabalho e de consumo, conheça as áreas de atuação e encontre orientação para a sua situação."
+                description="Contratos, crédito e cobranças fazem parte da sua vida. Conheça as frentes de orientação em Direito Bancário."
               >
-                Orientação para decidir.{" "}
-                <span className="text-brand-700">Cuidado para seguir.</span>
+                Sua vida financeira merece{" "}
+                <span className="text-brand-700">atenção jurídica.</span>
               </Heading>
               <p className="max-w-[250px] pb-1 text-xs leading-6 text-ink-soft">
-                Atendimento em todo o Brasil. Cada caso é analisado de forma individual, com atenção às suas particularidades.
+                Cada situação tem sua história. A análise individual é o ponto de partida para compreender o seu caso.
               </p>
             </motion.div>
             <motion.div
@@ -438,7 +440,7 @@ export default function Home() {
                     <h3 className="max-w-xl font-display text-[1.55rem] sm:text-[1.8rem] leading-tight text-ink">
                       {area.title}
                     </h3>
-                    <p className="mt-3 max-w-xl text-[13px] leading-6 text-ink-soft">
+                    <p className="mt-3 max-w-xl text-base leading-7 text-ink-soft">
                       {area.summary}
                     </p>
                     </div>
@@ -464,16 +466,16 @@ export default function Home() {
 
         <section id="sobre" className="scroll-mt-28 bg-white py-20 sm:py-28 lg:py-32">
           <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-24 lg:px-12">
-            <figure className="about-signature mx-auto flex w-full max-w-[460px] flex-col justify-center bg-brand-950 px-7 py-14 sm:px-10 lg:mx-0">
-              <Image src={brand.logo} alt="Marcela Santos — Advogada, logo original" width={2172} height={724} sizes="(max-width: 640px) 80vw, 380px" className="h-auto w-full" />
-              <figcaption className="border-b border-brand-300/30 py-5 text-sm text-brand-200">Uma advocacia próxima da sua história.</figcaption>
+            <figure className="about-signature mx-auto w-full max-w-[460px] bg-brand-950 lg:mx-0">
+              <Image src={brand.office} alt="Identidade visual do escritório Nathália Bastos, com monograma em parede de tom cobre" width={558} height={510} sizes="(max-width: 639px) 90vw, 460px" className="h-auto w-full" />
+              <figcaption className="px-6 py-5 text-sm leading-6 text-brand-200">Advocacia e Consultoria Jurídica · Patrocínio, MG</figcaption>
             </figure>
             <div>
               <Heading>Clareza para orientar.{" "}<span className="text-brand-700">Sensibilidade para acolher.</span></Heading>
-              <h3 className="mt-7 font-display text-3xl text-brand-800">Dra. Marcela Santos</h3>
-              <p className="mt-2 text-xs font-medium tracking-[0.04em] text-ink-soft">Previdenciário · Trabalhista · Civil · Consumidor</p>
-              <p className="mt-6 max-w-xl text-[15px] leading-7 text-ink-soft">À frente da Santos Advocacia, a Dra. Marcela Santos atua em Direito Previdenciário, Trabalhista, Civil e do Consumidor. Com sede em Formiga, Minas Gerais, atende em todo o Brasil. Cada história é o ponto de partida para compreender a situação, analisar os documentos e orientar os próximos passos.</p>
-              <p className="mt-4 max-w-xl text-[15px] leading-7 text-ink-soft">A proposta do escritório é tornar as questões jurídicas mais compreensíveis, com escuta, atenção e acompanhamento. Você encontra espaço para apresentar suas dúvidas, compreender as orientações e participar das decisões sobre o seu caso.</p>
+              <h3 className="mt-7 font-display text-3xl text-brand-800">Dra. Nathália Bastos</h3>
+              <p className="mt-2 text-sm font-medium text-ink-soft">Advogada bancária em Patrocínio, Minas Gerais</p>
+              <p className="mt-6 max-w-xl text-base leading-8 text-ink-soft">Questões com bancos podem trazer dúvidas e insegurança. Nathália Bastos atua na advocacia bancária, com sede no Edifício Vila Rica, no centro de Patrocínio. O atendimento parte da sua história e da análise dos documentos para tornar a situação mais compreensível.</p>
+              <p className="mt-4 max-w-xl text-base leading-8 text-ink-soft">Escuta, clareza e atenção individual orientam a proposta do escritório. Um espaço para apresentar suas dúvidas, compreender as alternativas e participar das decisões sobre os próximos passos.</p>
               <a href={contact} target="_blank" rel="noopener noreferrer" className="group mt-8 inline-flex min-h-11 items-center gap-2 border-b border-brand-700/40 py-2 text-sm font-semibold text-brand-800 transition-colors hover:text-brand-700">Conheça o atendimento <ArrowUpRight size={16} /></a>
             </div>
           </div>
@@ -499,11 +501,11 @@ export default function Home() {
               {[
                 [
                   "Primeiro, a sua história",
-                  "Conte sua situação pelo WhatsApp e receba as informações para agendar seu atendimento com a Dra. Marcela, em Formiga.",
+                  "Conte brevemente sua situação pelo WhatsApp e receba as informações para agendar seu atendimento com a Dra. Nathália.",
                 ],
                 [
                   "Depois, os documentos",
-                  "Seu histórico e os documentos apresentados são analisados com atenção às particularidades da sua demanda.",
+                  "Contratos, extratos, comprovantes e comunicações com o banco ajudam a compreender os detalhes da sua situação.",
                 ],
                 [
                   "Um caminho compreensível",
@@ -517,7 +519,7 @@ export default function Home() {
                 >
                   <div>
                     <h3 className="font-display text-2xl">{title}</h3>
-                    <p className="mt-2 max-w-lg text-[13px] leading-6 text-brand-100">
+                    <p className="mt-2 max-w-lg text-base leading-7 text-brand-100">
                       {description}
                     </p>
                   </div>
@@ -534,8 +536,8 @@ export default function Home() {
               {[
                 ["Como funciona o primeiro contato?", `Envie uma mensagem pelo WhatsApp ou ligue para ${brand.phone}. Conte brevemente sua situação para receber informações sobre o atendimento e os documentos iniciais necessários.`],
                 ["Onde fica o escritório?", `O escritório fica na ${brand.address}. Entre em contato para combinar sua visita.`],
-                ["O atendimento é só em Formiga?", "A Dra. Marcela atende em todo o Brasil, com sede em Formiga, Minas Gerais. Entre em contato pelo WhatsApp para combinar a forma de atendimento e o agendamento."],
-                ["Quais documentos devo separar?", "Os documentos variam conforme a situação. Documentos pessoais, contratos, comprovantes e comunicações relacionados à sua demanda podem ser úteis à análise. A Dra. Marcela orientará quais são pertinentes ao seu caso durante o agendamento."],
+                ["Quais situações posso apresentar?", "Você pode apresentar dúvidas sobre contratos bancários, empréstimos, financiamentos, cobranças ou operações não reconhecidas. O atendimento inicial permite compreender a demanda e avaliar a orientação adequada."],
+                ["Quais documentos devo separar?", "Os documentos variam conforme a situação. Contratos, extratos, comprovantes de pagamento e protocolos de contato com o banco podem ajudar. Durante o agendamento, a Dra. Nathália orientará quais documentos são pertinentes à análise."],
               ].map(([question, answer]) => (
                 <details key={question} className="group py-6">
                   <summary className="cursor-pointer text-base font-semibold text-ink marker:text-brand-700">{question}</summary>
@@ -548,51 +550,46 @@ export default function Home() {
 
         <section
           id="avaliacoes"
-          className="scroll-mt-24 bg-white py-20 sm:py-28 lg:py-32"
+          className="reviews-section scroll-mt-24 border-y border-brand-300/20 bg-brand-950 py-20 text-white sm:py-28 lg:py-32"
         >
           <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
             <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
-              <Heading description="A atenção no atendimento e a clareza nas orientações, nas palavras de quem já passou pelo escritório.">
-                Confiança que se{" "}
-                <span className="text-brand-700">compartilha.</span>
+              <Heading light description="Experiências reais de quem confiou seu atendimento ao escritório. Relatos publicados no Google, com autoria preservada.">
+                A confiança se constrói{" "}
+                <span className="text-brand-300">em cada atendimento.</span>
               </Heading>
-              <div className="flex shrink-0 items-center gap-4 text-brand-700">
-                <p className="font-display text-5xl leading-none tabular-nums" aria-label={`Nota ${brand.googleRating} de 5 no Google`}>
-                  {brand.googleRating}
-                </p>
-                <div>
-                  <span className="flex gap-1" role="img" aria-label={`Avaliação média de ${brand.googleRating} de 5 estrelas`}>
-                    {[0, 1, 2, 3, 4].map((star) => <Star key={star} size={16} fill="currentColor" aria-hidden="true" />)}
-                  </span>
-                  <p className="mt-2 text-xs text-ink-soft">{brand.googleReviewCount} avaliações no Google</p>
-                </div>
-              </div>
+              <a href={reviews} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 w-fit shrink-0 flex-col items-start gap-3 border-b border-brand-300/30 pb-4 text-brand-100 transition-colors hover:text-brand-300">
+                <span className="flex items-center gap-3 text-base font-semibold"><span>{brand.googleRating} / 5</span><span className="flex gap-1" role="img" aria-label="5 de 5 estrelas">{[0,1,2,3,4].map(star => <Star key={star} size={15} className="text-brand-300" fill="currentColor" aria-hidden="true" />)}</span></span>
+                <span className="inline-flex items-center gap-2 text-sm">{brand.googleReviewCount} avaliações no Google <ArrowUpRight size={15} aria-hidden="true" /></span>
+              </a>
             </div>
-            <div className="mt-12 grid divide-y divide-ink/15 border-y border-ink/15 md:grid-cols-3 md:divide-x md:divide-y-0">
-              {testimonials.map((testimonial) => (
-                <figure key={testimonial.name} className="flex flex-col justify-between gap-7 py-8 md:px-7 md:py-10 md:first:pl-0 md:last:pr-0">
-                  <blockquote className="text-[15px] leading-7 text-ink">
-                    <p>“{testimonial.text}”</p>
-                  </blockquote>
-                  <figcaption>
-                    <p className="font-display text-xl text-brand-700">{testimonial.name}</p>
-                    <p className="mt-1 text-xs text-ink-soft">Avaliação publicada no Google</p>
+            <div id="review-list" className="mt-12 grid gap-px border border-brand-300/20 bg-brand-300/20 md:grid-cols-2 lg:grid-cols-3">
+              {(showAllReviews ? testimonials : testimonials.slice(0,6)).map(testimonial => (
+                <figure key={testimonial.name} className="flex min-w-0 flex-col justify-between gap-8 bg-brand-950 px-6 py-8 sm:px-8 sm:py-10">
+                  <div>
+                    <span className="flex gap-1 text-brand-300" role="img" aria-label="Avaliação de 5 estrelas">{[0,1,2,3,4].map(star => <Star key={star} size={14} fill="currentColor" aria-hidden="true" />)}</span>
+                    <blockquote className="mt-6 text-base leading-8 text-brand-100"><p>“{testimonial.text}”</p></blockquote>
+                  </div>
+                  <figcaption className="border-t border-brand-300/15 pt-5">
+                    <p className="text-sm font-semibold text-white">{testimonial.name}</p>
+                    <a href={reviews} target="_blank" rel="noopener noreferrer" className="mt-1 inline-flex min-h-11 items-center gap-2 text-xs text-brand-200 underline-offset-4 hover:underline">{testimonial.excerpt ? "Trecho de avaliação no Google" : "Avaliação publicada no Google"}<ArrowUpRight size={12} aria-hidden="true" /></a>
                   </figcaption>
                 </figure>
               ))}
             </div>
-            <div className="mt-7 flex flex-col justify-between gap-5 sm:flex-row sm:items-center">
-              <p className="max-w-xl text-xs leading-6 text-ink-soft">
-                Relatos publicados no Google. A nota e a quantidade de avaliações podem mudar; consulte o perfil para ver os dados atuais.
+            <div className="mt-8 flex flex-col justify-between gap-6 sm:flex-row sm:items-center">
+              <p className="max-w-md text-xs leading-6 text-brand-200">
+                Avaliações consultadas em 17/10/2026. Alguns relatos são apresentados em trechos. Nota e quantidade podem mudar.
               </p>
-              <a
-                href={reviews}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex min-h-11 w-fit shrink-0 items-center gap-2 rounded-full border border-ink/15 px-5 py-3 text-[10px] font-semibold uppercase tracking-[0.13em] text-ink transition-colors hover:border-brand-700 hover:text-brand-700"
+              <button
+                type="button"
+                aria-expanded={showAllReviews}
+                aria-controls="review-list"
+                onClick={() => setShowAllReviews(show => !show)}
+                className="inline-flex min-h-11 w-fit shrink-0 items-center gap-3 rounded-sm border border-brand-300/50 px-6 py-3 text-sm font-semibold text-brand-100 transition-colors hover:bg-brand-300 hover:text-ink"
               >
-                Consultar no Google Maps <ArrowUpRight size={14} />
-              </a>
+                {showAllReviews ? "Mostrar menos depoimentos" : `Ver mais ${testimonials.length - 6} depoimentos`} <ArrowRight size={16} className={showAllReviews ? "-rotate-90" : "rotate-90"} aria-hidden="true" />
+              </button>
             </div>
           </div>
 
@@ -606,7 +603,7 @@ export default function Home() {
             <div>
               <Heading
 
-                description="Precisa de orientação jurídica? Fale com a Dra. Marcela, conte brevemente sua situação e receba informações para agendar seu atendimento."
+                description="Tem uma dúvida sobre sua relação com o banco? Fale com a Dra. Nathália e receba informações para agendar seu atendimento."
               >
                 Um primeiro contato com{" "}
                 <span className="text-brand-700">tranquilidade.</span>
@@ -618,23 +615,22 @@ export default function Home() {
                   size="lg"
                   className="rounded-sm"
                 >
-                  <WhatsAppMark size={17} /> Converse com a Dra. Marcela
+                  <WhatsAppMark size={17} /> Converse com a Dra. Nathália
                 </GlowingButton>
                 <a href={telephone} className="inline-flex min-h-11 items-center gap-2 text-sm text-brand-700 hover:text-brand-800"><Phone size={16} /> Ligue: {brand.phone}</a>
                 <a href={brand.instagram} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-2 py-2 text-sm text-brand-700 hover:text-brand-800"><Camera size={16} /> {brand.instagramHandle}</a>
               </div>
             </div>
             <div className="relative overflow-hidden border border-ink/10 bg-white p-7 sm:p-10">
-              <div className="absolute right-0 top-0 h-1 w-28 bg-brand-600" />
               <div className="flex items-center gap-4">
                 <span className="grid size-12 place-items-center rounded-full bg-brand-50 text-brand-700">
                   <MapPin size={21} strokeWidth={1.6} />
                 </span>
                 <div>
-                  <h3 className="font-display text-2xl text-ink">Nosso escritório em Formiga</h3>
+                  <h3 className="font-display text-2xl text-ink">Encontre o escritório em Patrocínio</h3>
                 </div>
               </div>
-              <p className="mt-6 text-sm font-semibold text-brand-700">Santos Advocacia · Marcela Santos</p>
+              <p className="mt-6 text-sm font-semibold text-brand-700">Nathália Bastos · Advocacia e Consultoria Jurídica</p>
               <address className="mt-2 max-w-md not-italic text-[14px] leading-7 text-ink-soft">
                 {brand.address}
               </address>
@@ -647,7 +643,7 @@ export default function Home() {
                   href={maps}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-3 text-[10px] font-semibold uppercase tracking-[0.13em] text-ink transition-colors hover:border-brand-700 hover:text-brand-700"
+                  className="inline-flex min-h-11 items-center gap-2 rounded-sm border border-ink/20 px-5 py-3 text-sm font-semibold text-ink transition-colors hover:border-brand-700 hover:text-brand-700"
                 >
                   Ver no Google Maps <ArrowUpRight size={14} />
                 </a>
@@ -667,7 +663,7 @@ export default function Home() {
               href={whatsapp}
               target="_blank"
               rel="noreferrer"
-              className="group inline-flex w-fit shrink-0 items-center gap-3 rounded-full bg-white px-6 py-4 text-[10px] font-semibold uppercase tracking-[0.14em] text-brand-800 transition-transform hover:-translate-y-0.5"
+              className="group inline-flex min-h-11 w-fit shrink-0 items-center gap-3 rounded-sm bg-white px-6 py-4 text-sm font-semibold text-brand-800 transition-colors hover:bg-brand-100"
             >
               Fale pelo WhatsApp <ArrowUpRight size={15} />
             </a>
@@ -680,15 +676,16 @@ export default function Home() {
               <div className="inline-flex max-w-full py-2">
                 <Image
                   src={brand.logo}
-                  width={2172}
-                  height={724}
+                  width={1942}
+                  height={809}
                   alt={brand.businessName}
+                  unoptimized
                   className="h-auto w-[250px]"
                   sizes="250px"
                 />
               </div>
               <p className="mt-4 max-w-xs text-xs leading-6 text-ink-soft">
-                Direito Previdenciário, Trabalhista, Civil e do Consumidor. Sede em Formiga, Minas Gerais. Atendimento em todo o Brasil.
+                Advocacia bancária com escuta, clareza e atenção individual. Sede em Patrocínio, Minas Gerais.
               </p>
             </div>
             <div>
@@ -700,7 +697,7 @@ export default function Home() {
                   Áreas de atuação
                 </a>
                 <a className="footer-link" href="#sobre">
-                  Conheça a Marcela
+                  Conheça a Nathália
                 </a>
                 <a className="footer-link" href="#avaliacoes">
                   Perfil no Google
